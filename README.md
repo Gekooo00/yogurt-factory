@@ -212,7 +212,8 @@ menu accessibilité (« Curseur classique »). Barre de défilement rouge assort
 Le dépôt contient une automatisation (`.github/workflows/deploy-pages.yml`) qui construit le site et le
 publie à chaque push sur `main`.
 
-1. **Une seule fois** : sur GitHub, **Settings → Pages → Build and deployment → Source : « GitHub Actions »**.
+1. **Une seule fois** : sur GitHub, **Settings → Pages → Build and deployment → Source : « Deploy from a branch »,
+   Branch : `gh-pages`, dossier `/ (root)`**, puis Save. (Le réglage « GitHub Actions » fonctionne aussi.)
 2. Chaque push publie le site sur `https://<utilisateur>.github.io/<dépôt>/` en 2 minutes environ
    (suivi dans l'onglet **Actions**).
 

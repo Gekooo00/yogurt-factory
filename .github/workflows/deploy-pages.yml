@@ -1,5 +1,7 @@
-# Construit le site (python build.py) et le publie sur GitHub Pages à chaque push sur main.
-# Réglage requis une seule fois : Settings > Pages > Build and deployment > Source = « GitHub Actions ».
+# Construit le site (python build.py) à chaque push sur main et le publie :
+#   1) dans la branche « gh-pages » (réglage GitHub : Settings > Pages > Deploy from a branch > gh-pages / root)
+#   2) directement sur GitHub Pages si le réglage est « GitHub Actions »
+# Les deux modes fonctionnent : il suffit de choisir l'un des deux dans Settings > Pages.
 name: Publier le site
 
 on:
@@ -8,7 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -40,15 +42,24 @@ jobs:
           BASE_PATH: /${{ github.event.repository.name }}
         run: python build.py
 
-      - uses: actions/configure-pages@v5
+      - name: Publication dans la branche gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "Site généré depuis"
 
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
+    # Utilisé seulement si Settings > Pages > Source = « GitHub Actions »
     needs: build
     runs-on: ubuntu-latest
+    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
