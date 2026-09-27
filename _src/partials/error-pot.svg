@@ -1,0 +1,16 @@
+<svg class="err-pot" viewBox="0 0 220 240" width="220" height="240" aria-hidden="true">
+  <ellipse class="err-shadow" cx="110" cy="228" rx="70" ry="8"/>
+  <g class="err-swirl">
+    <path d="M110 18c10 10 8 22-2 28 26 2 38 18 32 34 22 4 34 20 28 38H52c-6-18 6-34 28-38-6-16 6-32 32-34-10-6-12-18-2-28z" fill="#fff"/>
+    <path d="M110 18c10 10 8 22-2 28 26 2 38 18 32 34" fill="none" stroke="#f1e4e1" stroke-width="5" stroke-linecap="round"/>
+    <path d="M80 80c20 4 44 4 60 0" fill="none" stroke="#f1e4e1" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="92" cy="96" r="6" fill="#e3232b"/><circle cx="128" cy="62" r="5" fill="#ffc845"/><circle cx="140" cy="100" r="6" fill="#3d63d6"/><circle cx="104" cy="54" r="4" fill="#3fb67b"/>
+  </g>
+  <path d="M40 116h140l-16 108H56z" fill="#b3131b"/>
+  <path d="M40 116h140l-3 20H43z" fill="#8f0f16"/>
+  <rect class="err-drip d1" x="62" y="110" width="12" height="30" rx="6" fill="#fff"/>
+  <rect class="err-drip d2" x="116" y="110" width="10" height="42" rx="5" fill="#fff"/>
+  <rect class="err-drip d3" x="150" y="110" width="12" height="24" rx="6" fill="#fff"/>
+  <circle cx="110" cy="182" r="26" fill="#fff"/>
+  <text x="110" y="188" text-anchor="middle" font-family="Lobster, cursive" font-size="17" fill="#e3232b">{{pot-label}}</text>
+</svg>

@@ -1,0 +1,53 @@
+<!--
+title: Our stores — Find a Yogurt Factory near you
+description: Addresses, opening hours and directions for every Yogurt Factory store in France, Belgium, Luxembourg, Spain, Africa and Asia.
+nav: boutiques
+og_title: Find your Facto
+og_sub: {{count:stores}} stores in France and around the world: map, opening hours, directions.
+-->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> › Our stores</p>
+    <h1>Find your <span class="script">Facto</span></h1>
+    <p class="lead"><span data-count="stores">{{count:stores}}</span> locations in <span data-count="cities">{{count:cities}}</span> cities, in France and around the world. Search by city, postcode or shopping centre.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34C240 70 480 4 720 30s480 36 720-6v36H0z"/></svg>
+</section>
+
+<section class="section section--tight" id="liste">
+  <div class="wrap" id="store-locator">
+    <form class="store-tools" role="search">
+      <div class="search">
+        <label class="sr-only" for="store-q">City, postcode or shopping centre</label>
+        <input id="store-q" type="search" placeholder="City, postcode, shopping centre…" autocomplete="off">
+      </div>
+      <label class="sr-only" for="store-region">Region</label>
+      <select id="store-region" class="select"></select>
+    </form>
+    <div class="store-actions-row">
+      <button class="btn btn--red btn--small" type="button" id="store-geo">📍 Near me</button>
+      <span class="hint">Tip: tap ⭐ on a store to make it “My Facto”</span>
+      <label class="toggle-open"><input type="checkbox" id="store-open"> Open now</label>
+    </div>
+    <div class="country-pills" aria-label="Filter by country"></div>
+    <div id="store-map" class="store-map" role="region" aria-label="Store map"></div>
+    <p class="store-count" aria-live="polite"></p>
+    <div class="store-list"></div>
+    <div class="center"><button class="btn btn--line" type="button" id="store-more" hidden>Show more stores</button></div>
+    <p class="note">Opening hours are indicative and may vary (public and school holidays, shopping centre hours). If in doubt, call the store.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>No Facto near you?</h2>
+        <p>Maybe it's a sign you should open one. We're looking for entrepreneurs across France and abroad.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--white" href="franchise.html">Become a franchisee</a>
+      </div>
+    </div>
+  </div>
+</section>

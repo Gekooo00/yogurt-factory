@@ -1,0 +1,93 @@
+# ==========================================================================
+#  Yogurt Factory — configuration Apache (OVH, o2switch, Ionos…)
+# ==========================================================================
+Options -Indexes
+AddDefaultCharset utf-8
+AddCharset utf-8 .txt .xml .webmanifest
+ServerSignature Off
+
+# Fichiers cachés interdits (sauf /.well-known/)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule "(^|/)\.(?!well-known/)" - [F]
+</IfModule>
+DirectoryIndex index.html
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+<If "%{REQUEST_URI} =~ m#^/en/#">
+  ErrorDocument 404 /en/404.html
+</If>
+ErrorDocument 500 /500.html
+ErrorDocument 503 /maintenance.html
+
+# ---- Mode maintenance -------------------------------------------------------
+# Pour afficher la page de maintenance à tous (sauf à votre adresse IP), décommentez :
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{REMOTE_ADDR} !^123\.45\.67\.89$
+#   RewriteCond %{REQUEST_URI} !^/(maintenance\.html|assets/|images/)
+#   RewriteRule ^ - [R=503,L]
+# </IfModule>
+
+# ---- HTTPS + domaine sans www ----------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://yogurtfactory.fr%{REQUEST_URI} [R=301,L]
+
+  # Anciennes adresses WordPress -> nouvelles pages (référencement conservé)
+  RewriteRule ^notre-concept/?$ /concept.html [R=301,L]
+  RewriteRule ^nos-gourmandises/?$ /carte.html [R=301,L]
+  RewriteRule ^nos-shops/?$ /boutiques.html [R=301,L]
+  RewriteRule ^adresse/?$ /boutiques.html [R=301,L]
+  RewriteRule ^devenir-franchise/?$ /franchise.html [R=301,L]
+  RewriteRule ^mention-legales/?$ /mentions-legales.html [R=301,L]
+  RewriteRule ^wp-content/uploads/.*\.pdf$ /carte.html [R=301,L]
+  RewriteRule ^(wp-admin|wp-login\.php|xmlrpc\.php|feed)(/.*)?$ / [R=301,L]
+</IfModule>
+
+# ---- Sécurité ----------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+  Header unset X-Powered-By
+  <FilesMatch "^sw\.js$">
+    Header set Cache-Control "no-cache"
+    Header set Service-Worker-Allowed "/"
+  </FilesMatch>
+  <FilesMatch "^(llms(-full)?\.txt|robots\.txt)$">
+    Header set X-Robots-Tag "noindex"
+  </FilesMatch>
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(self), camera=(), microphone=(), payment=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.tile.openstreetmap.org; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
+</IfModule>
+
+# ---- Compression ------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript application/json image/svg+xml application/xml text/xml application/manifest+json
+</IfModule>
+
+# ---- Cache navigateur ---------------------------------------------------------
+# CSS/JS sont versionnés (?v=…) à chaque build : ils peuvent être gardés 1 an.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 week"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+</IfModule>
+AddType font/woff2 .woff2
+AddType image/webp .webp
+AddType application/manifest+json .webmanifest
+AddType text/plain .txt

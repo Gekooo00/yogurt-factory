@@ -1,0 +1,105 @@
+<!--
+title: Programme fidélité — 1 € = 1 point | Yogurt Factory
+description: 1 € = 1 point avec votre numéro de téléphone, en caisse ou sur borne. Échangez vos points contre des gourmandises offertes dès 30 points.
+nav: fidelite
+og_title: 1 € dépensé = 1 point
+og_sub: Votre numéro de téléphone suffit. Gourmandises offertes dès 30 points.
+-->
+<section class="page-hero">
+  <div class="wrap split">
+    <div>
+      <p class="crumbs"><a href="index.html">Accueil</a> › Fidélité</p>
+      <h1>Vos gourmandises vous <span class="script">rapportent</span></h1>
+      <p class="lead">Avec le programme fidélité Yogurt Factory, chaque euro dépensé vous rapporte 1 point. Pas de carte, pas d'appli à télécharger&nbsp;: juste votre numéro de téléphone.</p>
+      <div class="btn-row" style="margin-top:24px">
+        <a class="btn btn--yellow" href="#recompenses">Voir les récompenses</a>
+        <a class="btn btn--ghost" href="#comment">Comment ça marche&nbsp;?</a>
+      </div>
+    </div>
+    <div aria-hidden="true">
+      <div class="phone-card">
+        <div class="lbl">Mon solde fidélité</div>
+        <div class="val">84 <small>points</small></div>
+        <div class="row"><span>✓ Un Mignon avec toppings</span><span>80 pts</span></div>
+        <div class="row"><span>Prochaine récompense</span><span>Parfait · 90 pts</span></div>
+      </div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34C240 70 480 4 720 30s480 36 720-6v36H0z"/></svg>
+</section>
+
+<section class="section" id="comment">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Comment ça marche&nbsp;?</span>
+      <h2>Simple comme <span class="script">1, 2, 3</span></h2>
+    </div>
+    <div class="loyalty-steps" style="margin-top:36px">
+      <div class="reveal"><div class="big">📱</div><h3>Donnez votre numéro</h3><p>En caisse ou directement sur la borne, indiquez votre numéro de téléphone. C'est votre compte fidélité.</p></div>
+      <div class="reveal"><div class="big">🪙</div><h3>1&nbsp;€ = 1 point</h3><p>À chaque commande, vos points s'ajoutent automatiquement sur votre compte.</p></div>
+      <div class="reveal"><div class="big">🎁</div><h3>Faites-vous plaisir</h3><p>Dès 30 points, échangez-les contre des gourmandises offertes, en caisse ou sur la borne.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white" id="recompenses">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Les récompenses</span>
+      <h2>Qu'allez-vous vous <span class="script">offrir</span>&nbsp;?</h2>
+      <p class="lead">Faites glisser le curseur pour voir ce que vos points vous permettent de débloquer.</p>
+    </div>
+    <div class="builder" style="margin-top:28px">
+      <ol class="rewards reveal">
+        <li class="reward" data-points="30"><span class="pts-badge">30<small>points</small></span><b>Petit thé glacé</b><span class="state"></span></li>
+        <li class="reward" data-points="40"><span class="pts-badge">40<small>points</small></span><b>Donut</b><span class="state"></span></li>
+        <li class="reward" data-points="50"><span class="pts-badge">50<small>points</small></span><b>La Wallonne</b><span class="state"></span></li>
+        <li class="reward" data-points="60"><span class="pts-badge">60<small>points</small></span><b>Petit bubble tea</b><span class="state"></span></li>
+        <li class="reward" data-points="70"><span class="pts-badge">70<small>points</small></span><b>Petit smoothie ou milkshake</b><span class="state"></span></li>
+        <li class="reward" data-points="80"><span class="pts-badge">80<small>points</small></span><b>Un Mignon avec toppings</b><span class="state"></span></li>
+        <li class="reward" data-points="90"><span class="pts-badge">90<small>points</small></span><b>Le Parfait</b><span class="state"></span></li>
+        <li class="reward" data-points="100"><span class="pts-badge">100<small>points</small></span><b>Waffle Bomb</b><span class="state"></span></li>
+        <li class="reward" data-points="110"><span class="pts-badge">110<small>points</small></span><b>La Délicieuse</b><span class="state"></span></li>
+        <li class="reward" data-points="120"><span class="pts-badge">120<small>points</small></span><b>Le Superbe à partager</b><span class="state"></span></li>
+      </ol>
+      <aside class="sim reveal">
+        <h3>Simulateur</h3>
+        <label for="pts-range">Mes points (= euros dépensés)</label>
+        <output id="pts-out" for="pts-range">45 pts</output>
+        <input type="range" id="pts-range" min="0" max="130" step="1" value="45">
+        <div class="progress" aria-hidden="true"><span id="pts-bar"></span></div>
+        <p class="next" id="pts-next" aria-live="polite"></p>
+        <a class="btn btn--yellow" href="boutiques.html" style="width:100%;margin-top:18px">Commencer à cumuler</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap center">
+    <div class="reveal">
+      <span class="eyebrow">FAQ fidélité</span>
+      <h2>Vos questions</h2>
+    </div>
+    <div class="faq reveal" style="margin-top:28px">
+      <details><summary>Faut-il télécharger une application&nbsp;?</summary><div><p>Non. Votre numéro de téléphone suffit : on le saisit en caisse ou vous le tapez sur la borne de commande.</p></div></details>
+      <details><summary>Comment sont calculés les points&nbsp;?</summary><div><p>1&nbsp;€ dépensé = 1 point, sur le montant total de votre commande.</p></div></details>
+      <details><summary>Mes points sont-ils valables dans toutes les boutiques&nbsp;?</summary><div><p>Le programme est disponible dans les boutiques participantes. Demandez à l'équipe de votre Facto préférée.</p></div></details>
+      <details><summary>Comment utiliser mes points&nbsp;?</summary><div><p>Au moment de commander, en caisse ou sur la borne, choisissez la récompense que vous souhaitez : les points correspondants sont déduits de votre solde.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white section--tight" id="reglement">
+  <div class="wrap prose">
+    <h2>Règlement du programme fidélité</h2>
+    <!-- ⚠ À COMPLÉTER / VALIDER avec le prestataire Pongo et votre conseil juridique -->
+    <p><strong>Organisateur.</strong> Le programme est proposé par <span class="todo">[Raison sociale]</span> et les boutiques Yogurt Factory participantes, avec la solution technique de Pongo.</p>
+    <p><strong>Inscription.</strong> Gratuite et sans obligation d'achat, réservée aux personnes physiques, par la communication d'un numéro de téléphone mobile en caisse ou sur borne.</p>
+    <p><strong>Acquisition.</strong> 1 point par euro TTC dépensé. Les points ne sont ni échangeables contre de l'argent, ni cessibles.</p>
+    <p><strong>Récompenses.</strong> Selon le barème affiché ci-dessus et en boutique, dans la limite des produits disponibles. Le barème peut évoluer&nbsp;: les clients en sont informés en boutique.</p>
+    <p><strong>Validité des points.</strong> <span class="todo">[Durée de validité des points, ex. 12 mois après le dernier achat]</span></p>
+    <p><strong>Données personnelles.</strong> Le numéro de téléphone est utilisé uniquement pour la gestion du compte fidélité et, avec votre accord, pour vous envoyer nos offres. Voir notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+    <p><strong>Fin du programme.</strong> L'organisateur peut modifier ou mettre fin au programme, moyennant une information préalable des membres d'au moins <span class="todo">[30]</span> jours.</p>
+  </div>
+</section>

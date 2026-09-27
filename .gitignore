@@ -1,0 +1,12 @@
+# Généré par python build.py
+dist/
+
+# Photos originales (lourdes, non publiées)
+images/src/
+
+# Local
+.claude/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

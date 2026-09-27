@@ -1,0 +1,40 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://yogurtfactory.fr/#organization",
+      "name": "Yogurt Factory",
+      "alternateName": ["La Facto", "Yogurt Factory France"],
+      "url": "https://yogurtfactory.fr/",
+      "logo": { "@type": "ImageObject", "url": "https://yogurtfactory.fr/images/logo.png", "width": 210, "height": 210 },
+      "image": "https://yogurtfactory.fr/images/og-image.jpg",
+      "foundingDate": "2011",
+      "founders": [{ "@type": "Person", "name": "Ouriel Hodara" }, { "@type": "Person", "name": "Emmanuel Tedesco" }],
+      "description": "Leader français du frozen yogurt : glace au yaourt 0 % de matières grasses ou sundae vanille, et le plus gros bar à toppings de France. 90 points de vente dans 10 pays.",
+      "slogan": "Ton pot. Tes toppings. À volonté !",
+      "areaServed": ["FR", "BE", "LU", "ES", "SN", "GA", "MY", "UZ", "GF", "NC"],
+      "knowsAbout": ["Frozen yogurt", "Glace au yaourt", "Bubble tea", "Bubble waffle", "Franchise de restauration"],
+      "sameAs": [
+        "https://www.tiktok.com/@yogurt_factory",
+        "https://www.instagram.com/yogurtfactory/",
+        "https://www.facebook.com/YogurtFactory.fr/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yogurtfactory.fr/#website",
+      "url": "https://yogurtfactory.fr/",
+      "name": "Yogurt Factory",
+      "inLanguage": "fr-FR",
+      "publisher": { "@id": "https://yogurtfactory.fr/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://yogurtfactory.fr/boutiques.html?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>

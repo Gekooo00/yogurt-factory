@@ -1,0 +1,53 @@
+<!--
+title: Nos boutiques — Trouver une Yogurt Factory près de chez vous
+description: Adresses, horaires et itinéraires de toutes les boutiques Yogurt Factory en France, en Belgique, au Luxembourg, en Espagne, en Afrique et en Asie.
+nav: boutiques
+og_title: Trouvez votre Facto
+og_sub: {{count:stores}} boutiques en France et dans le monde : carte, horaires, itinéraire.
+-->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Accueil</a> › Nos boutiques</p>
+    <h1>Trouvez votre <span class="script">Facto</span></h1>
+    <p class="lead"><span data-count="stores">{{count:stores}}</span> adresses dans <span data-count="cities">{{count:cities}}</span> villes, en France et dans le monde. Cherchez par ville, code postal ou centre commercial.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34C240 70 480 4 720 30s480 36 720-6v36H0z"/></svg>
+</section>
+
+<section class="section section--tight" id="liste">
+  <div class="wrap" id="store-locator">
+    <form class="store-tools" role="search">
+      <div class="search">
+        <label class="sr-only" for="store-q">Ville, code postal ou centre commercial</label>
+        <input id="store-q" type="search" placeholder="Ville, code postal, centre commercial…" autocomplete="off">
+      </div>
+      <label class="sr-only" for="store-region">Région</label>
+      <select id="store-region" class="select"></select>
+    </form>
+    <div class="store-actions-row">
+      <button class="btn btn--red btn--small" type="button" id="store-geo">📍 Autour de moi</button>
+      <span class="hint">Astuce : ⭐ sur une boutique pour en faire « Ma Facto »</span>
+      <label class="toggle-open"><input type="checkbox" id="store-open"> Ouvert maintenant</label>
+    </div>
+    <div class="country-pills" aria-label="Filtrer par pays"></div>
+    <div id="store-map" class="store-map" role="region" aria-label="Carte des boutiques"></div>
+    <p class="store-count" aria-live="polite"></p>
+    <div class="store-list"></div>
+    <div class="center"><button class="btn btn--line" type="button" id="store-more" hidden>Afficher plus de boutiques</button></div>
+    <p class="note">Horaires indicatifs, susceptibles de varier (jours fériés, vacances scolaires, horaires des centres commerciaux). En cas de doute, appelez la boutique.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Pas de Facto près de chez vous&nbsp;?</h2>
+        <p>C'est peut-être le signe qu'il faut en ouvrir une. On cherche des entrepreneurs partout en France et à l'international.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--white" href="franchise.html">Devenir franchisé</a>
+      </div>
+    </div>
+  </div>
+</section>
