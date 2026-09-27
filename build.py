@@ -21,6 +21,7 @@ Si Node.js est installé, CSS et JS sont minifiés et rendus compatibles avec le
 navigateurs (esbuild) ; sinon une minification simple est appliquée.
 """
 import hashlib
+import os
 import html
 import json
 import re
@@ -41,6 +42,11 @@ DIST = ROOT / "dist"
 # ---- Réglages ---------------------------------------------------------------
 SITE_URL = "https://yogurtfactory.fr"
 SITE_NAME = "Yogurt Factory"
+# Sous-dossier de publication (ex. BASE_PATH=/yogurt-factory pour GitHub Pages). Vide = racine du domaine.
+# Un site publié dans un sous-dossier est considéré comme une préversion : il n'est pas indexé.
+BASE = os.environ.get("BASE_PATH", "").strip().rstrip("/")
+if BASE and not BASE.startswith("/"):
+    BASE = "/" + BASE
 # Codes de validation des outils pour webmasters (laisser vide si non utilisé)
 GOOGLE_SITE_VERIFICATION = ""   # Google Search Console
 BING_SITE_VERIFICATION = ""     # Bing Webmaster Tools (alimente aussi DuckDuckGo, Qwant, Ecosia, Yahoo)
@@ -81,7 +87,7 @@ ICONS = {
 }
 
 HEAD = """<!doctype html>
-<html lang="{html_lang}" class="no-js">
+<html lang="{html_lang}" class="no-js"{data_base}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -476,10 +482,11 @@ self.addEventListener("fetch", (e) => {
     e.respondWith(fetch(req).then((res) => {
       if (res.ok) { const copy = res.clone(); caches.open(VERSION).then((c) => c.put(req, copy)); }
       return res;
-    }).catch(() => caches.match(req, { ignoreSearch: true }).then((r) => r || caches.match(url.pathname.startsWith("/en/") ? "/en/offline.html" : "/hors-ligne.html"))));
+    }).catch(() => caches.match(req, { ignoreSearch: true }).then((r) => r || caches.match(url.pathname.startsWith("__BASE__/en/") ? "__BASE__/en/offline.html" : "__BASE__/hors-ligne.html"))));
     return;
   }
-  if (/^\\/(assets|images)\\//.test(url.pathname) || url.pathname === "/favicon.ico") {
+  const path = url.pathname.slice("__BASE__".length);
+  if (/^\\/(assets|images)\\//.test(path) || path === "/favicon.ico") {
     e.respondWith(caches.match(req).then((hit) => hit || fetch(req).then((res) => {
       if (res.ok) { const copy = res.clone(); caches.open(VERSION).then((c) => c.put(req, copy)); }
       return res;
@@ -516,7 +523,7 @@ def build():
     build_images()
     (DIST / "site.webmanifest").write_text(json.dumps({
         "name": SITE_NAME, "short_name": SITE_NAME, "description": "Glace au yaourt 0 % et le plus gros bar à toppings de France",
-        "lang": "fr", "start_url": "/", "scope": "/", "display": "standalone",
+        "lang": "fr", "start_url": BASE + "/", "scope": BASE + "/", "display": "standalone",
         "background_color": "#fff7ee", "theme_color": "#e3232b",
         "icons": [{"src": "images/icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
                   {"src": "images/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}],
@@ -595,15 +602,18 @@ def build():
                 og_image=og_image, og_alt=html.escape(html.unescape(meta.get("og_title", short)).replace("\u00a0", " ") + " — Yogurt Factory", quote=True),
                 url=url, site=SITE_URL, extra_head=extra, verification=verification, alternates=alternates,
                 html_lang=L["html"], og_locale=L["locale"], og_locale_alt=LANGS[other]["locale"],
+                data_base=f' data-base="{BASE}"' if BASE else "",
                 twitter_labels=(
                     '<meta name="twitter:label1" content="Stores">\n<meta name="twitter:data1" content="90 locations in 10 countries">\n'
                     '<meta name="twitter:label2" content="Loyalty">\n<meta name="twitter:data2" content="€1 spent = 1 point">') if lang == "en" else (
                     '<meta name="twitter:label1" content="Boutiques">\n<meta name="twitter:data1" content="90 points de vente dans 10 pays">\n'
                     '<meta name="twitter:label2" content="Fidélité">\n<meta name="twitter:data2" content="1 € dépensé = 1 point">'),
                 base=f'<base href="/{L["dir"]}">\n' if is404 else "",
-                robots="noindex, follow" if is404 else "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+                robots="noindex, follow" if (is404 or BASE) else "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
                 **versions,
             ) + nav + '<main id="main">\n' + raw.strip() + "\n</main>\n" + foot + FOOT.format(**versions)
+            if BASE:   # chemins absolus « /… » → « /sous-dossier/… »
+                out = re.sub(r'(href|src|data-src)="/(?!/)', lambda mm: f'{mm.group(1)}="{BASE}/', out)
             leftovers = re.findall(r"\{\{[^}]+\}\}", out)
             assert not leftovers, f"{lang}/{page.name} : balises non remplacées {leftovers}"
             (DIST / L["dir"] / slug(lang, page.name)).write_text(out, encoding="utf-8")
@@ -620,8 +630,10 @@ def build():
                 f"/assets/js/prefs.js?v={versions['v_prefs']}", "/images/logo.png",
                 "/assets/fonts/poppins-400-normal-latin.woff2", "/assets/fonts/montserrat-100-900-normal-latin.woff2",
                 "/assets/fonts/lobster-400-normal-latin.woff2"]
+    precache = [BASE + p for p in precache]
     sw_version = hashlib.md5("".join(precache).encode()).hexdigest()[:8]
-    (DIST / "sw.js").write_text(SW_TEMPLATE % {"version": sw_version, "precache": json.dumps(precache)}, encoding="utf-8")
+    (DIST / "sw.js").write_text((SW_TEMPLATE % {"version": sw_version, "precache": json.dumps(precache)}).replace("__BASE__", BASE), encoding="utf-8")
+    (DIST / ".nojekyll").write_text("", encoding="utf-8")   # GitHub Pages : publier aussi .well-known, _headers…
 
     # Sitemap multilingue (avec images et alternatives de langue)
     today = date.today().isoformat()

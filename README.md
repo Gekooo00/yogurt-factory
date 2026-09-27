@@ -206,3 +206,17 @@ n'est pas en français voient une petite suggestion « View in English » (et in
 
 Curseur aux couleurs de la marque (flèche rouge, petite glace sur les liens et boutons), désactivable dans le
 menu accessibilité (« Curseur classique »). Barre de défilement rouge assortie (Chrome, Edge, Safari, Firefox).
+
+## Publication sur GitHub Pages
+
+Le dépôt contient une automatisation (`.github/workflows/deploy-pages.yml`) qui construit le site et le
+publie à chaque push sur `main`.
+
+1. **Une seule fois** : sur GitHub, **Settings → Pages → Build and deployment → Source : « GitHub Actions »**.
+2. Chaque push publie le site sur `https://<utilisateur>.github.io/<dépôt>/` en 2 minutes environ
+   (suivi dans l'onglet **Actions**).
+
+Sur cette adresse, le site vit dans un sous-dossier : le build adapte les chemins (`BASE_PATH`) et marque les
+pages « noindex » pour qu'elles ne concurrencent pas le futur site officiel dans Google.
+**Avec un domaine personnalisé** (ex. yogurtfactory.fr) : dans le workflow, mettre `BASE_PATH: ""`, puis
+configurer le domaine dans Settings → Pages. Le site est alors servi à la racine et indexé normalement.

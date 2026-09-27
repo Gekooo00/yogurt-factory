@@ -16,10 +16,12 @@ const YF_CONFIG = {
   },
   protectContent: true,
   storesPerPage: 12,
-  defaultStorePhoto: "/images/boutique-thumb.webp"
+  defaultStorePhoto: "images/boutique-thumb.webp"
 };
 
 document.documentElement.classList.remove("no-js");
+// Sous-dossier éventuel du site (ex. « /yogurt-factory » sur GitHub Pages), vide en production
+const BASE = document.documentElement.dataset.base || "";
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -302,7 +304,7 @@ const YF_STORE_UI = (() => {
   const rating = (s) => s.rating
     ? `<a class="rating" href="${esc(reviewsUrl(s))}" target="_blank" rel="noopener" aria-label="${t("ratingAria", LANG === "fr" ? String(s.rating).replace(".", ",") : s.rating, s.reviews)}"><span class="stars" aria-hidden="true">${stars(s.rating)}</span><b>${LANG === "fr" ? String(s.rating).replace(".", ",") : s.rating}</b>${s.reviews ? `<small>${t("reviews", Number(s.reviews).toLocaleString(LANG === "fr" ? "fr-FR" : "en-GB"))}</small>` : ""}</a>`
     : `<a class="rating rating--empty" href="${esc(reviewsUrl(s))}" target="_blank" rel="noopener">${t("seeReviews")}</a>`;
-  const photo = (s) => (s.photo ? "/" + s.photo.replace(/^\//, "") : YF_CONFIG.defaultStorePhoto);
+  const photo = (s) => BASE + "/" + (s.photo || YF_CONFIG.defaultStorePhoto).replace(/^\//, "");
   const favKey = (s) => s.name;
   const getFav = () => store.get("yf-fav-store", null);
   const setFav = (name) => store.set("yf-fav-store", name);
@@ -467,10 +469,10 @@ const YF_STORE_UI = (() => {
   };
   if (mapEl) {
     const css = document.createElement("link");
-    css.rel = "stylesheet"; css.href = "/assets/vendor/leaflet/leaflet.css";
+    css.rel = "stylesheet"; css.href = BASE + "/assets/vendor/leaflet/leaflet.css";
     document.head.appendChild(css);
     const js = document.createElement("script");
-    js.src = "/assets/vendor/leaflet/leaflet.js"; js.onload = initMap;
+    js.src = BASE + "/assets/vendor/leaflet/leaflet.js"; js.onload = initMap;
     document.body.appendChild(js);
   }
 
@@ -698,7 +700,7 @@ const YF_STORE_UI = (() => {
   // Petit mot pour les curieux qui ouvrent la console
   try {
     console.log("%c🍦 Yogurt Factory", "font:800 28px Montserrat,sans-serif;color:#e3232b");
-    console.log("%c" + t("consoleHint") + location.origin + "/" + (LANG === "en" ? "en/" : "") + t("pages").careers, "font:14px Poppins,sans-serif;color:#2a1a1a");
+    console.log("%c" + t("consoleHint") + location.origin + BASE + "/" + (LANG === "en" ? "en/" : "") + t("pages").careers, "font:14px Poppins,sans-serif;color:#2a1a1a");
   } catch { /* console indisponible */ }
 })();
 
@@ -843,7 +845,7 @@ if ($(".err") && /hors-ligne/.test(location.pathname)) window.addEventListener("
 
 /* ---- Service worker : consultation hors connexion ------------------------- */
 if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+  window.addEventListener("load", () => navigator.serviceWorker.register(BASE + "/sw.js", { scope: BASE + "/" }).catch(() => {}));
 }
 
 /* ---- Formulaires ---------------------------------------------------------- */
