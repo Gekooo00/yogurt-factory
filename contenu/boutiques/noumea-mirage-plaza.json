@@ -1,0 +1,14 @@
+{
+  "nom": "Nouméa – Mirage Plaza",
+  "centre": "Mirage Plaza",
+  "adresse": "27 promenade Roger Laroque",
+  "code_postal": "98800",
+  "ville": "Nouméa",
+  "region": "Nouvelle-Calédonie",
+  "pays": "Outre-mer",
+  "horaires": "Horaires du centre",
+  "telephone": "",
+  "lat": -22.30102,
+  "lng": 166.43957,
+  "fuseau_horaire": "Pacific/Noumea"
+}

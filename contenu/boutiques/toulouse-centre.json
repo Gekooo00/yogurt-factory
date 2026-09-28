@@ -1,0 +1,13 @@
+{
+  "nom": "Toulouse Centre",
+  "centre": "Centre-ville",
+  "adresse": "58 rue Léon Gambetta",
+  "code_postal": "31000",
+  "ville": "Toulouse",
+  "region": "Occitanie",
+  "pays": "France",
+  "horaires": "Tous les jours 12h–22h",
+  "telephone": "09 63 62 39 94",
+  "lat": 43.60366,
+  "lng": 1.44254
+}

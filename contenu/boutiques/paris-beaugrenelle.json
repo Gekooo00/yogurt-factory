@@ -1,0 +1,13 @@
+{
+  "nom": "Paris Beaugrenelle",
+  "centre": "Beaugrenelle",
+  "adresse": "12 rue Linois",
+  "code_postal": "75015",
+  "ville": "Paris",
+  "region": "Île-de-France",
+  "pays": "France",
+  "horaires": "Tous les jours 10h–21h",
+  "telephone": "09 83 76 53 52",
+  "lat": 48.84857,
+  "lng": 2.2825
+}

@@ -1,0 +1,13 @@
+{
+  "nom": "Tours",
+  "centre": "L'Heure Tranquille",
+  "adresse": "59 avenue Marcel Mérieux",
+  "code_postal": "37200",
+  "ville": "Tours",
+  "region": "Centre-Val de Loire",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h · dim 11h–19h",
+  "telephone": "",
+  "lat": 47.36627,
+  "lng": 0.67745
+}

@@ -1,0 +1,13 @@
+{
+  "nom": "Beauvais",
+  "centre": "Jeu de Paume",
+  "adresse": "21 boulevard Saint-André",
+  "code_postal": "60000",
+  "ville": "Beauvais",
+  "region": "Hauts-de-France",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "03 44 07 53 79",
+  "lat": 49.43308,
+  "lng": 2.08908
+}

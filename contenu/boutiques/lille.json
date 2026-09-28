@@ -1,0 +1,13 @@
+{
+  "nom": "Lille",
+  "centre": "Euralille",
+  "adresse": "100 avenue Willy Brandt",
+  "code_postal": "59777",
+  "ville": "Lille",
+  "region": "Hauts-de-France",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "09 67 00 51 56",
+  "lat": 50.63777,
+  "lng": 3.07434
+}

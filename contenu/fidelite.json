@@ -1,0 +1,14 @@
+{
+  "recompenses": [
+    { "points": 30, "fr": "Petit thé glacé", "en": "Small iced tea" },
+    { "points": 40, "fr": "Donut", "en": "Donut" },
+    { "points": 50, "fr": "La Wallonne", "en": "La Wallonne" },
+    { "points": 60, "fr": "Petit bubble tea", "en": "Small bubble tea" },
+    { "points": 70, "fr": "Petit smoothie ou milkshake", "en": "Small smoothie or milkshake" },
+    { "points": 80, "fr": "Un Mignon avec toppings", "en": "A Mignon with toppings" },
+    { "points": 90, "fr": "Le Parfait", "en": "Le Parfait" },
+    { "points": 100, "fr": "Waffle Bomb", "en": "Waffle Bomb" },
+    { "points": 110, "fr": "La Délicieuse", "en": "La Délicieuse" },
+    { "points": 120, "fr": "Le Superbe à partager", "en": "Le Superbe to share" }
+  ]
+}

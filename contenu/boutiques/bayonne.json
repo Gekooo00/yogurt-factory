@@ -1,0 +1,13 @@
+{
+  "nom": "Bayonne",
+  "centre": "Centre-ville",
+  "adresse": "81 rue d'Espagne",
+  "code_postal": "64100",
+  "ville": "Bayonne",
+  "region": "Nouvelle-Aquitaine",
+  "pays": "France",
+  "horaires": "Lun–sam 12h–19h",
+  "telephone": "",
+  "lat": 43.49014,
+  "lng": -1.47681
+}

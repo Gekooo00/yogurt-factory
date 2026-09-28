@@ -1,0 +1,13 @@
+{
+  "nom": "Poitiers",
+  "centre": "Passage des Cordeliers",
+  "adresse": "4 rue Henri Oudin",
+  "code_postal": "86000",
+  "ville": "Poitiers",
+  "region": "Nouvelle-Aquitaine",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "06 61 24 78 02",
+  "lat": 46.5824,
+  "lng": 0.34164
+}

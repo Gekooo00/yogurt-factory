@@ -1,0 +1,13 @@
+{
+  "nom": "Lyon Part-Dieu",
+  "centre": "Westfield La Part-Dieu",
+  "adresse": "17 rue du Docteur Bouchut",
+  "code_postal": "69003",
+  "ville": "Lyon",
+  "region": "Auvergne-Rhône-Alpes",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "",
+  "lat": 45.76001,
+  "lng": 4.85544
+}

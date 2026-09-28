@@ -1,0 +1,13 @@
+{
+  "nom": "Metz",
+  "centre": "Muse",
+  "adresse": "2 rue des Messageries",
+  "code_postal": "57000",
+  "ville": "Metz",
+  "region": "Grand Est",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "03 72 59 55 99",
+  "lat": 49.10569,
+  "lng": 6.18236
+}

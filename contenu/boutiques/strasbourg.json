@@ -1,0 +1,13 @@
+{
+  "nom": "Strasbourg",
+  "centre": "Les Halles",
+  "adresse": "24 place des Halles",
+  "code_postal": "67000",
+  "ville": "Strasbourg",
+  "region": "Grand Est",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "",
+  "lat": 48.58663,
+  "lng": 7.74157
+}

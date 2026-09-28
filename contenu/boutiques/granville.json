@@ -1,0 +1,13 @@
+{
+  "nom": "Granville",
+  "centre": "Centre-ville",
+  "adresse": "6 rue de l'Abreuvoir",
+  "code_postal": "50400",
+  "ville": "Granville",
+  "region": "Normandie",
+  "pays": "France",
+  "horaires": "Horaires saisonniers",
+  "telephone": "02 33 69 86 24",
+  "lat": 48.83741,
+  "lng": -1.59737
+}

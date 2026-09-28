@@ -1,0 +1,11 @@
+{
+  "France": { "en": "France", "fuseau_horaire": "Europe/Paris" },
+  "Outre-mer": { "en": "French overseas" },
+  "Belgique": { "en": "Belgium", "fuseau_horaire": "Europe/Brussels" },
+  "Luxembourg": { "en": "Luxembourg", "fuseau_horaire": "Europe/Luxembourg" },
+  "Espagne": { "en": "Spain", "fuseau_horaire": "Europe/Madrid" },
+  "Sénégal": { "en": "Senegal", "fuseau_horaire": "Africa/Dakar" },
+  "Gabon": { "en": "Gabon", "fuseau_horaire": "Africa/Libreville" },
+  "Malaisie": { "en": "Malaysia", "fuseau_horaire": "Asia/Kuala_Lumpur" },
+  "Ouzbékistan": { "en": "Uzbekistan", "fuseau_horaire": "Asia/Tashkent" }
+}

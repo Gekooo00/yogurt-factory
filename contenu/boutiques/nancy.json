@@ -1,0 +1,13 @@
+{
+  "nom": "Nancy",
+  "centre": "Saint-Sébastien",
+  "adresse": "Rue des Ponts",
+  "code_postal": "54000",
+  "ville": "Nancy",
+  "region": "Grand Est",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "03 83 23 82 50",
+  "lat": 48.68675,
+  "lng": 6.18307
+}

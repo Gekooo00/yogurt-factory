@@ -1,31 +1,38 @@
 /* ==========================================================================
-   Yogurt Factory — scripts du site
+   Yogurt Factory — comportements du site (toutes les pages)
+
+   Ce fichier est chargé en dernier, après « data.js » que build.py génère à
+   partir du dossier contenu/ :
+     window.YF_SETTINGS   réglages (contenu/reglages.json)
+     window.YF_COUNTRIES  pays, dans l'ordre d'affichage (contenu/pays.json)
+     window.YF_STORES     boutiques (contenu/boutiques/*.json)
+   On ne modifie donc jamais les boutiques ou les adresses e-mail ici.
+
+   Organisation : une fonction auto-exécutée par fonctionnalité, qui s'arrête
+   d'elle-même si la page ne contient pas les éléments dont elle a besoin.
+   Pour retirer une fonctionnalité, il suffit de supprimer son bloc.
+
+   Textes affichés par le script : objet I18N (français / anglais) plus bas.
+   Sécurité : toute donnée insérée en HTML passe par esc().
    ========================================================================== */
 
-/* ---- Configuration -------------------------------------------------------
-   forms : adresses de réception des formulaires (⚠ provisoires, à remplacer).
-           Sans "endpoint", le formulaire ouvre la messagerie du visiteur avec
-           un message pré-rempli. Avec un endpoint (Formspree…), il est envoyé
-           directement (penser à autoriser le domaine dans la CSP du .htaccess).
-   protectContent : empêche la sélection et la copie du texte du site. */
+const YF_SETTINGS = window.YF_SETTINGS || {};
 const YF_CONFIG = {
-  forms: {
-    contact:     { email: "contact@yogurtfactory.fr",     endpoint: "" },
-    franchise:   { email: "franchise@yogurtfactory.fr",   endpoint: "" },
-    recrutement: { email: "recrutement@yogurtfactory.fr", endpoint: "" }
-  },
-  protectContent: true,
-  storesPerPage: 12,
+  forms: YF_SETTINGS.forms || {},
+  protectContent: YF_SETTINGS.protectContent !== false,
+  storesPerPage: YF_SETTINGS.storesPerPage || 12,
   defaultStorePhoto: "images/boutique-thumb.webp"
 };
 
 document.documentElement.classList.remove("no-js");
-// Sous-dossier éventuel du site (ex. « /yogurt-factory » sur GitHub Pages), vide en production
+// Préfixe des chemins quand le site est publié dans un sous-dossier (GitHub Pages) ; vide en production.
 const BASE = document.documentElement.dataset.base || "";
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-/* ---- Langue (français / anglais) ------------------------------------------ */
+/* ---- Textes (français / anglais) ------------------------------------------
+   La langue est lue sur <html lang>. Pour ajouter un texte : même clé dans
+   « fr » et « en », puis t("cle") ou t("cle", argument) dans le code. */
 const LANG = (document.documentElement.lang || "fr").slice(0, 2) === "en" ? "en" : "fr";
 const I18N = {
   fr: {
@@ -80,7 +87,7 @@ const I18N = {
     typeHome: ["Find a Facto… e.g. ", ["Paris", "Lyon", "Brussels", "Luxembourg", "Nice"]],
     formFail: (m) => "Oops, sending failed. Please try again or email us at " + m + ".",
     formMail: (m) => "Your email app will open with your message ready: just click “Send”. Nothing opens? Email us directly at " + m + ".",
-    country: (c) => ({ "Outre-mer": "French overseas", "Belgique": "Belgium", "Espagne": "Spain", "Sénégal": "Senegal", "Malaisie": "Malaysia", "Ouzbékistan": "Uzbekistan", "Tous": "All" }[c] || c),
+    country: (c) => c === "Tous" ? "All" : ((window.YF_COUNTRIES || []).find((x) => x.name === c) || {}).en || c,
     hours: (h) => String(h)
       .replace(/Tous les jours/gi, "Daily").replace(/Horaires du centre/gi, "Mall opening hours").replace(/Horaires saisonniers/gi, "Seasonal hours")
       .replace(/\b(lun|mar|mer|jeu|ven|sam|dim)\b/gi, (d) => ({ lun: "Mon", mar: "Tue", mer: "Wed", jeu: "Thu", ven: "Fri", sam: "Sat", dim: "Sun" }[d.toLowerCase()]))
@@ -91,8 +98,9 @@ const t = (key, ...args) => { const v = I18N[LANG][key]; return typeof v === "fu
 
 const store = {
   get(key, fallback) { try { const v = localStorage.getItem(key); return v === null ? fallback : JSON.parse(v); } catch { return fallback; } },
-  set(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* stockage indisponible */ } }
+  set(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* navigation privée : on ignore */ } }
 };
+// Toutes les clés « yf-… » enregistrées ici sont listées sur la page Cookies : en ajouter une = mettre la page à jour.
 
 /* ---- Protection du contenu (sélection / copie) --------------------------- */
 (() => {
@@ -239,11 +247,11 @@ $$("form[data-store-search]").forEach((form) => {
 /* ---- Horaires : « Ouvert / Fermé » --------------------------------------- */
 const YF_HOURS = (() => {
   const DAYS = ["lun", "mar", "mer", "jeu", "ven", "sam", "dim"];
-  const TZ = { "Guyane": "America/Cayenne", "Nouvelle-Calédonie": "Pacific/Noumea", "Malaisie": "Asia/Kuala_Lumpur", "Ouzbékistan": "Asia/Tashkent", "Sénégal": "Africa/Dakar", "Gabon": "Africa/Libreville" };
   const toMin = (h, m) => parseInt(h, 10) * 60 + (m ? parseInt(m, 10) : 0);
   const fmt = (min) => min >= 1440 ? t("midnight") : t("hm", Math.floor(min / 60), min % 60);
 
-  // "Lun–sam 10h–20h · dim 11h–19h" -> { 0:[600,1200], … } (0 = lundi)
+  // Format accepté (vérifié par build.py) : "Tous les jours 10h–20h" ou "Lun–sam 10h–20h · dim 11h–19h".
+  // Résultat : { 0: [600, 1200], … } en minutes, 0 = lundi. Tout autre texte = « Horaires variables ».
   const parse = (txt) => {
     const out = {};
     for (const seg of String(txt || "").split("·").map((s) => s.trim()).filter(Boolean)) {
@@ -273,7 +281,7 @@ const YF_HOURS = (() => {
   const status = (s) => {
     const sched = parse(s.hours);
     if (!sched) return { state: "unknown", label: t("hoursVar") };
-    const now = nowIn(TZ[s.region] || TZ[s.country] || "Europe/Paris");
+    const now = nowIn(s.tz || "Europe/Paris");   // fuseau calculé par build.py
     const today = sched[now.day];
     if (today && now.min >= today[0] && now.min < today[1]) {
       const left = today[1] - now.min;
@@ -353,8 +361,8 @@ const YF_STORE_UI = (() => {
   };
   const km = (d) => d < 10 ? d.toFixed(1).replace(".", ",") + " km" : Math.round(d) + " km";
 
-  // Pastilles pays
-  const order = ["France", "Outre-mer", "Belgique", "Luxembourg", "Espagne", "Sénégal", "Gabon", "Malaisie", "Ouzbékistan"];
+  // Pastilles pays, dans l'ordre de contenu/pays.json
+  const order = (window.YF_COUNTRIES || []).map((c) => c.name);
   const byCountry = {};
   stores.forEach((s) => { byCountry[s.country] = (byCountry[s.country] || 0) + 1; });
   const countryList = ["Tous", ...order.filter((c) => byCountry[c]), ...Object.keys(byCountry).filter((c) => !order.includes(c))];
@@ -854,6 +862,7 @@ $$("form[data-form]").forEach((form) => {
   const msg = $(".form-msg", form);
   const btn = $("button[type=submit]", form);
   const draftKey = "yf-draft-" + form.dataset.form;
+  const openedAt = Date.now();
 
   // Brouillon : on restaure ce que le visiteur avait commencé à taper
   const draft = store.get(draftKey, null);
@@ -868,9 +877,11 @@ $$("form[data-form]").forEach((form) => {
     e.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    if (data.get("website")) return; // pot de miel anti-spam
+    // Anti-spam : champ invisible rempli ou envoi en moins de 3 s = robot, on ignore sans rien dire.
+    if (data.get("website") || Date.now() - openedAt < 3000) return;
     data.delete("website");
 
+    if (!cfg) return;
     if (cfg.endpoint) {
       btn.disabled = true; btn.dataset.label = btn.textContent; btn.textContent = "Envoi…";
       try {

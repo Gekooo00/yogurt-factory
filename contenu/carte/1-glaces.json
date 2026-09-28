@@ -1,0 +1,50 @@
+{
+  "icone": "🍦",
+  "onglet": { "fr": "Glaces", "en": "Ice cream" },
+  "titre": { "fr": "Les glaces", "en": "Ice cream" },
+  "sous_titre": {
+    "fr": "Glace au yaourt 0 % ou sundae vanille · toppings à volonté tant que ça rentre dans le pot",
+    "en": "0% frozen yogurt or vanilla soft serve · unlimited toppings as long as they fit in the pot"
+  },
+  "halal": true,
+  "blocs": [
+    {
+      "type": "bases",
+      "bases": [
+        {
+          "nom": { "fr": "Glace au yaourt 0 %", "en": "0% frozen yogurt" },
+          "texte": { "fr": "L'originale : légère, onctueuse, délicieusement acidulée", "en": "The original: light, smooth, deliciously tangy" }
+        },
+        {
+          "nom": { "fr": "Sundae vanille", "en": "Vanilla soft serve" },
+          "texte": { "fr": "Pour les fans de douceur : crémeuse à souhait", "en": "For sweet-tooth fans: creamy as can be" },
+          "style": "vanille"
+        },
+        {
+          "nom": "Halal",
+          "texte": { "fr": "Lait pasteurisé et stérilisé", "en": "Pasteurised and sterilised milk" },
+          "style": "info",
+          "icone": "halal"
+        }
+      ]
+    },
+    {
+      "type": "pots",
+      "titre": { "fr": "Pots classiques · coulis + toppings à volonté", "en": "Classic pots · sauce + unlimited toppings" },
+      "pots": [
+        { "nom": "Le Mignon", "image": "images/menu/mignon.webp", "detail": { "fr": "110 g · taille S", "en": "110 g · size S" } },
+        { "nom": "Le Beau", "image": "images/menu/beau.webp", "detail": { "fr": "160 g · taille M", "en": "160 g · size M" }, "badge": "Best-seller" },
+        { "nom": "Le Magnifique", "image": "images/menu/magnifique.webp", "detail": { "fr": "220 g · taille L", "en": "220 g · size L" } }
+      ]
+    },
+    {
+      "type": "pots",
+      "titre": { "fr": "Les spéciales", "en": "Specials" },
+      "pots": [
+        { "nom": "Le Superbe", "image": "images/menu/superbe.webp", "detail": { "fr": "350 g · 1 coulis + 3 toppings", "en": "350 g · 1 sauce + 3 toppings" }, "badge": { "fr": "À partager", "en": "To share" } },
+        { "nom": "Le Parfait", "image": "images/menu/parfait.webp", "detail": { "fr": "180 g · 1 coulis + 2 toppings", "en": "180 g · 1 sauce + 2 toppings" } },
+        { "nom": "Le Trognon", "image": "images/menu/trognon.webp", "detail": { "fr": "90 g · 1 coulis + 2 toppings", "en": "90 g · 1 sauce + 2 toppings" }, "badge": { "fr": "– de 10 ans", "en": "Under 10s" }, "badge_couleur": "bleu" }
+      ]
+    }
+  ]
+}

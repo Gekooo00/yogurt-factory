@@ -1,0 +1,16 @@
+{
+  "nom": "Ville – Nom du centre",
+  "centre": "Nom du centre commercial ou du quartier",
+  "adresse": "12 rue de l'Exemple",
+  "code_postal": "75000",
+  "ville": "Ville",
+  "region": "Île-de-France",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h · dim 11h–19h",
+  "telephone": "01 23 45 67 89",
+  "lat": 48.85661,
+  "lng": 2.35222,
+  "note_google": 4.6,
+  "nombre_avis": 120,
+  "lien_google": "https://maps.app.goo.gl/xxxxxxxx"
+}

@@ -1,9 +1,9 @@
 <!--
 title: Menu — Frozen yogurt, toppings, waffles, bubble tea | Yogurt Factory
-description: 0% fat frozen yogurt or vanilla soft serve, 36 toppings and 11 sauces as much as you like, bubble waffles, crêpes, bubble tea, slushies, coffee, matcha and ube.
+description: 0% fat frozen yogurt or vanilla soft serve, {{count:toppings}} toppings and {{count:coulis}} sauces as much as you like, bubble waffles, crêpes, bubble tea, slushies, coffee, matcha and ube.
 nav: carte
 og_title: The menu
-og_sub: Frozen yogurt, 36 toppings & 11 sauces, bubble tea, waffles, crêpes, coffee, matcha and ube.
+og_sub: Frozen yogurt, {{count:toppings}} toppings & {{count:coulis}} sauces, bubble tea, waffles, crêpes, coffee, matcha and ube.
 -->
 <section class="page-hero page-hero--compact">
   <div class="wrap">
@@ -21,156 +21,14 @@ og_sub: Frozen yogurt, 36 toppings & 11 sauces, bubble tea, waffles, crêpes, co
 
 <nav class="menu-nav" aria-label="Menu sections">
   <div class="wrap">
-    <a href="#glaces"><span aria-hidden="true">🍦</span> Ice cream</a>
-    <a href="#toppings"><span aria-hidden="true">🍓</span> Toppings</a>
-    <a href="#gaufres"><span aria-hidden="true">🧇</span> Waffles &amp; crêpes</a>
-    <a href="#boissons"><span aria-hidden="true">🧋</span> Cold drinks</a>
-    <a href="#cafes"><span aria-hidden="true">☕</span> Coffee &amp; hot drinks</a>
+    {{carte:onglets}}
     <a href="#infos"><span aria-hidden="true">ℹ️</span> Halal &amp; allergens</a>
   </div>
 </nav>
 
 <div class="wrap menu-page">
 
-  <section class="menu-sec" id="glaces" aria-labelledby="t-glaces">
-    <header class="sec-head">
-      <span class="sec-ico" aria-hidden="true">🍦</span>
-      <div><h2 id="t-glaces">Ice cream</h2><p>0% frozen yogurt or vanilla soft serve · unlimited toppings as long as they fit in the pot</p></div>
-    </header>
-    <div class="bases">
-      <div class="base"><b>0% frozen yogurt</b><span>The original: light, smooth, deliciously tangy</span></div>
-      <div class="base base--vanille"><b>Vanilla soft serve</b><span>For sweet-tooth fans: creamy as can be</span></div>
-      <div class="base base--info"><b>{{icon:halal}} Halal</b><span>Pasteurised and sterilised milk</span></div>
-    </div>
-    <h3 class="group-title">Classic pots · sauce + unlimited toppings</h3>
-    <div class="pots-grid">
-      <article class="pot-card"><img src="images/menu/mignon.webp" alt="Le Mignon pot" loading="lazy" width="252" height="266"><h4>Le Mignon</h4><p>110 g · size S</p></article>
-      <article class="pot-card"><img src="images/menu/beau.webp" alt="Le Beau pot" loading="lazy" width="256" height="334"><span class="badge">Best-seller</span><h4>Le Beau</h4><p>160 g · size M</p></article>
-      <article class="pot-card"><img src="images/menu/magnifique.webp" alt="Le Magnifique pot" loading="lazy" width="290" height="386"><h4>Le Magnifique</h4><p>220 g · size L</p></article>
-    </div>
-    <h3 class="group-title">Specials</h3>
-    <div class="pots-grid">
-      <article class="pot-card"><img src="images/menu/superbe.webp" alt="Le Superbe" loading="lazy" width="246" height="414"><span class="badge">To share</span><h4>Le Superbe</h4><p>350 g · 1 sauce + 3 toppings</p></article>
-      <article class="pot-card"><img src="images/menu/parfait.webp" alt="Le Parfait" loading="lazy" width="240" height="414"><h4>Le Parfait</h4><p>180 g · 1 sauce + 2 toppings</p></article>
-      <article class="pot-card"><img src="images/menu/trognon.webp" alt="Le Trognon" loading="lazy" width="234" height="254"><span class="badge badge--blue">Under 10s</span><h4>Le Trognon</h4><p>90 g · 1 sauce + 2 toppings</p></article>
-    </div>
-  </section>
-
-  <section class="menu-sec" id="toppings" aria-labelledby="t-toppings">
-    <header class="sec-head">
-      <span class="sec-ico" aria-hidden="true">🍓</span>
-      <div><h2 id="t-toppings">The biggest topping bar in France</h2><p>36 toppings and 11 sauces, as much as you like · varies by store and season</p></div>
-    </header>
-    <div class="topping-cols">
-      <div class="topping-col">
-        <h3>Fresh fruit</h3>
-        <ul class="tlist"><li>Strawberry</li><li>Raspberry</li><li>Blueberry</li><li>Mango</li><li>Pineapple</li><li>Kiwi</li><li>Banana</li><li>Passion fruit</li><li>Coconut</li><li class="season">Melon</li><li class="season">Watermelon</li></ul>
-      </div>
-      <div class="topping-col">
-        <h3>Chocolate &amp; biscuits</h3>
-        <ul class="tlist"><li>Milk chocolate balls</li><li>White chocolate balls</li><li>Dark chocolate balls</li><li>Kinder Bueno</li><li>Kinder Bueno White</li><li>Kit Kat</li><li>Lion</li><li>M&amp;M's</li><li>Maltesers</li><li>Crunch</li><li>Daim</li><li>Schoko-Bons</li><li>Smarties</li><li>Brownie</li><li>Cookie</li><li>Speculoos</li><li>Meringue</li></ul>
-      </div>
-      <div class="topping-col">
-        <h3>Sweets &amp; crunchies</h3>
-        <ul class="tlist"><li class="pork">Tagada</li><li class="pork">Smurfs</li><li class="pork">Marshmallow</li><li>Candied peanuts</li><li>Hazelnut</li><li>Muesli</li></ul>
-        <p class="legend"><span class="pork-dot" aria-hidden="true"></span>contains pork gelatine<br><span class="season-dot" aria-hidden="true"></span>seasonal</p>
-      </div>
-      <div class="topping-col">
-        <h3>Sauces</h3>
-        <ul class="tlist"><li>Peanut</li><li>Salted caramel</li><li>White chocolate</li><li>Chocolate-hazelnut</li><li>Exotic</li><li>Strawberry</li><li>Raspberry</li><li>Kit Kat</li><li>Hazelnut</li><li>Pistachio</li><li>Speculoos</li></ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="menu-sec" id="gaufres" aria-labelledby="t-gaufres">
-    <header class="sec-head">
-      <span class="sec-ico" aria-hidden="true">🧇</span>
-      <div><h2 id="t-gaufres">Waffles, crêpes &amp; donuts</h2><p>Warm, crispy, indulgent</p></div>
-    </header>
-    <div class="items">
-      <article class="item">
-        <img src="images/menu/bubble-waffle.webp" alt="Bubble waffle" loading="lazy" width="470" height="550">
-        <div><h3>Bubble Waffle <span class="badge">Halal</span></h3><p class="meta">The Hong Kong egg waffle</p>
-          <ul class="opts"><li><b>La Jolie</b> ice cream + sauce</li><li><b>La Délicieuse</b> ice cream + sauce + toppings</li></ul></div>
-      </article>
-      <article class="item">
-        <img src="images/menu/gaufre-liege.webp" alt="Liège waffle" loading="lazy" width="460" height="480">
-        <div><h3>Liège waffles</h3>
-          <ul class="opts"><li><b>La Liégeoise</b> plain (sugared)</li><li><b>La Wallonne</b> sauce of your choice</li><li><b>Waffle Bomb</b> waffle, sauce and ice cream</li></ul></div>
-      </article>
-      <article class="item">
-        <img src="images/menu/crepe.webp" alt="Chocolate crêpe" loading="lazy" width="530" height="420">
-        <div><h3>Crêpes</h3>
-          <ul class="opts"><li><b>Sugar</b></li><li><b>Build your own</b> Nutella®, honey, speculoos, caramel, raspberry, exotic</li></ul></div>
-      </article>
-      <article class="item">
-        <img src="images/donut.webp" alt="Speculoos donut" loading="lazy" width="900" height="748">
-        <div><h3>Donuts <span class="badge">New</span></h3><p class="meta">Soft and customisable with your favourite toppings and sauces</p></div>
-      </article>
-    </div>
-  </section>
-
-  <section class="menu-sec" id="boissons" aria-labelledby="t-boissons">
-    <header class="sec-head">
-      <span class="sec-ico" aria-hidden="true">🧋</span>
-      <div><h2 id="t-boissons">Cold drinks</h2><p>Smoothies, milkshakes, bubble tea, iced teas and slushies</p></div>
-    </header>
-    <div class="items">
-      <article class="item">
-        <img src="images/menu/bubble-tea.webp" alt="Bubble tea" loading="lazy" width="330" height="380">
-        <div><h3>Bubble Tea <span class="badge">Trending</span></h3>
-          <p class="meta"><b>1. The syrup</b> strawberry, raspberry, lychee, mango, passion fruit, peach, mojito, grapefruit</p>
-          <p class="meta"><b>2. The pearls (boba)</b> cherry, strawberry, raspberry, lychee, blueberry, apple, peach, mango, passion fruit</p></div>
-      </article>
-      <article class="item">
-        <img src="images/menu/smoothie.webp" alt="Smoothie" loading="lazy" width="330" height="380">
-        <div><h3>Smoothies</h3><p class="meta">Frozen yogurt, milk and fruit</p>
-          <ul class="opts"><li>Strawberry · raspberry · blueberry</li><li>Mango · kiwi · pineapple</li><li>Strawberry · banana</li><li>Mango · banana</li></ul></div>
-      </article>
-      <article class="item">
-        <img src="images/menu/milkshake.webp" alt="Milkshake" loading="lazy" width="350" height="380">
-        <div><h3>Milkshakes</h3><p class="meta">Vanilla ice cream, milk and a treat</p>
-          <p class="meta">Kinder Bueno, Oreo, speculoos, vanilla, Daim</p></div>
-      </article>
-      <article class="item">
-        <img src="images/menu/the-glace.webp" alt="Iced tea" loading="lazy" width="320" height="380">
-        <div><h3>Iced teas &amp; lemonade</h3><p class="meta">Strawberry, raspberry, lychee, mango, passion fruit, peach, mojito, grapefruit</p></div>
-      </article>
-      <article class="item">
-        <span class="item-emoji" style="background:linear-gradient(135deg,#ffe3e6,#dcefff)" aria-hidden="true">🧊</span>
-        <div><h3>Slushies <span class="badge badge--blue">New</span></h3><p class="meta">Cola, strawberry, tropical blue</p></div>
-      </article>
-      <article class="item">
-        <span class="item-emoji" style="background:linear-gradient(135deg,#fff3c4,#ffe1e6)" aria-hidden="true">🍹</span>
-        <div><h3>Our syrups</h3><p class="meta"><b>Fruity</b> strawberry, raspberry, lychee, mango, passion fruit, peach, mojito, grapefruit</p><p class="meta"><b>Indulgent</b> hazelnut, vanilla, caramel, speculoos</p></div>
-      </article>
-    </div>
-  </section>
-
-  <section class="menu-sec" id="cafes" aria-labelledby="t-cafes">
-    <header class="sec-head">
-      <span class="sec-ico" aria-hidden="true">☕</span>
-      <div><h2 id="t-cafes">Coffee &amp; hot drinks</h2><p>Make them yours with our hazelnut, vanilla, caramel or speculoos syrups</p></div>
-    </header>
-    <div class="items">
-      <article class="item">
-        <img src="images/menu/cafe-frappe.webp" alt="Iced coffee" loading="lazy" width="330" height="380">
-        <div><h3>Iced coffee <span class="badge">Cold</span></h3><p class="meta">Caramel, vanilla, speculoos, cookie, hazelnut</p></div>
-      </article>
-      <article class="item">
-        <img src="images/menu/boisson-chaude.webp" alt="Hot drink" loading="lazy" width="330" height="380">
-        <div><h3>Hot drinks</h3><p class="meta">Espresso, hot chocolate, cappuccino, café au lait, mocha, tea</p></div>
-      </article>
-      <article class="item">
-        <span class="item-emoji" style="background:linear-gradient(135deg,#eef7e4,#cfe8b8)" aria-hidden="true">🍵</span>
-        <div><h3>Matcha <span class="badge badge--blue">New</span></h3><p class="meta">Japanese green tea, the indulgent way: smooth, creamy and full of pep</p></div>
-      </article>
-      <article class="item">
-        <span class="item-emoji" style="background:linear-gradient(135deg,#f3e9fc,#d7bff2)" aria-hidden="true">💜</span>
-        <div><h3>Ube <span class="badge badge--blue">New</span></h3><p class="meta">The Philippines' star purple yam: indulgent, with an irresistible colour</p></div>
-      </article>
-    </div>
-  </section>
+  {{carte:rubriques}}
 
   <p class="empty" id="menu-empty" hidden><b>Nothing found…</b>Try another word, or ask the team in store: the menu can vary from one Facto to another.</p>
 

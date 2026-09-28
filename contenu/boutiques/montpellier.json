@@ -1,0 +1,13 @@
+{
+  "nom": "Montpellier",
+  "centre": "Odysseum",
+  "adresse": "2 place de Lisbonne",
+  "code_postal": "34000",
+  "ville": "Montpellier",
+  "region": "Occitanie",
+  "pays": "France",
+  "horaires": "Tous les jours 12h–19h",
+  "telephone": "09 67 13 29 90",
+  "lat": 43.60354,
+  "lng": 3.91671
+}

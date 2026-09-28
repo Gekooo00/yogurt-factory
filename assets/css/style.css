@@ -1,5 +1,22 @@
 /* ==========================================================================
-   Yogurt Factory — feuille de style principale
+   Yogurt Factory — feuille de style unique du site
+
+   Couleurs, arrondis, ombres : variables de :root juste en dessous. Changer
+   une couleur de la marque = changer sa variable, jamais la valeur en dur.
+   Polices (Lobster, Montserrat, Poppins) : fonts.css, fichiers dans assets/fonts.
+
+   Ordre du fichier (les règles plus bas l'emportent à spécificité égale) :
+     1. Base et composants communs (boutons, en-tête, héros, cartes, pied de page)
+     2. Composants des pages (fidélité, boutiques, accessibilité, pages légales)
+     3. Confort : protection du texte, fiches boutiques, carte interactive
+     4. Page « La carte »
+     5. Écrans particuliers : pliables, écrans doubles, très petits écrans
+     6. Animations (toutes coupées si « réduire les animations » est actif)
+     7. Ajustements d'affichage, barre de défilement, curseur, langue
+
+   Préfixes de classes : .a11y-* = réglages d'accessibilité (posés sur <html>
+   par prefs.js), .is-* = états gérés par main.js (is-open, is-visible…).
+   Ce fichier est minifié par build.py : les commentaires ne sont pas publiés.
    ========================================================================== */
 
 :root {
@@ -499,7 +516,7 @@ td:first-child { font-weight: 600; }
 [id] { scroll-margin-top: 90px; }
 
 /* ==========================================================================
-   v2 — nouveaux composants
+   2. Composants des pages
    ========================================================================== */
 .split .kpis { grid-template-columns: repeat(2, 1fr); }
 .btn { font-weight: 700; letter-spacing: -.005em; }
@@ -690,7 +707,7 @@ html.a11y-motion .reveal { opacity: 1; transform: none; }
 .phone-card .row span:last-child { white-space: nowrap; }
 
 /* ==========================================================================
-   v3 — production, QoL
+   3. Confort d'utilisation
    ========================================================================== */
 
 /* Protection du contenu -------------------------------------------------- */
@@ -777,7 +794,7 @@ html.protect img { -webkit-user-drag: none; }
 #store-more { white-space: normal; max-width: 100%; }
 
 /* ==========================================================================
-   v4 — Carte (page unique), écrans extrêmes, compatibilité navigateurs
+   4. Page « La carte », écrans extrêmes, anciens navigateurs
    ========================================================================== */
 
 /* Hero compact + recherche ------------------------------------------------ */
@@ -945,7 +962,7 @@ h1, h2, h3 { overflow-wrap: break-word; -webkit-hyphens: auto; hyphens: auto; }
 @media (max-width: 400px) { h2 { font-size: 1.75rem; } .split-media .badge { right: 8px; bottom: -12px; } .cta-band { padding: 26px 20px; } }
 
 /* ==========================================================================
-   v5 — Pliables & écrans doubles
+   5. Pliables et écrans doubles
    ========================================================================== */
 
 /* Écran extérieur des pliables (Galaxy Z Fold : 280 px) --------------------- */
@@ -1027,7 +1044,7 @@ h1, h2, h3 { overflow-wrap: break-word; -webkit-hyphens: auto; hyphens: auto; }
 .footer-brand img { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 
 /* ==========================================================================
-   v6 — Pages annexes & animations
+   6. Pages utilitaires et animations
    ========================================================================== */
 
 /* Transitions douces entre les pages (Chrome, Edge, Safari 18+) ------------ */
@@ -1130,7 +1147,7 @@ html.a11y-motion .hero-bits { display: none; }
 .err-search input { min-width: 0; }
 
 /* ==========================================================================
-   v7 — collisions & adaptations
+   7. Ajustements d'affichage (aucun chevauchement, de 280 px à 2560 px)
    ========================================================================== */
 /* Bandeau : version courte sur mobile, refermable */
 .topbar { position: relative; padding-right: 44px; padding-left: 44px; }

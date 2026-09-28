@@ -1,0 +1,43 @@
+{
+  "icone": "☕",
+  "onglet": { "fr": "Cafés & boissons chaudes", "en": "Coffee & hot drinks" },
+  "titre": { "fr": "Cafés & boissons chaudes", "en": "Coffee & hot drinks" },
+  "sous_titre": {
+    "fr": "À personnaliser avec nos sirops {{liste:sirops-gourmands}}",
+    "en": "Make them yours with our {{liste:sirops-gourmands}} syrups"
+  },
+  "blocs": [
+    {
+      "type": "produits",
+      "produits": [
+        {
+          "nom": { "fr": "Café frappé", "en": "Iced coffee" },
+          "image": "images/menu/cafe-frappe.webp",
+          "badge": { "fr": "Froid", "en": "Cold" },
+          "description": "{{Liste:cafes-frappes}}"
+        },
+        {
+          "nom": { "fr": "Boissons chaudes", "en": "Hot drinks" },
+          "image": "images/menu/boisson-chaude.webp",
+          "description": "{{Liste:boissons-chaudes}}"
+        },
+        {
+          "nom": "Matcha",
+          "emoji": "🍵",
+          "fond": ["#eef7e4", "#cfe8b8"],
+          "badge": { "fr": "Nouveau", "en": "New" },
+          "badge_couleur": "bleu",
+          "description": { "fr": "Le thé vert japonais en version gourmande : doux, crémeux et plein de peps", "en": "Japanese green tea, the indulgent way: smooth, creamy and full of pep" }
+        },
+        {
+          "nom": "Ube",
+          "emoji": "💜",
+          "fond": ["#f3e9fc", "#d7bff2"],
+          "badge": { "fr": "Nouveau", "en": "New" },
+          "badge_couleur": "bleu",
+          "description": { "fr": "L'igname violette star des Philippines, gourmande et à la couleur irrésistible", "en": "The Philippines' star purple yam: indulgent, with an irresistible colour" }
+        }
+      ]
+    }
+  ]
+}

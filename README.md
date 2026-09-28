@@ -25,43 +25,48 @@ puis ouvrir http://localhost:8765
 
 | Dossier / fichier | Rôle |
 |---|---|
-| `_src/pages/` | Contenu des pages (une page = un fichier) |
-| `_src/partials/` | Bandeau, menu, pied de page, menu accessibilité (communs à toutes les pages) |
-| `_src/static/` | `.htaccess` (Apache), `_headers` / `_redirects` (Netlify), `robots.txt` |
-| `assets/css/style.css` | Styles (couleurs et polices en haut du fichier) |
-| `assets/js/main.js` | Fonctionnalités ; **configuration en haut du fichier** (`YF_CONFIG`) |
-| `assets/js/stores.js` | **Liste des boutiques** (modifiable sans connaissance technique) |
+| **`contenu/`** | **Tout ce qui change souvent** : boutiques, carte, fidélité, pays, réglages. Mode d'emploi : [`contenu/LISEZMOI.md`](contenu/LISEZMOI.md) |
+| `_src/pages/`, `_src/pages-en/` | Texte des pages en français / en anglais (même nom de fichier) |
+| `_src/partials/` | En-tête, pied de page, panneau d'accessibilité, données structurées communes |
+| `_src/static/` | `.htaccess` (Apache), `_headers` / `_redirects` (Netlify), `security.txt` |
+| `assets/css/style.css` | Styles ; plan du fichier et variables de couleurs en tête |
+| `assets/js/main.js` | Comportements du site, textes affichés par le script (FR / EN) |
+| `build.py` | Générateur : lit et **vérifie** `contenu/`, fabrique les pages, la sécurité, le référencement |
 | `images/` | Photos ; `images/menu/` produits ; `images/boutiques/` photos des boutiques ; `images/src/` originaux (non publiés) |
-| `dist/` | Site généré, prêt à publier (ne pas modifier à la main) |
+| `dist/` | Site généré, prêt à publier (ne jamais modifier à la main) |
 
 ## Pages
 
-Accueil · Le concept · La carte (onglets, recherche de toppings) · Fidélité (simulateur de points) ·
+Accueil · Le concept · La carte (rubriques générées depuis `contenu/carte/`, recherche) · Fidélité (simulateur de points) ·
 Boutiques (carte interactive, « Autour de moi », « Ouvert maintenant », favori « Ma Facto ») · Franchise ·
 Recrutement · Contact & FAQ · Mentions légales · Confidentialité · Cookies · Conditions d'utilisation ·
-Accessibilité · 404.
+Accessibilité · Plan du site · 404 / 403 / 500 · Maintenance · Hors connexion · Merci.
 
 La carte **n'affiche aucun prix** : chaque boutique fixe les siens (les franchisés sont libres de leurs prix).
 
 ## Tâches courantes
 
-- **Ajouter / modifier une boutique** : `assets/js/stores.js`, puis `python build.py`.
-  - `hours` au format `"Lun–sam 10h–20h · dim 11h–19h"` ou `"Tous les jours 10h–20h"` (sinon « Horaires variables »).
-  - `lat` / `lng` : clic droit sur le lieu dans Google Maps → cliquer sur les coordonnées pour les copier.
-  - **Photo** : déposer l'image dans `images/boutiques/` (format paysage, 800 px de large, `.webp` ou `.jpg`)
-    et ajouter `photo: "images/boutiques/nom.webp"`. Sans photo, une photo générique s'affiche.
-  - **Note Google** : ajouter `rating: 4.6, reviews: 1234` et `googleUrl: "lien de la fiche Google Maps"`.
-    Sans note, un bouton « Voir les avis Google » s'affiche.
-- **Modifier un texte** : fichier correspondant dans `_src/pages/`, puis `python build.py`.
-- **Protection du texte** (anti-sélection / anti-copie) : `protectContent` dans `YF_CONFIG` (`true` / `false`).
-  Les champs de formulaire restent utilisables. Cette protection décourage la copie, sans pouvoir l'empêcher totalement.
+| Je veux… | Je modifie… |
+|---|---|
+| Ajouter, modifier, fermer une boutique | `contenu/boutiques/` (un fichier par boutique, modèle `_modele.json`) + photo du même nom dans `images/boutiques/` |
+| Ajouter / retirer un topping, un coulis, un sirop, une perle | `contenu/carte/2-toppings.json` ou `contenu/carte/listes.json` |
+| Ajouter un produit à la carte | le fichier de la rubrique dans `contenu/carte/` |
+| Changer les récompenses fidélité | `contenu/fidelite.json` |
+| Changer l'adresse de réception d'un formulaire | `contenu/reglages.json` |
+| Modifier un texte de page | `_src/pages/…` **et** `_src/pages-en/…` |
+| Autoriser un service externe (vidéo, statistiques…) | dictionnaire `CSP` en haut de `build.py` |
+
+Puis `python build.py` (ou un simple push sur GitHub : le site se reconstruit tout seul).
+Le build refuse de générer le site si un fichier de `contenu/` est mal rempli et dit exactement où est l'erreur.
+
+**Protection du texte** (anti-sélection / anti-copie) : `proteger_le_texte` dans `contenu/reglages.json`.
+Les champs de formulaire restent utilisables. Cette protection décourage la copie sans pouvoir l'empêcher totalement.
 
 ## À faire avant la mise en ligne
 
-1. **E-mails des formulaires** (`YF_CONFIG.forms` dans `assets/js/main.js`) : adresses provisoires à remplacer.
+1. **E-mails des formulaires** (`contenu/reglages.json`) : adresses provisoires à remplacer.
    Pour recevoir les demandes directement (sans ouvrir la messagerie du visiteur), créer un formulaire
-   Formspree et coller son URL dans `endpoint`, **puis** ajouter `https://formspree.io` à `connect-src`
-   dans la Content-Security-Policy (`_src/static/.htaccess` et `_headers`).
+   Formspree et coller son URL dans `endpoint` : la politique de sécurité est mise à jour automatiquement.
 2. **Pages légales** : compléter les passages surlignés en jaune (raison sociale, SIREN, hébergeur,
    médiateur de la consommation, contact RGPD, validité des points fidélité…) et faire relire par un juriste.
 3. **« Le plus gros bar à toppings de France »** : c'est une allégation comparative ; gardez de quoi la justifier
@@ -71,7 +76,7 @@ La carte **n'affiche aucun prix** : chaque boutique fixe les siens (les franchis
 5. **Photos** manquantes : granités, matcha, ube (emoji pour l'instant).
 6. **Carte OpenStreetMap** : les tuiles gratuites d'OpenStreetMap conviennent pour un trafic modéré.
    Si le site reçoit beaucoup de visites, passer à un fournisseur (MapTiler, Stadia Maps…) : changer l'URL des tuiles
-   dans `main.js` (`tileLayer`) et le domaine dans la CSP.
+   dans `main.js` (`tileLayer`) et le domaine dans `CSP` (`build.py`).
 7. **Accessibilité** : faire réaliser un audit RGAA pour afficher un taux de conformité.
 8. Après la mise en ligne : déclarer `https://yogurtfactory.fr/sitemap.xml` dans Google Search Console
    et vérifier les redirections des anciennes pages.
@@ -80,6 +85,11 @@ La carte **n'affiche aucun prix** : chaque boutique fixe les siens (les franchis
 
 - HTTPS forcé, domaine sans `www`, redirections 301 des anciennes URL WordPress.
 - En-têtes de sécurité (CSP stricte sans script externe, HSTS, anti-iframe, Permissions-Policy).
+- CSP aussi présente dans chaque page (balise meta) : protège même sur un hébergeur sans en-têtes (GitHub Pages).
+- Données de `contenu/` vérifiées au build (liens Google Maps et endpoints en https uniquement, couleurs, nombres) ;
+  toute donnée affichée par le script est échappée (pas d'injection de code possible via une fiche boutique).
+- Formulaires : champ piège invisible + envoi refusé s'il arrive moins de 3 s après l'ouverture de la page (robots).
+- Aucun commentaire de travail publié : HTML nettoyé, CSS/JS minifiés.
 - Compression et cache long des CSS/JS/polices, avec numéro de version automatique à chaque build.
 - CSS minifié, images WebP en chargement différé, polices préchargées.
 - SEO : titres et descriptions uniques, canonical, Open Graph + image de partage 1200×630, sitemap,
@@ -147,12 +157,12 @@ pluie de toppings. Un petit message attend aussi les curieux dans la console du 
   (fréquent sur ordinateur), rien ne s'ouvre et le visiteur doit écrire lui-même à l'adresse affichée.
   Le CV ne peut pas être joint automatiquement.
 - **Recommandé** : brancher un service de formulaires (Formspree, Web3Forms, Netlify Forms, ou un CRM) via
-  `endpoint` dans `YF_CONFIG`. Le visiteur reste alors sur le site et voit « Merci ! », vous recevez un e-mail
+  `endpoint` dans `contenu/reglages.json`. Le visiteur reste alors sur le site et voit « Merci ! », vous recevez un e-mail
   et/ou une ligne dans un tableau, avec la possibilité de joindre un CV et d'envoyer une réponse automatique.
 
 ## Boutiques : sources et boutiques à confirmer
 
-La liste (`assets/js/stores.js`, 88 boutiques) croise, en septembre 2026 :
+La liste (`contenu/boutiques/`, 88 boutiques) croise, en septembre 2026 :
 les fiches boutiques du site officiel (dont 71 photos de boutiques), OpenStreetMap (positions GPS précises,
 boutiques fermées) et les annuaires / plateformes de livraison. Google Maps n'a pas été aspiré :
 c'est interdit par ses conditions d'utilisation.

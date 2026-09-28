@@ -1,0 +1,13 @@
+{
+  "nom": "Rouen",
+  "centre": "Docks 76",
+  "adresse": "5-7 rue Netien",
+  "code_postal": "76000",
+  "ville": "Rouen",
+  "region": "Normandie",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "02 79 90 13 32",
+  "lat": 49.44596,
+  "lng": 1.06533
+}

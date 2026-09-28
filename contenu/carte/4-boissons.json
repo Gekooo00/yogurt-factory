@@ -1,0 +1,61 @@
+{
+  "icone": "🧋",
+  "onglet": { "fr": "Boissons fraîches", "en": "Cold drinks" },
+  "titre": { "fr": "Boissons fraîches", "en": "Cold drinks" },
+  "sous_titre": { "fr": "Smoothies, milkshakes, bubble tea, thés glacés et granités", "en": "Smoothies, milkshakes, bubble tea, iced teas and slushies" },
+  "blocs": [
+    {
+      "type": "produits",
+      "produits": [
+        {
+          "nom": "Bubble Tea",
+          "image": "images/menu/bubble-tea.webp",
+          "badge": { "fr": "Tendance", "en": "Trending" },
+          "lignes": [
+            { "titre": { "fr": "1. Le sirop", "en": "1. The syrup" }, "texte": "{{liste:sirops-fruites}}" },
+            { "titre": { "fr": "2. Les perles (boba)", "en": "2. The pearls (boba)" }, "texte": "{{liste:perles-boba}}" }
+          ]
+        },
+        {
+          "nom": "Smoothies",
+          "image": "images/menu/smoothie.webp",
+          "description": { "fr": "Glace au yaourt, lait et fruits", "en": "Frozen yogurt, milk and fruit" },
+          "options": [
+            { "texte": { "fr": "Fraise · framboise · myrtille", "en": "Strawberry · raspberry · blueberry" } },
+            { "texte": { "fr": "Mangue · kiwi · ananas", "en": "Mango · kiwi · pineapple" } },
+            { "texte": { "fr": "Fraise · banane", "en": "Strawberry · banana" } },
+            { "texte": { "fr": "Mangue · banane", "en": "Mango · banana" } }
+          ]
+        },
+        {
+          "nom": "Milkshakes",
+          "image": "images/menu/milkshake.webp",
+          "description": { "fr": "Glace vanille, lait et gourmandise", "en": "Vanilla ice cream, milk and a treat" },
+          "lignes": [{ "texte": "{{Liste:milkshakes}}" }]
+        },
+        {
+          "nom": { "fr": "Thés glacés & citronnade", "en": "Iced teas & lemonade" },
+          "image": "images/menu/the-glace.webp",
+          "description": "{{Liste:sirops-fruites}}"
+        },
+        {
+          "nom": { "fr": "Granités", "en": "Slushies" },
+          "emoji": "🧊",
+          "fond": ["#ffe3e6", "#dcefff"],
+          "badge": { "fr": "Nouveau", "en": "New" },
+          "badge_couleur": "bleu",
+          "description": "{{Liste:granites}}"
+        },
+        {
+          "nom": { "fr": "Nos sirops", "en": "Our syrups" },
+          "emoji": "🍹",
+          "fond": ["#fff3c4", "#ffe1e6"],
+          "lignes": [
+            { "titre": { "fr": "Fruités", "en": "Fruity" }, "texte": "{{liste:sirops-fruites}}" },
+            { "titre": { "fr": "Gourmands", "en": "Indulgent" }, "texte": "{{liste:sirops-gourmands}}" }
+          ]
+        }
+      ]
+    }
+  ]
+}

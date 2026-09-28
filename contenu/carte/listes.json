@@ -1,0 +1,64 @@
+{
+  "sirops-fruites": [
+    { "fr": "fraise", "en": "strawberry" },
+    { "fr": "framboise", "en": "raspberry" },
+    { "fr": "litchi", "en": "lychee" },
+    { "fr": "mangue", "en": "mango" },
+    { "fr": "passion", "en": "passion fruit" },
+    { "fr": "pêche", "en": "peach" },
+    "mojito",
+    { "fr": "pamplemousse", "en": "grapefruit" }
+  ],
+  "sirops-gourmands": [
+    { "fr": "noisette", "en": "hazelnut" },
+    { "fr": "vanille", "en": "vanilla" },
+    "caramel",
+    { "fr": "spéculoos", "en": "speculoos" }
+  ],
+  "perles-boba": [
+    { "fr": "cerise", "en": "cherry" },
+    { "fr": "fraise", "en": "strawberry" },
+    { "fr": "framboise", "en": "raspberry" },
+    { "fr": "litchi", "en": "lychee" },
+    { "fr": "myrtille", "en": "blueberry" },
+    { "fr": "pomme", "en": "apple" },
+    { "fr": "pêche", "en": "peach" },
+    { "fr": "mangue", "en": "mango" },
+    { "fr": "passion", "en": "passion fruit" }
+  ],
+  "granites": [
+    "cola",
+    { "fr": "fraise", "en": "strawberry" },
+    "tropical blue"
+  ],
+  "milkshakes": [
+    "Kinder Bueno",
+    "Oreo",
+    { "fr": "spéculoos", "en": "speculoos" },
+    { "fr": "vanille", "en": "vanilla" },
+    "Daim"
+  ],
+  "cafes-frappes": [
+    "caramel",
+    { "fr": "vanille", "en": "vanilla" },
+    { "fr": "spéculoos", "en": "speculoos" },
+    "cookie",
+    { "fr": "noisette", "en": "hazelnut" }
+  ],
+  "boissons-chaudes": [
+    { "fr": "expresso", "en": "espresso" },
+    { "fr": "chocolat chaud", "en": "hot chocolate" },
+    "cappuccino",
+    "café au lait",
+    "mocha",
+    { "fr": "thé", "en": "tea" }
+  ],
+  "crepes": [
+    "Nutella®",
+    { "fr": "miel", "en": "honey" },
+    { "fr": "spéculoos", "en": "speculoos" },
+    "caramel",
+    { "fr": "framboise", "en": "raspberry" },
+    { "fr": "exotique", "en": "exotic" }
+  ]
+}

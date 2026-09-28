@@ -1,0 +1,47 @@
+{
+  "icone": "🧇",
+  "onglet": { "fr": "Gaufres & crêpes", "en": "Waffles & crêpes" },
+  "titre": { "fr": "Gaufres, crêpes & donuts", "en": "Waffles, crêpes & donuts" },
+  "sous_titre": { "fr": "Chaud, croustillant, gourmand", "en": "Warm, crispy, indulgent" },
+  "blocs": [
+    {
+      "type": "produits",
+      "produits": [
+        {
+          "nom": "Bubble Waffle",
+          "image": "images/menu/bubble-waffle.webp",
+          "badge": { "fr": "Gourmandise", "en": "Indulgence" },
+          "halal": true,
+          "description": { "fr": "La gaufre à bulles de Hong Kong", "en": "The Hong Kong egg waffle" },
+          "options": [
+            { "nom": "La Jolie", "texte": { "fr": "glace + coulis", "en": "ice cream + sauce" } },
+            { "nom": "La Délicieuse", "texte": { "fr": "glace + coulis + toppings", "en": "ice cream + sauce + toppings" } }
+          ]
+        },
+        {
+          "nom": { "fr": "Gaufres liégeoises", "en": "Liège waffles" },
+          "image": "images/menu/gaufre-liege.webp",
+          "options": [
+            { "nom": "La Liégeoise", "texte": { "fr": "nature (sucrée)", "en": "plain (sugared)" } },
+            { "nom": "La Wallonne", "texte": { "fr": "coulis au choix", "en": "sauce of your choice" } },
+            { "nom": "Waffle Bomb", "texte": { "fr": "gaufre, coulis et glace", "en": "waffle, sauce and ice cream" } }
+          ]
+        },
+        {
+          "nom": { "fr": "Crêpes", "en": "Crêpes" },
+          "image": "images/menu/crepe.webp",
+          "options": [
+            { "nom": { "fr": "Au sucre", "en": "Sugar" } },
+            { "nom": { "fr": "À composer", "en": "Build your own" }, "texte": "{{Liste:crepes}}" }
+          ]
+        },
+        {
+          "nom": "Donuts",
+          "image": "images/donut.webp",
+          "badge": { "fr": "Nouveau", "en": "New" },
+          "description": { "fr": "Moelleux et personnalisables avec vos toppings et coulis préférés", "en": "Soft and customisable with your favourite toppings and sauces" }
+        }
+      ]
+    }
+  ]
+}

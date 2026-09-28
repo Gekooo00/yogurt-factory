@@ -1,0 +1,85 @@
+{
+  "icone": "🍓",
+  "onglet": "Toppings",
+  "titre": { "fr": "Le plus gros bar à toppings de France", "en": "The biggest topping bar in France" },
+  "sous_titre": {
+    "fr": "{{count:toppings}} toppings et {{count:coulis}} coulis, à volonté · selon les boutiques et les saisons",
+    "en": "{{count:toppings}} toppings and {{count:coulis}} sauces, as much as you like · varies by store and season"
+  },
+  "blocs": [
+    {
+      "type": "listes",
+      "listes": [
+        {
+          "titre": { "fr": "Fruits frais", "en": "Fresh fruit" },
+          "compte": "toppings",
+          "elements": [
+            { "fr": "Fraise", "en": "Strawberry" },
+            { "fr": "Framboise", "en": "Raspberry" },
+            { "fr": "Myrtille", "en": "Blueberry" },
+            { "fr": "Mangue", "en": "Mango" },
+            { "fr": "Ananas", "en": "Pineapple" },
+            "Kiwi",
+            { "fr": "Banane", "en": "Banana" },
+            { "fr": "Passion", "en": "Passion fruit" },
+            { "fr": "Noix de coco", "en": "Coconut" },
+            { "fr": "Melon", "en": "Melon", "saison": true },
+            { "fr": "Pastèque", "en": "Watermelon", "saison": true }
+          ]
+        },
+        {
+          "titre": { "fr": "Chocolats & biscuits", "en": "Chocolate & biscuits" },
+          "compte": "toppings",
+          "elements": [
+            { "fr": "Billes chocolat au lait", "en": "Milk chocolate balls" },
+            { "fr": "Billes chocolat blanc", "en": "White chocolate balls" },
+            { "fr": "Billes chocolat noir", "en": "Dark chocolate balls" },
+            "Kinder Bueno",
+            "Kinder Bueno White",
+            "Kit Kat",
+            "Lion",
+            "M&M's",
+            "Maltesers",
+            "Crunch",
+            "Daim",
+            "Schoko-Bons",
+            "Smarties",
+            "Brownie",
+            "Cookie",
+            { "fr": "Spéculoos", "en": "Speculoos" },
+            { "fr": "Meringue", "en": "Meringue" }
+          ]
+        },
+        {
+          "titre": { "fr": "Bonbons & croquants", "en": "Sweets & crunchies" },
+          "compte": "toppings",
+          "elements": [
+            { "fr": "Tagada", "en": "Tagada", "porc": true },
+            { "fr": "Schtroumpfs", "en": "Smurfs", "porc": true },
+            { "fr": "Marshmallow", "en": "Marshmallow", "porc": true },
+            { "fr": "Chouchou", "en": "Candied peanuts" },
+            { "fr": "Noisette", "en": "Hazelnut" },
+            "Muesli"
+          ]
+        },
+        {
+          "titre": { "fr": "Coulis", "en": "Sauces" },
+          "compte": "coulis",
+          "elements": [
+            { "fr": "Cacahuète", "en": "Peanut" },
+            { "fr": "Caramel beurre salé", "en": "Salted caramel" },
+            { "fr": "Chocolat blanc", "en": "White chocolate" },
+            { "fr": "Chocolat-noisette", "en": "Chocolate-hazelnut" },
+            { "fr": "Exotique", "en": "Exotic" },
+            { "fr": "Fraise", "en": "Strawberry" },
+            { "fr": "Framboise", "en": "Raspberry" },
+            "Kit Kat",
+            { "fr": "Noisette", "en": "Hazelnut" },
+            { "fr": "Pistache", "en": "Pistachio" },
+            { "fr": "Spéculoos", "en": "Speculoos" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "nom": "Paris Carrousel du Louvre",
+  "centre": "Carrousel du Louvre",
+  "adresse": "99 rue de Rivoli",
+  "code_postal": "75001",
+  "ville": "Paris",
+  "region": "Île-de-France",
+  "pays": "France",
+  "horaires": "Tous les jours 10h–20h",
+  "telephone": "",
+  "lat": 48.86215,
+  "lng": 2.33343
+}

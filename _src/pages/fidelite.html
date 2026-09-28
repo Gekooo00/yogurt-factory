@@ -51,22 +51,13 @@ og_sub: Votre numéro de téléphone suffit. Gourmandises offertes dès 30 point
     </div>
     <div class="builder" style="margin-top:28px">
       <ol class="rewards reveal">
-        <li class="reward" data-points="30"><span class="pts-badge">30<small>points</small></span><b>Petit thé glacé</b><span class="state"></span></li>
-        <li class="reward" data-points="40"><span class="pts-badge">40<small>points</small></span><b>Donut</b><span class="state"></span></li>
-        <li class="reward" data-points="50"><span class="pts-badge">50<small>points</small></span><b>La Wallonne</b><span class="state"></span></li>
-        <li class="reward" data-points="60"><span class="pts-badge">60<small>points</small></span><b>Petit bubble tea</b><span class="state"></span></li>
-        <li class="reward" data-points="70"><span class="pts-badge">70<small>points</small></span><b>Petit smoothie ou milkshake</b><span class="state"></span></li>
-        <li class="reward" data-points="80"><span class="pts-badge">80<small>points</small></span><b>Un Mignon avec toppings</b><span class="state"></span></li>
-        <li class="reward" data-points="90"><span class="pts-badge">90<small>points</small></span><b>Le Parfait</b><span class="state"></span></li>
-        <li class="reward" data-points="100"><span class="pts-badge">100<small>points</small></span><b>Waffle Bomb</b><span class="state"></span></li>
-        <li class="reward" data-points="110"><span class="pts-badge">110<small>points</small></span><b>La Délicieuse</b><span class="state"></span></li>
-        <li class="reward" data-points="120"><span class="pts-badge">120<small>points</small></span><b>Le Superbe à partager</b><span class="state"></span></li>
+        {{fidelite:recompenses}}
       </ol>
       <aside class="sim reveal">
         <h3>Simulateur</h3>
         <label for="pts-range">Mes points (= euros dépensés)</label>
         <output id="pts-out" for="pts-range">45 pts</output>
-        <input type="range" id="pts-range" min="0" max="130" step="1" value="45">
+        <input type="range" id="pts-range" min="0" max="{{fidelite:max}}" step="1" value="45">
         <div class="progress" aria-hidden="true"><span id="pts-bar"></span></div>
         <p class="next" id="pts-next" aria-live="polite"></p>
         <a class="btn btn--yellow" href="boutiques.html" style="width:100%;margin-top:18px">Commencer à cumuler</a>

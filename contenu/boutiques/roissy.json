@@ -1,0 +1,13 @@
+{
+  "nom": "Roissy",
+  "centre": "Aéroville",
+  "adresse": "30 rue des Buissons",
+  "code_postal": "95700",
+  "ville": "Roissy-en-France",
+  "region": "Île-de-France",
+  "pays": "France",
+  "horaires": "Lun–sam 9h–20h",
+  "telephone": "01 48 62 03 85",
+  "lat": 48.99059,
+  "lng": 2.52207
+}

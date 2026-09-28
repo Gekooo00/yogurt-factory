@@ -1,0 +1,13 @@
+{
+  "nom": "Paris Passage du Havre",
+  "centre": "Passage du Havre",
+  "adresse": "109 rue Saint-Lazare",
+  "code_postal": "75009",
+  "ville": "Paris",
+  "region": "Île-de-France",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h · dim 10h–19h",
+  "telephone": "",
+  "lat": 48.87535,
+  "lng": 2.327
+}

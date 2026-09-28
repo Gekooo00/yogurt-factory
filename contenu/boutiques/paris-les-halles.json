@@ -1,0 +1,13 @@
+{
+  "nom": "Paris Les Halles",
+  "centre": "Westfield Forum des Halles",
+  "adresse": "101 rue Berger",
+  "code_postal": "75001",
+  "ville": "Paris",
+  "region": "Île-de-France",
+  "pays": "France",
+  "horaires": "Tous les jours 10h–20h",
+  "telephone": "01 40 28 01 51",
+  "lat": 48.86183,
+  "lng": 2.34652
+}

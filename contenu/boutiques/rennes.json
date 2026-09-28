@@ -1,0 +1,13 @@
+{
+  "nom": "Rennes",
+  "centre": "Colombia",
+  "adresse": "40 place du Colombier",
+  "code_postal": "35000",
+  "ville": "Rennes",
+  "region": "Bretagne",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "02 99 65 10 86",
+  "lat": 48.10479,
+  "lng": -1.68107
+}

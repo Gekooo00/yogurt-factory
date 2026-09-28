@@ -1,0 +1,13 @@
+{
+  "nom": "Charleroi",
+  "centre": "Rive Gauche",
+  "adresse": "Place Verte 20",
+  "code_postal": "6000",
+  "ville": "Charleroi",
+  "region": "Wallonie",
+  "pays": "Belgique",
+  "horaires": "Lun–sam 10h–19h",
+  "telephone": "",
+  "lat": 50.40785,
+  "lng": 4.44242
+}

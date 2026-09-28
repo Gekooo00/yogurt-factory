@@ -63,8 +63,9 @@ ErrorDocument 503 /maintenance.html
     Header set X-Robots-Tag "noindex"
   </FilesMatch>
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Permissions-Policy "geolocation=(self), camera=(), microphone=(), payment=()"
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.tile.openstreetmap.org; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
+  Header always set Permissions-Policy "geolocation=(self), camera=(), microphone=(), payment=(), usb=(), serial=(), bluetooth=(), browsing-topics=()"
+  # __CSP__ est remplacé par build.py (réglage CSP dans build.py, identique pour tous les hébergeurs)
+  Header always set Content-Security-Policy "__CSP__"
 </IfModule>
 
 # ---- Compression ------------------------------------------------------------

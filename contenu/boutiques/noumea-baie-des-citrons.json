@@ -1,0 +1,14 @@
+{
+  "nom": "Nouméa – Baie des Citrons",
+  "centre": "Baie des Citrons",
+  "adresse": "Promenade Roger Laroque",
+  "code_postal": "98800",
+  "ville": "Nouméa",
+  "region": "Nouvelle-Calédonie",
+  "pays": "Outre-mer",
+  "horaires": "Lun–jeu 11h–19h · ven–dim 11h–20h",
+  "telephone": "+687 31 14 77",
+  "lat": -22.29889,
+  "lng": 166.43871,
+  "fuseau_horaire": "Pacific/Noumea"
+}

@@ -1,0 +1,9 @@
+{
+  "formulaires": {
+    "contact": { "email": "contact@yogurtfactory.fr", "endpoint": "" },
+    "franchise": { "email": "franchise@yogurtfactory.fr", "endpoint": "" },
+    "recrutement": { "email": "recrutement@yogurtfactory.fr", "endpoint": "" }
+  },
+  "proteger_le_texte": true,
+  "boutiques_par_page": 12
+}

@@ -1,0 +1,13 @@
+{
+  "nom": "Dijon",
+  "centre": "Toison d'Or",
+  "adresse": "Route de Langres",
+  "code_postal": "21000",
+  "ville": "Dijon",
+  "region": "Bourgogne-Franche-Comté",
+  "pays": "France",
+  "horaires": "Lun–sam 10h–20h",
+  "telephone": "",
+  "lat": 47.36725,
+  "lng": 5.04738
+}

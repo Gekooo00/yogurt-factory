@@ -1,24 +1,38 @@
 """
-Génère le site de production dans le dossier dist/.
+Générateur du site Yogurt Factory : transforme les sources en site statique dans dist/.
 
-    python build.py              construit le site
-    python build.py --indexnow   construit puis signale les pages à Bing, Yandex, Seznam, Naver… (après mise en ligne)
+    python build.py              construit le site dans dist/ (c'est ce dossier qu'on met en ligne)
+    python build.py --indexnow   construit puis signale les pages à Bing, Yandex, Seznam, Naver…
+    BASE_PATH=/mon-dossier python build.py   site publié dans un sous-dossier (préversion, non indexée)
 
-Sources :
-- _src/partials/header.html, footer.html : communs à toutes les pages
-- _src/pages/*.html : contenu de chaque page, précédé d'un bloc d'en-tête :
-      <!--
-      title: Titre de la page — suite du titre
-      description: Description pour Google (≈155 caractères)
-      nav: carte            (lien du menu à mettre en surbrillance)
-      jsonld: partials/x.html  (données structurées supplémentaires, facultatif)
-      -->
-- _src/static/ : fichiers copiés tels quels à la racine (.htaccess, _headers…)
-- assets/, images/ : copiés dans dist/ (sauf images/src/, les originaux)
+Pré-requis : Python 3.10+ et Pillow (pip install pillow). Node.js est facultatif : s'il est
+installé, esbuild minifie le CSS/JS et le rend compatible avec les anciens navigateurs.
 
-Le dossier dist/ est entièrement régénéré à chaque build : c'est lui qu'on met en ligne.
-Si Node.js est installé, CSS et JS sont minifiés et rendus compatibles avec les anciens
-navigateurs (esbuild) ; sinon une minification simple est appliquée.
+Où modifier quoi :
+    contenu/boutiques/*.json    une boutique par fichier (modèle : contenu/boutiques/_modele.json)
+    contenu/carte/*.json        rubriques de la carte, toppings, coulis, sirops, perles…
+    contenu/fidelite.json       récompenses du programme de fidélité
+    contenu/pays.json           pays (ordre des pastilles, nom anglais, fuseau horaire)
+    contenu/reglages.json       adresses des formulaires, protection du texte…
+    _src/pages/*.html           texte des pages en français (_src/pages-en/ : anglais, même nom de fichier)
+    _src/partials/              en-tête, pied de page, données structurées communes
+    _src/static/                fichiers copiés tels quels à la racine (.htaccess, _headers, security.txt…)
+    assets/css, assets/js       styles et scripts ; images/ : photos (originaux lourds dans images/src/, non publiés)
+
+Chaque page commence par un bloc de réglages lu ici puis retiré :
+    <!--
+    title: Titre de l'onglet et de Google
+    description: Résumé pour Google et les réseaux sociaux (≈155 caractères)
+    nav: carte                    lien du menu à mettre en surbrillance
+    og_title / og_sub:            texte de l'image de partage générée automatiquement
+    jsonld: partials/x.html       données structurées supplémentaires (facultatif)
+    kind: error                   page utilitaire (404, merci…) : non indexée
+    -->
+
+Balises remplacées dans les pages : {{count:stores}}, {{count:cities}}, {{count:toppings}},
+{{count:coulis}}, {{carte:onglets}}, {{carte:rubriques}}, {{fidelite:recompenses}},
+{{fidelite:max}}, {{icon:halal}}, {{pot:TEXTE}}, {{nav:x}}, {{alt_href}}.
+Une balise oubliée ou mal écrite arrête le build avec un message.
 """
 import hashlib
 import os
@@ -42,22 +56,23 @@ DIST = ROOT / "dist"
 # ---- Réglages ---------------------------------------------------------------
 SITE_URL = "https://yogurtfactory.fr"
 SITE_NAME = "Yogurt Factory"
-# Sous-dossier de publication (ex. BASE_PATH=/yogurt-factory pour GitHub Pages). Vide = racine du domaine.
-# Un site publié dans un sous-dossier est considéré comme une préversion : il n'est pas indexé.
+# Sous-dossier de publication, lu dans la variable d'environnement BASE_PATH (GitHub Pages : /nom-du-depot).
+# Vide = site à la racine du domaine. Un site en sous-dossier est traité comme une préversion : noindex.
 BASE = os.environ.get("BASE_PATH", "").strip().rstrip("/")
 if BASE and not BASE.startswith("/"):
     BASE = "/" + BASE
-# Codes de validation des outils pour webmasters (laisser vide si non utilisé)
+# Codes fournis par les outils pour webmasters (balise meta de validation) ; vide = non utilisé
 GOOGLE_SITE_VERIFICATION = ""   # Google Search Console
 BING_SITE_VERIFICATION = ""     # Bing Webmaster Tools (alimente aussi DuckDuckGo, Qwant, Ecosia, Yahoo)
 YANDEX_VERIFICATION = ""
-# Clé IndexNow (fichier <clé>.txt publié à la racine)
+# Clé IndexNow : publiée à la racine sous <clé>.txt pour prouver que le site nous appartient
 INDEXNOW_KEY = "7f3c9a2e5b8d4f16a0c3e9b72d5f8a14"
-# Navigateurs ciblés (esbuild) : couvre ~98 % du parc, iPhone depuis iOS 13
+# Navigateurs ciblés par esbuild (~98 % du parc, iPhone depuis iOS 13)
 BROWSER_TARGETS = "chrome80,edge80,firefox78,safari13,ios13,opera67"
 ESBUILD = "esbuild@0.25.0"
 
-# Langues : le français à la racine, l'anglais dans /en/ (pages dans _src/pages-en/, même nom de fichier que la version FR)
+# Langues : français à la racine, anglais dans /en/. Une page anglaise porte le même nom de fichier source
+# que sa version française ; SLUGS_EN donne son adresse publique en anglais.
 LANGS = {
     "fr": {"dir": "", "pages": "pages", "header": "header.html", "footer": "footer.html", "locale": "fr_FR", "html": "fr-FR"},
     "en": {"dir": "en/", "pages": "pages-en", "header": "header-en.html", "footer": "footer-en.html", "locale": "en_GB", "html": "en"},
@@ -79,6 +94,37 @@ def page_url(lang, fr_name):
     return SITE_URL + "/" + LANGS[lang]["dir"] + ("" if name == "index.html" else name)
 
 
+# Politique de sécurité du contenu (CSP) : seules les ressources listées ici peuvent être chargées.
+# Les adresses d'envoi des formulaires (contenu/reglages.json) sont ajoutées automatiquement à connect-src.
+# Ajouter un service externe (vidéo, carte, statistiques…) = ajouter son domaine ici.
+CSP = {
+    "default-src": "'self'",
+    "script-src": "'self'",
+    "style-src": "'self' 'unsafe-inline'",
+    "img-src": "'self' data: https://*.tile.openstreetmap.org",
+    "font-src": "'self'",
+    "connect-src": "'self'",
+    "manifest-src": "'self'",
+    "worker-src": "'self'",
+    "frame-src": "'none'",
+    "media-src": "'self'",
+    "object-src": "'none'",
+    "base-uri": "'self'",
+    "form-action": "'self'",
+    "frame-ancestors": "'none'",
+    "upgrade-insecure-requests": "",
+}
+META_CSP_IGNORED = ("frame-ancestors", "upgrade-insecure-requests")   # sans effet ou gênant en balise meta (aperçu local en http)
+
+
+def csp_string(settings, meta=False):
+    policy = dict(CSP)
+    origins = sorted({re.match(r"https://[^/]+", f["endpoint"]).group(0) for f in settings["forms"].values() if f["endpoint"]})
+    if origins:
+        policy["connect-src"] += " " + " ".join(origins)
+    return "; ".join((k + " " + v).strip() for k, v in policy.items() if not (meta and k in META_CSP_IGNORED))
+
+
 NAV_KEYS = ["concept", "carte", "fidelite", "boutiques", "franchise", "recrutement", "contact"]
 ICONS = {
     "halal": '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">'
@@ -90,6 +136,8 @@ HEAD = """<!doctype html>
 <html lang="{html_lang}" class="no-js"{data_base}>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="{csp}">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 {base}<title>{title}</title>
 <meta name="description" content="{description}">
@@ -134,7 +182,7 @@ HEAD = """<!doctype html>
 <body>
 """
 
-FOOT = """<script src="/assets/js/stores.js?v={v_stores}" defer></script>
+FOOT = """<script src="/assets/js/data.js?v={v_data}" defer></script>
 <script src="/assets/js/main.js?v={v_main}" defer></script>
 </body>
 </html>
@@ -168,15 +216,6 @@ def esbuild(path, loader):
     except Exception as exc:  # noqa: BLE001
         print("  ! esbuild indisponible, minification simple :", exc)
         return False
-
-
-def load_stores():
-    """Lit assets/js/stores.js (objets JS) et le convertit en liste de dicts."""
-    src = (ROOT / "assets/js/stores.js").read_text(encoding="utf-8")
-    out = []
-    for row in re.findall(r"\{ name: .*? \}", src):
-        out.append(json.loads(re.sub(r'([{,]\s*)([a-zA-Z]+):', r'\1"\2":', row)))
-    return out
 
 
 def ld(data):
@@ -231,8 +270,330 @@ def store_cards(stores):
     e = html.escape
     return "".join(
         f'<article class="store"><div class="store-body"><span class="where">{e(s["region"])}</span>'
-        f'<h3>{e(s["name"])}</h3><address>{e(s["center"])} · {e(s["address"])}, {e(s.get("zip", ""))} {e(s["city"])}</address>'
+        f'<h3>{e(s["name"])}</h3><address>{e(" · ".join(filter(None, (s["center"], s["address"]))))}, {e(s["zip"])} {e(s["city"])}</address>'
         f'<div class="hours">{e(s["hours"])}</div></div></article>' for s in stores)
+
+
+# ---- Contenu éditable (dossier contenu/) -------------------------------------
+# Tout ce qui change souvent vit dans contenu/ au format JSON : boutiques, carte,
+# récompenses fidélité, pays, réglages. Ce module lit ces fichiers, les vérifie
+# (message clair + arrêt du build en cas d'erreur) et produit le HTML / JS / JSON-LD.
+# Un texte traduisible s'écrit soit "texte" (identique en FR et EN), soit
+# { "fr": "…", "en": "…" }.
+CONTENT = ROOT / "contenu"
+STORE_FIELDS = {   # clé du fichier JSON -> clé utilisée par le JavaScript du site
+    "nom": "name", "centre": "center", "adresse": "address", "code_postal": "zip", "ville": "city",
+    "region": "region", "pays": "country", "horaires": "hours", "telephone": "phone", "lat": "lat", "lng": "lng",
+    "note_google": "rating", "nombre_avis": "reviews", "lien_google": "googleUrl", "photo": "photo",
+    "fuseau_horaire": "tz",
+}
+STORE_REQUIRED = ("nom", "adresse", "ville", "region", "pays", "horaires")
+HOURS_FREE_TEXT = ("Horaires du centre", "Horaires saisonniers")   # affichés tels quels, sans « Ouvert / Fermé »
+HOURS_RE = re.compile(r"^(tous les jours|(lun|mar|mer|jeu|ven|sam|dim)(–(lun|mar|mer|jeu|ven|sam|dim))?)\s+"
+                      r"\d{1,2}h(\d{2})?–(\d{1,2}h(\d{2})?|minuit)$", re.I)
+PHOTO_EXT = (".webp", ".jpg", ".jpeg", ".png")
+
+
+def fail(msg):
+    raise SystemExit("\n✗ " + msg + "\n  Le site n'a pas été généré : corrigez le fichier puis relancez python build.py.\n")
+
+
+def rel(path):
+    return str(path.relative_to(ROOT)).replace("\\", "/")
+
+
+def read_json(path):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        fail(f"{rel(path)} est introuvable.")
+    except json.JSONDecodeError as e:
+        fail(f"{rel(path)}, ligne {e.lineno} : JSON invalide ({e.msg}). "
+             "Vérifiez les guillemets droits \" \", les virgules entre les lignes et l'absence de virgule après le dernier élément.")
+
+
+def tr(value, lang):
+    if isinstance(value, dict):
+        return value.get(lang) or value.get("fr", "")
+    return "" if value is None else str(value)
+
+
+def load_countries():
+    data = read_json(CONTENT / "pays.json")
+    return [{"name": k, "en": v.get("en", k), "tz": v.get("fuseau_horaire", "")} for k, v in data.items()]
+
+
+def load_settings():
+    data = read_json(CONTENT / "reglages.json")
+    forms = {}
+    for key, f in data.get("formulaires", {}).items():
+        email, endpoint = f.get("email", "").strip(), f.get("endpoint", "").strip()
+        if not re.fullmatch(r"[^@\s]+@[^@\s]+\.[a-z]{2,}", email, re.I):
+            fail(f"contenu/reglages.json : adresse e-mail invalide pour le formulaire « {key} ».")
+        if endpoint and not re.fullmatch(r"https://[\w.-]+(:\d+)?(/[\w\-./%?=&]*)?", endpoint):
+            fail(f"contenu/reglages.json : l'endpoint du formulaire « {key} » doit être une adresse https://…")
+        forms[key] = {"email": email, "endpoint": endpoint}
+    per_page = data.get("boutiques_par_page", 12)
+    if not isinstance(per_page, int) or not 4 <= per_page <= 100:
+        fail("contenu/reglages.json : boutiques_par_page doit être un nombre entre 4 et 100.")
+    return {"forms": forms, "protectContent": bool(data.get("proteger_le_texte", True)), "storesPerPage": per_page}
+
+
+def store_photo(slug, data, path):
+    if data.get("photo"):
+        p = ROOT / data["photo"]
+        if not p.is_file():
+            fail(f"{rel(path)} : la photo « {data['photo']} » n'existe pas.")
+        return data["photo"]
+    for ext in PHOTO_EXT:
+        if (ROOT / "images" / "boutiques" / (slug + ext)).is_file():
+            return f"images/boutiques/{slug}.webp"   # les JPG/PNG sont convertis en WebP au build
+    return None
+
+
+def load_stores(countries):
+    """Lit contenu/boutiques/*.json (les fichiers commençant par « _ » sont ignorés : modèles, brouillons)."""
+    tz_of = {c["name"]: c["tz"] for c in countries}
+    order = {c["name"]: i for i, c in enumerate(countries)}
+    stores, names = [], {}
+    for path in sorted((CONTENT / "boutiques").glob("*.json")):
+        if path.name.startswith("_"):
+            continue
+        data = read_json(path)
+        where = rel(path)
+        if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", path.stem):
+            fail(f"{where} : le nom du fichier doit être en minuscules, sans accent ni espace (ex. lyon-part-dieu.json).")
+        unknown = set(data) - set(STORE_FIELDS)
+        if unknown:
+            fail(f"{where} : champ inconnu {sorted(unknown)}. Champs possibles : {', '.join(STORE_FIELDS)}.")
+        for k in STORE_REQUIRED:
+            if not str(data.get(k, "")).strip():
+                fail(f"{where} : le champ « {k} » est obligatoire.")
+        if data["pays"] not in tz_of:
+            fail(f"{where} : pays « {data['pays']} » inconnu. Ajoutez-le d'abord dans contenu/pays.json.")
+        if data["nom"] in names:
+            fail(f"{where} : le nom « {data['nom']} » est déjà utilisé par {names[data['nom']]}.")
+        names[data["nom"]] = where
+        s = {STORE_FIELDS[k]: v for k, v in data.items() if v not in ("", None)}
+        s.setdefault("center", "")
+        s.setdefault("zip", "")
+        has_lat, has_lng = "lat" in data, "lng" in data
+        if has_lat != has_lng:
+            fail(f"{where} : indiquez lat et lng ensemble (ou aucun des deux).")
+        if has_lat and not (isinstance(data["lat"], (int, float)) and isinstance(data["lng"], (int, float))
+                            and -90 <= data["lat"] <= 90 and -180 <= data["lng"] <= 180):
+            fail(f"{where} : lat / lng doivent être des nombres (ex. 48.8566 et 2.3522), sans guillemets.")
+        if "note_google" in data and not (isinstance(data["note_google"], (int, float)) and 0 <= data["note_google"] <= 5):
+            fail(f"{where} : note_google doit être un nombre entre 0 et 5 (ex. 4.6).")
+        if "nombre_avis" in data and not (isinstance(data["nombre_avis"], int) and data["nombre_avis"] >= 0):
+            fail(f"{where} : nombre_avis doit être un nombre entier (ex. 1234).")
+        if data.get("lien_google") and not re.match(r"https://(www\.google\.[a-z.]+/maps|maps\.google\.[a-z.]+|maps\.app\.goo\.gl|goo\.gl/maps)/", data["lien_google"]):
+            fail(f"{where} : lien_google doit être un lien Google Maps en https://.")
+        hours = data["horaires"].strip()
+        if hours not in HOURS_FREE_TEXT and not all(HOURS_RE.match(seg.strip()) for seg in hours.split("·")):
+            print(f"  ! {where} : horaires « {hours} » non reconnus, la boutique s'affichera sans « Ouvert / Fermé ».")
+        s["tz"] = data.get("fuseau_horaire") or tz_of[data["pays"]]
+        if not s["tz"]:
+            fail(f"{where} : fuseau_horaire obligatoire pour le pays « {data['pays']} » (ex. \"America/Cayenne\").")
+        photo = store_photo(path.stem, data, path)
+        if photo:
+            s["photo"] = photo
+        else:
+            s.pop("photo", None)
+        s["_order"] = (order[data["pays"]], data["region"] != "Île-de-France", data["region"], data["nom"])   # ordre d'affichage par défaut
+        stores.append(s)
+    if not stores:
+        fail("aucune boutique trouvée dans contenu/boutiques/.")
+    stores.sort(key=lambda s: s.pop("_order"))
+    return stores
+
+
+# ---- Carte -------------------------------------------------------------------
+def load_menu():
+    """Rubriques de la carte : contenu/carte/<numéro>-<ancre>.json, dans l'ordre des numéros."""
+    lists = read_json(CONTENT / "carte" / "listes.json")
+    sections = []
+    for path in sorted((CONTENT / "carte").glob("*.json"), key=lambda p: (len(p.stem.split("-")[0]), p.stem)):
+        m = re.fullmatch(r"(\d+)-([a-z0-9-]+)", path.stem)
+        if not m:
+            continue
+        sec = read_json(path)
+        sec["id"], sec["_file"] = m.group(2), rel(path)
+        for b in sec.get("blocs", []):
+            if b.get("type") not in ("bases", "pots", "listes", "produits"):
+                fail(f"{rel(path)} : type de bloc « {b.get('type')} » inconnu (bases, pots, listes ou produits).")
+        sections.append(sec)
+    counts = {"toppings": 0, "coulis": 0}
+    for sec in sections:
+        for b in sec.get("blocs", []):
+            for lst in b.get("listes", []):
+                if lst.get("compte") in counts:
+                    counts[lst["compte"]] += len(lst.get("elements", []))
+    return {"sections": sections, "lists": lists, "counts": counts}
+
+
+def menu_text(value, lang, menu, where):
+    """Texte traduit, avec les listes partagées {{liste:nom}} (ou {{Liste:nom}} pour une majuscule)."""
+    text = tr(value, lang)
+
+    def repl(m):
+        items = menu["lists"].get(m.group(2))
+        if items is None:
+            fail(f"{where} : la liste « {m.group(2)} » n'existe pas dans contenu/carte/listes.json.")
+        words = [tr(i, lang) for i in items]
+        joined = ", ".join(words[:-1]) + (" et " if lang == "fr" else " and ") + words[-1] if len(words) > 1 else "".join(words)
+        return joined[:1].upper() + joined[1:] if m.group(1) == "L" else joined
+    text = re.sub(r"\{\{count:(toppings|coulis)\}\}", lambda m: str(menu["counts"][m.group(1)]), text)
+    return re.sub(r"\{\{([lL])iste:([\w-]+)\}\}", repl, text)
+
+
+def image_tag(src, alt, where):
+    path = ROOT / src
+    if not path.is_file():
+        fail(f"{where} : l'image « {src} » n'existe pas.")
+    with Image.open(path) as im:
+        w, h = im.size
+    return f'<img src="{html.escape(src)}" alt="{html.escape(alt)}" loading="lazy" width="{w}" height="{h}">'
+
+
+def badge(item, lang):
+    if not item.get("badge"):
+        return ""
+    cls = " badge--blue" if item.get("badge_couleur") == "bleu" else ""
+    return f'<span class="badge{cls}">{html.escape(tr(item["badge"], lang))}</span>'
+
+
+LEGEND = {
+    "fr": ("contient de la gélatine de porc", "de saison"),
+    "en": ("contains pork gelatine", "seasonal"),
+}
+
+
+def menu_html(menu, lang):
+    e = html.escape
+    tabs, out = [], []
+    for sec in menu["sections"]:
+        where, sid = sec["_file"], sec["id"]
+        T = lambda v: e(menu_text(v, lang, menu, where))   # noqa: E731
+        tabs.append(f'<a href="#{sid}"><span aria-hidden="true">{sec.get("icone", "")}</span> {T(sec.get("onglet", sec["titre"]))}</a>')
+        body = []
+        for b in sec.get("blocs", []):
+            if b["type"] == "bases":
+                cells = []
+                for base in b["bases"]:
+                    cls = f' base--{e(base["style"])}' if base.get("style") else ""
+                    ico = "{{icon:%s}} " % base["icone"] if base.get("icone") else ""
+                    cells.append(f'<div class="base{cls}"><b>{ico}{T(base["nom"])}</b><span>{T(base.get("texte"))}</span></div>')
+                body.append('<div class="bases">' + "".join(cells) + "</div>")
+            elif b["type"] == "pots":
+                if b.get("titre"):
+                    body.append(f'<h3 class="group-title">{T(b["titre"])}</h3>')
+                cards = [f'<article class="pot-card">{image_tag(p["image"], menu_text(p["nom"], lang, menu, where), where)}'
+                         f'{badge(p, lang)}<h4>{T(p["nom"])}</h4><p>{T(p.get("detail"))}</p></article>' for p in b["pots"]]
+                body.append('<div class="pots-grid">' + "".join(cards) + "</div>")
+            elif b["type"] == "listes":
+                cols, flagged = [], -1
+                for i, lst in enumerate(b["listes"]):
+                    lis = []
+                    for it in lst.get("elements", []):
+                        flags = [f for f in ("porc", "saison") if isinstance(it, dict) and it.get(f)]
+                        cls = " ".join({"porc": "pork", "saison": "season"}[f] for f in flags)
+                        note = "".join(f'<span class="sr-only"> ({LEGEND[lang][0 if f == "porc" else 1]})</span>' for f in flags)
+                        lis.append(f'<li{f" class={chr(34)}{cls}{chr(34)}" if cls else ""}>{T(it)}{note}</li>')
+                        if flags:
+                            flagged = i
+                    cols.append([f'<div class="topping-col"><h3>{T(lst["titre"])}</h3><ul class="tlist">{"".join(lis)}</ul>', "</div>"])
+                if flagged >= 0:
+                    pork, season = LEGEND[lang]
+                    cols[flagged].insert(1, f'<p class="legend" aria-hidden="true"><span class="pork-dot"></span>{pork}<br><span class="season-dot"></span>{season}</p>')
+                body.append('<div class="topping-cols">' + "".join("".join(c) for c in cols) + "</div>")
+            else:
+                items = []
+                for p in b["produits"]:
+                    name = menu_text(p["nom"], lang, menu, where)
+                    if p.get("image"):
+                        media = image_tag(p["image"], name, where)
+                    else:
+                        colors = p.get("fond", ["#fff3c4", "#ffe1e6"])
+                        if not all(re.fullmatch(r"#[0-9a-fA-F]{3,8}", c) for c in colors):
+                            fail(f"{where} : « fond » doit contenir des couleurs au format #rrggbb.")
+                        media = (f'<span class="item-emoji" style="background:linear-gradient(135deg,{colors[0]},{colors[-1]})" '
+                                 f'aria-hidden="true">{p.get("emoji", "🍦")}</span>')
+                    parts = [f"<h3>{e(name)} {badge(p, lang)}</h3>".replace(" </h3>", "</h3>")]
+                    if p.get("description"):
+                        parts.append(f'<p class="meta">{T(p["description"])}</p>')
+                    for ln in p.get("lignes", []):
+                        title = f'<b>{T(ln["titre"])}</b> ' if ln.get("titre") else ""
+                        parts.append(f'<p class="meta">{title}{T(ln.get("texte"))}</p>')
+                    if p.get("options"):
+                        opts = "".join(f'<li>{"<b>" + T(o["nom"]) + "</b> " if o.get("nom") else ""}{T(o.get("texte"))}</li>'.replace(" </li>", "</li>")
+                                       for o in p["options"])
+                        parts.append(f'<ul class="opts">{opts}</ul>')
+                    items.append(f'<article class="item">{media}<div>{"".join(parts)}</div></article>')
+                body.append('<div class="items">' + "".join(items) + "</div>")
+        out.append(f'<section class="menu-sec" id="{sid}" aria-labelledby="t-{sid}">\n'
+                   f'    <header class="sec-head"><span class="sec-ico" aria-hidden="true">{sec.get("icone", "")}</span>'
+                   f'<div><h2 id="t-{sid}">{T(sec["titre"])}</h2><p>{T(sec.get("sous_titre"))}</p></div></header>\n    '
+                   + "\n    ".join(body) + "\n  </section>")
+    return "\n    ".join(tabs), "\n\n  ".join(out)
+
+
+def menu_jsonld(menu, lang):
+    halal = "https://schema.org/HalalDiet"
+    sections = []
+    for sec in menu["sections"]:
+        where = sec["_file"]
+        T = lambda v: strip_tags(menu_text(v, lang, menu, where))   # noqa: E731
+        s = {"@type": "MenuSection", "name": T(sec["titre"])}
+        if sec.get("sous_titre"):
+            s["description"] = T(sec["sous_titre"])
+        items = []
+        for b in sec.get("blocs", []):
+            for p in b.get("pots", []) + b.get("produits", []):
+                desc = [T(p.get("detail") or p.get("description"))]
+                desc += [(T(ln.get("titre")) + " : " if ln.get("titre") else "") + T(ln.get("texte")) for ln in p.get("lignes", [])]
+                desc += [" ".join(filter(None, (T(o.get("nom")), T(o.get("texte"))))) for o in p.get("options", [])]
+                it = {"@type": "MenuItem", "name": T(p["nom"])}
+                if any(desc):
+                    it["description"] = " ; ".join(d for d in desc if d)
+                if sec.get("halal") or p.get("halal"):
+                    it["suitableForDiet"] = halal
+                items.append(it)
+            for lst in b.get("listes", []):
+                s["description"] = s.get("description", "") + f" — {T(lst['titre'])} : " + ", ".join(T(i) for i in lst.get("elements", []))
+        if items:
+            s["hasMenuItem"] = items
+        sections.append(s)
+    return ld({"@context": "https://schema.org", "@type": "Menu",
+               "name": "Carte Yogurt Factory" if lang == "fr" else "Yogurt Factory menu",
+               "url": page_url(lang, "carte.html"), "inLanguage": lang,
+               "description": "Carte indicative du réseau Yogurt Factory. Les prix sont fixés et affichés par chaque boutique." if lang == "fr"
+               else "Indicative menu of the Yogurt Factory network. Prices are set and displayed by each store.",
+               "hasMenuSection": sections})
+
+
+# ---- Fidélité ----------------------------------------------------------------
+def load_rewards():
+    data = read_json(CONTENT / "fidelite.json").get("recompenses", [])
+    pts = [r.get("points") for r in data]
+    if not data or not all(isinstance(p, int) and p > 0 for p in pts) or pts != sorted(pts):
+        fail("contenu/fidelite.json : chaque récompense doit avoir un nombre de points entier, du plus petit au plus grand.")
+    return data
+
+
+def rewards_html(rewards, lang):
+    return "\n        ".join(
+        f'<li class="reward" data-points="{r["points"]}"><span class="pts-badge">{r["points"]}<small>points</small></span>'
+        f'<b>{html.escape(tr(r, lang))}</b><span class="state"></span></li>' for r in rewards)
+
+
+def data_js(settings, countries, stores):
+    """assets/js/data.js : seul fichier JS généré, lu par main.js."""
+    dump = lambda v: json.dumps(v, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")   # noqa: E731
+    return ("/* Généré par build.py depuis contenu/ : ne pas modifier à la main. */\n"
+            f"window.YF_SETTINGS={dump(settings)};\n"
+            f"window.YF_COUNTRIES={dump([{'name': c['name'], 'en': c['en']} for c in countries])};\n"
+            f"window.YF_STORES={dump(stores)};\n")
 
 
 class TextExtractor(HTMLParser):
@@ -390,6 +751,40 @@ def build_images():
     og.convert("RGB").save(DIST / "images" / "og-image.jpg", quality=84, optimize=True)
 
 
+def optimize_images():
+    """Allège les photos publiées : 1600 px de large au plus, WebP recompressé.
+    Les photos de boutiques déposées en JPG/PNG sont converties en WebP 800 px."""
+    saved = 0
+    for f in (DIST / "images").rglob("*"):
+        if f.suffix.lower() not in PHOTO_EXT or f.parent.name == "icons" or f.name.startswith(("logo", "og-")):
+            continue
+        store = f.parent.name == "boutiques"
+        if store and f.suffix.lower() != ".webp":
+            target = f.with_suffix(".webp")
+        elif f.suffix.lower() == ".webp" and (f.stat().st_size > 250_000 or store):
+            target = f
+        else:
+            continue
+        before = f.stat().st_size
+        with Image.open(f) as im:
+            im.load()
+            max_w = 800 if store else 1600
+            if im.width > max_w:
+                im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
+            im = im.convert("RGBA" if im.mode in ("RGBA", "LA", "P") else "RGB")
+            tmp = target.with_name(target.stem + ".tmp.webp")
+            im.save(tmp, "WEBP", quality=80, method=6)
+        if target == f and tmp.stat().st_size >= before:
+            tmp.unlink()
+            continue
+        if target != f:
+            f.unlink()
+        tmp.replace(target)
+        saved += before - target.stat().st_size
+    if saved > 0:
+        print(f"✓ images allégées : {saved / 1024:.0f} Ko gagnés")
+
+
 # ---- Fichiers pour moteurs de recherche et agents IA ------------------------
 ROBOTS = """# Yogurt Factory — robots.txt
 # Tous les moteurs de recherche et assistants IA sont les bienvenus.
@@ -433,13 +828,13 @@ Sitemap: {site}/sitemap.xml
 
 LLMS_INTRO = """# Yogurt Factory
 
-> Yogurt Factory (« la Facto ») est le leader français du frozen yogurt : glace au yaourt 0 % de matières grasses ou sundae vanille, servie avec le plus gros bar à toppings de France (36 toppings et 11 coulis à volonté, tant que ça rentre dans le pot). Enseigne créée en 2011 par Ouriel Hodara et Emmanuel Tedesco, réseau de franchise depuis 2016, 90 points de vente dans 10 pays.
+> Yogurt Factory (« la Facto ») est le leader français du frozen yogurt : glace au yaourt 0 % de matières grasses ou sundae vanille, servie avec le plus gros bar à toppings de France ({toppings} toppings et {coulis} coulis à volonté, tant que ça rentre dans le pot). Enseigne créée en 2011 par Ouriel Hodara et Emmanuel Tedesco, réseau de franchise depuis 2016, {stores} boutiques référencées sur le site.
 
 Informations clés :
 - Produits : glace au yaourt 0 % MG, sundae vanille, pots Le Mignon (110 g), Le Beau (160 g), Le Magnifique (220 g), Le Superbe (350 g, à partager), Le Parfait (180 g), Le Trognon (90 g, moins de 10 ans) ; bubble waffles, gaufres liégeoises, crêpes, donuts ; bubble tea, smoothies, milkshakes, thés glacés, citronnade, granités ; cafés frappés, boissons chaudes, matcha, ube.
 - Halal : les glaces (yaourt et sundae vanille) et les bubble waffles sont halal ; lait pasteurisé et stérilisé. Les bonbons Tagada, Schtroumpfs et Marshmallow contiennent de la gélatine de porc.
 - Prix : fixés et affichés par chaque boutique (ils peuvent varier d'une boutique franchisée à l'autre) ; le site ne publie pas de prix.
-- Fidélité : 1 € dépensé = 1 point, avec le numéro de téléphone en caisse ou sur borne ; récompenses de 30 points (petit thé glacé) à 120 points (Le Superbe).
+- Fidélité : 1 € dépensé = 1 point, avec le numéro de téléphone en caisse ou sur borne ; récompenses : {rewards}.
 - Franchise : apport ≈ 30 000 €, droit d'entrée 20 000 € HT, kiosques de 15 à 25 m² ou boutiques de 30 à 60 m², contrat de 5 ans.
 - Réseaux sociaux : TikTok @yogurt_factory, Instagram @yogurtfactory, Facebook YogurtFactory.fr.
 
@@ -498,6 +893,13 @@ self.addEventListener("fetch", (e) => {
 
 # ---- Build ------------------------------------------------------------------
 def build():
+    # Contenu éditable : lu et vérifié avant de toucher à dist/ : une erreur laisse le site précédent intact
+    settings = load_settings()
+    countries = load_countries()
+    stores = load_stores(countries)
+    menu = load_menu()
+    rewards = load_rewards()
+
     # On vide dist/ sans supprimer le dossier lui-même (il peut être ouvert par un serveur local)
     DIST.mkdir(exist_ok=True)
     for child in DIST.iterdir():
@@ -507,12 +909,18 @@ def build():
     shutil.copytree(ROOT / "images", DIST / "images", ignore=shutil.ignore_patterns("src"))
     for f in (SRC / "static").iterdir():
         (shutil.copytree if f.is_dir() else shutil.copy2)(f, DIST / f.name)
+
+    (DIST / "assets/js/data.js").write_text(data_js(settings, countries, stores), encoding="utf-8")
+    for name in (".htaccess", "_headers"):
+        f = DIST / name
+        f.write_text(f.read_text(encoding="utf-8").replace("__CSP__", csp_string(settings)), encoding="utf-8")
+    optimize_images()
     (DIST / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
 
     # Minification + compatibilité navigateurs
     modern = True
     for rel, loader in [("assets/css/style.css", "css"), ("assets/css/fonts.css", "css"),
-                        ("assets/js/main.js", "js"), ("assets/js/stores.js", "js"), ("assets/js/prefs.js", "js")]:
+                        ("assets/js/main.js", "js"), ("assets/js/data.js", "js"), ("assets/js/prefs.js", "js")]:
         p = DIST / rel
         if not (modern and esbuild(p, loader)):
             modern = False
@@ -531,12 +939,11 @@ def build():
 
     versions = {k: fhash(DIST / p) for k, p in [
         ("v_css", "assets/css/style.css"), ("v_fonts", "assets/css/fonts.css"), ("v_prefs", "assets/js/prefs.js"),
-        ("v_main", "assets/js/main.js"), ("v_stores", "assets/js/stores.js")]}
+        ("v_main", "assets/js/main.js"), ("v_data", "assets/js/data.js")]}
     verification = "".join(f'<meta name="{n}" content="{v}">\n' for n, v in [
         ("google-site-verification", GOOGLE_SITE_VERIFICATION), ("msvalidate.01", BING_SITE_VERIFICATION),
         ("yandex-verification", YANDEX_VERIFICATION)] if v)
 
-    stores = load_stores()
     pot = (SRC / "partials" / "error-pot.svg").read_text(encoding="utf-8")
     pages, llm_pages, full_text = [], {"fr": [], "en": []}, []
     for lang, L in LANGS.items():
@@ -549,7 +956,13 @@ def build():
         footer = (SRC / "partials" / L["footer"]).read_text(encoding="utf-8")
         for page in sorted(src_dir.glob("*.html"), key=lambda p: (p.name != "index.html", p.name)):
             raw = page.read_text(encoding="utf-8")
-            raw = raw.replace("{{count:stores}}", str(len(stores))).replace("{{count:cities}}", str(len({s["city"] for s in stores})))
+            if "{{carte:" in raw:
+                tabs, body = menu_html(menu, lang)
+                raw = raw.replace("{{carte:onglets}}", tabs).replace("{{carte:rubriques}}", body)
+            raw = (raw.replace("{{fidelite:recompenses}}", rewards_html(rewards, lang))
+                   .replace("{{fidelite:max}}", str(rewards[-1]["points"] + 10))
+                   .replace("{{count:stores}}", str(len(stores))).replace("{{count:cities}}", str(len({s["city"] for s in stores})))
+                   .replace("{{count:toppings}}", str(menu["counts"]["toppings"])).replace("{{count:coulis}}", str(menu["counts"]["coulis"])))
             m = re.match(r"\s*<!--(.*?)-->\s*", raw, re.S)
             meta = {}
             if m:
@@ -568,6 +981,8 @@ def build():
             extra = ""
             if "jsonld" in meta:
                 extra += (SRC / meta["jsonld"]).read_text(encoding="utf-8")
+            if page.name == "carte.html":
+                extra += menu_jsonld(menu, lang)
             if page.name == "boutiques.html":
                 extra += store_jsonld(stores)
                 raw = raw.replace('<div class="store-list"></div>', '<div class="store-list">' + store_cards(stores) + "</div>")
@@ -603,6 +1018,7 @@ def build():
                 url=url, site=SITE_URL, extra_head=extra, verification=verification, alternates=alternates,
                 html_lang=L["html"], og_locale=L["locale"], og_locale_alt=LANGS[other]["locale"],
                 data_base=f' data-base="{BASE}"' if BASE else "",
+                csp=csp_string(settings, meta=True),
                 twitter_labels=(
                     '<meta name="twitter:label1" content="Stores">\n<meta name="twitter:data1" content="90 locations in 10 countries">\n'
                     '<meta name="twitter:label2" content="Loyalty">\n<meta name="twitter:data2" content="€1 spent = 1 point">') if lang == "en" else (
@@ -612,6 +1028,7 @@ def build():
                 robots="noindex, follow" if (is404 or BASE) else "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
                 **versions,
             ) + nav + '<main id="main">\n' + raw.strip() + "\n</main>\n" + foot + FOOT.format(**versions)
+            out = re.sub(r"<!--(?!\[if).*?-->\s*", "", out, flags=re.S)   # aucun commentaire de travail en ligne
             if BASE:   # chemins absolus « /… » → « /sous-dossier/… »
                 out = re.sub(r'(href|src|data-src)="/(?!/)', lambda mm: f'{mm.group(1)}="{BASE}/', out)
             leftovers = re.findall(r"\{\{[^}]+\}\}", out)
@@ -626,7 +1043,7 @@ def build():
 
     # Service worker (hors connexion + cache)
     precache = ["/hors-ligne.html", "/en/offline.html", f"/assets/css/style.css?v={versions['v_css']}", f"/assets/css/fonts.css?v={versions['v_fonts']}",
-                f"/assets/js/main.js?v={versions['v_main']}", f"/assets/js/stores.js?v={versions['v_stores']}",
+                f"/assets/js/main.js?v={versions['v_main']}", f"/assets/js/data.js?v={versions['v_data']}",
                 f"/assets/js/prefs.js?v={versions['v_prefs']}", "/images/logo.png",
                 "/assets/fonts/poppins-400-normal-latin.woff2", "/assets/fonts/montserrat-100-900-normal-latin.woff2",
                 "/assets/fonts/lobster-400-normal-latin.woff2"]
@@ -659,12 +1076,14 @@ def build():
     # robots.txt, llms.txt, llms-full.txt
     (DIST / "robots.txt").write_text(ROBOTS.format(site=SITE_URL), encoding="utf-8")
     llm_list = "\n".join(llm_pages["fr"]) + ("\n\n## English version\n" + "\n".join(llm_pages["en"]) if llm_pages["en"] else "")
-    (DIST / "llms.txt").write_text(LLMS_INTRO.format(site=SITE_URL, pages=llm_list), encoding="utf-8")
+    facts = dict(site=SITE_URL, pages=llm_list, stores=len(stores), toppings=menu["counts"]["toppings"], coulis=menu["counts"]["coulis"],
+                 rewards=", ".join(f"{r['points']} points = {r['fr']}" for r in rewards))
+    (DIST / "llms.txt").write_text(LLMS_INTRO.format(**facts), encoding="utf-8")
     store_lines = "\n".join(
-        f"- {s['name']} ({s['country']}) : {s['center']}, {s['address']}, {s.get('zip', '')} {s['city']} — {s['hours']}"
+        f"- {s['name']} ({s['country']}) : {', '.join(filter(None, (s['center'], s['address'])))}, {s['zip']} {s['city']} — {s['hours']}"
         + (f" — tél. {s['phone']}" if s.get("phone") else "") for s in stores)
     (DIST / "llms-full.txt").write_text(
-        LLMS_INTRO.format(site=SITE_URL, pages=llm_list) + "".join(full_text)
+        LLMS_INTRO.format(**facts) + "".join(full_text)
         + f"\n\n---\n\n# Liste des boutiques ({len(stores)})\n\n" + store_lines + "\n", encoding="utf-8")
     print("✓ sitemap.xml, robots.txt, llms.txt, llms-full.txt, icônes, image de partage")
 
@@ -674,6 +1093,8 @@ def build():
 
 
 if __name__ == "__main__":
+    for stream in (sys.stdout, sys.stderr):
+        stream.reconfigure(encoding="utf-8", errors="replace")   # accents et symboles dans la console Windows
     built = build()
     if "--indexnow" in sys.argv:
         indexnow(built + [SITE_URL + "/llms.txt"])

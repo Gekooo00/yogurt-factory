@@ -1,0 +1,13 @@
+{
+  "nom": "Paris Gare Montparnasse",
+  "centre": "Gare Montparnasse, hall 1, niveau 2",
+  "adresse": "17 boulevard de Vaugirard",
+  "code_postal": "75015",
+  "ville": "Paris",
+  "region": "Île-de-France",
+  "pays": "France",
+  "horaires": "Lun–sam 7h–20h · dim 10h–20h",
+  "telephone": "",
+  "lat": 48.84048,
+  "lng": 2.32084
+}

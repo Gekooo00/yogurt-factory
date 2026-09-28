@@ -1,0 +1,13 @@
+{
+  "nom": "La Rochelle – Centre",
+  "centre": "Centre-ville",
+  "adresse": "14 rue du Temple",
+  "code_postal": "17000",
+  "ville": "La Rochelle",
+  "region": "Nouvelle-Aquitaine",
+  "pays": "France",
+  "horaires": "Lun–sam 12h–18h45",
+  "telephone": "05 46 55 43 11",
+  "lat": 46.15883,
+  "lng": -1.15246
+}

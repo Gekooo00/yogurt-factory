@@ -1,0 +1,13 @@
+{
+  "nom": "Cherbourg",
+  "centre": "Les Eléis",
+  "adresse": "Quai de l'Entrepôt",
+  "code_postal": "50100",
+  "ville": "Cherbourg-en-Cotentin",
+  "region": "Normandie",
+  "pays": "France",
+  "horaires": "Lun–sam 10h30–18h30",
+  "telephone": "02 33 45 07 45",
+  "lat": 49.63516,
+  "lng": -1.61982
+}

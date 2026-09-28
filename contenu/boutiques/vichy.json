@@ -1,0 +1,13 @@
+{
+  "nom": "Vichy",
+  "centre": "Les 4 Chemins",
+  "adresse": "35 rue Lucas",
+  "code_postal": "03200",
+  "ville": "Vichy",
+  "region": "Auvergne-Rhône-Alpes",
+  "pays": "France",
+  "horaires": "Mar–sam 9h30–19h · dim–lun 14h–19h",
+  "telephone": "",
+  "lat": 46.1266,
+  "lng": 3.42204
+}
