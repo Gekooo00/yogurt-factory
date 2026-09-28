@@ -9,5 +9,7 @@
   "horaires": "Lun–sam 9h30–20h",
   "telephone": "",
   "lat": 47.20563,
-  "lng": -1.53481
+  "lng": -1.53481,
+  "uber_eats": "https://www.ubereats.com/fr/store/yogurt-factory-nantes-beaulieu/qs6mdNUSV3ytlidvwGEJfw",
+  "deliveroo": "https://deliveroo.fr/fr/menu/nantes/nantes-ile-de-nantes/yogurt-factory-nantes-beaulieu"
 }

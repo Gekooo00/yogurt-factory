@@ -9,7 +9,7 @@
       "produits": [
         {
           "nom": "Bubble Tea",
-          "image": "images/menu/bubble-tea.webp",
+          "image": "images/bubble-tea.webp",
           "badge": { "fr": "Tendance", "en": "Trending" },
           "lignes": [
             { "titre": { "fr": "1. Le sirop", "en": "1. The syrup" }, "texte": "{{liste:sirops-fruites}}" },
@@ -29,7 +29,7 @@
         },
         {
           "nom": "Milkshakes",
-          "image": "images/menu/milkshake.webp",
+          "image": "images/milkshakes.webp",
           "description": { "fr": "Glace vanille, lait et gourmandise", "en": "Vanilla ice cream, milk and a treat" },
           "lignes": [{ "texte": "{{Liste:milkshakes}}" }]
         },

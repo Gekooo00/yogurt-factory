@@ -31,14 +31,8 @@ jsonld: partials/jsonld-org.html
   <div class="stats reveal">
     <div class="stat"><b>90</b><span>points de vente</span></div>
     <div class="stat"><b>10</b><span>pays</span></div>
-    <div class="stat"><b>36</b><span>toppings à volonté</span></div>
+    <div class="stat"><b>{{count:toppings}}</b><span>toppings à volonté</span></div>
     <div class="stat"><b>2011</b><span>l'année de notre 1<sup>er</sup> pot</span></div>
-  </div>
-  <div class="quality reveal" style="margin-top:22px">
-    <div><span class="ico">0%</span><p style="margin:0"><b>0&nbsp;% de matières grasses</b><span>dans notre glace au yaourt</span></p></div>
-    <div><span class="ico">{{icon:halal}}</span><p style="margin:0"><b>Halal</b><span>glaces &amp; bubble waffles</span></p></div>
-    <div><span class="ico">🥛</span><p style="margin:0"><b>Lait pasteurisé &amp; stérilisé</b><span>qualité et sécurité avant tout</span></p></div>
-    <div><span class="ico">🍓</span><p style="margin:0"><b>Fruits frais</b><span>découpés chaque jour en boutique</span></p></div>
   </div>
 </div>
 
@@ -89,11 +83,11 @@ jsonld: partials/jsonld-org.html
         <div class="card-body"><span class="tag tag--pink">Nouvelle base</span><h3>Le Sundae vanille</h3><p>Toute la douceur de la vanille, à garnir de coulis et de toppings comme vos pots.</p></div>
       </a>
       <a class="card reveal" href="carte.html#gaufres">
-        <div class="card-media"><img src="images/menu/bubble-waffle.webp" alt="Bubble waffle garnie de glace et chocolat" width="470" height="550" loading="lazy"></div>
+        <div class="card-media"><img src="images/bubble-waffle.webp" alt="Bubble waffle garnie de glace et chocolat" width="800" height="800" loading="lazy"></div>
         <div class="card-body"><span class="tag tag--mint">Gourmandise</span><h3>Bubble Waffle</h3><p>La gaufre à bulles de Hong Kong&nbsp;: La Jolie ou La Délicieuse, avec glace et toppings.</p></div>
       </a>
       <a class="card reveal" href="carte.html#boissons">
-        <div class="card-media"><img src="images/menu/bubble-tea.webp" alt="Bubble tea aux perles fruitées" width="330" height="380" loading="lazy"></div>
+        <div class="card-media"><img src="images/bubble-tea.webp" alt="Bubble tea aux perles fruitées" width="800" height="800" loading="lazy"></div>
         <div class="card-body"><span class="tag tag--blue">9 perles au choix</span><h3>Bubble Tea</h3><p>8 sirops, 9 parfums de boba&nbsp;: des dizaines de combinaisons fruitées.</p></div>
       </a>
       <a class="card reveal" href="carte.html#cafes">
@@ -129,13 +123,14 @@ jsonld: partials/jsonld-org.html
   <div class="wrap center reveal">
     <span class="eyebrow">Nos boutiques</span>
     <h2>Il y a sûrement une Facto <span class="script">près de chez vous</span></h2>
-    <p class="lead">Paris, Lyon, Lille, Nice, Bordeaux, Nantes, Strasbourg… mais aussi Liège, Luxembourg, Saint-Sébastien, Libreville, Kuala Lumpur ou Tachkent.</p>
+    <p class="lead">{{count:stores}} adresses en France et dans le monde, de Paris à Kuala Lumpur. Sur place, à emporter… ou livré chez vous.</p>
     <div class="fav-store" id="fav-store" hidden></div>
     <form class="search" data-store-search role="search" style="margin-top:28px">
       <label class="sr-only" for="home-q">Ville ou code postal</label>
       <input id="home-q" type="search" placeholder="Ville, code postal, centre commercial…" autocomplete="off">
       <button class="btn btn--red" type="submit">Rechercher</button>
     </form>
+    <p class="delivery-line">🛵 Envie de rester au chaud&nbsp;? <a href="boutiques.html?livraison=1#liste">Voir les boutiques qui livrent</a> avec Uber Eats, Deliveroo ou Takeaway.</p>
   </div>
 </section>
 
@@ -187,44 +182,23 @@ jsonld: partials/jsonld-org.html
   </div>
 </section>
 
-<section class="section" id="livraison">
-  <div class="wrap split split--rev">
-    <div class="split-media reveal">
-      <img src="images/pots-duo.webp" alt="Deux pots de glace au yaourt garnis de fruits et de chocolat" width="667" height="541" loading="lazy" style="box-shadow:none">
-    </div>
-    <div class="reveal">
-      <span class="eyebrow">Livrez-moi&nbsp;!</span>
-      <h2>Trop la flemme de sortir&nbsp;? <span class="script">On arrive.</span></h2>
-      <p class="lead">Dans de nombreuses villes, vos pots, donuts et boissons Yogurt Factory se commandent en quelques clics sur vos applis de livraison préférées.</p>
-      <div class="delivery">
-        <a href="https://www.ubereats.com/fr/search?q=Yogurt%20Factory" target="_blank" rel="noopener"><span class="dot" style="background:#06c167"></span>Uber Eats</a>
-        <a href="https://deliveroo.fr/fr/" target="_blank" rel="noopener"><span class="dot" style="background:#00ccbc"></span>Deliveroo</a>
-        <a href="https://www.just-eat.fr/" target="_blank" rel="noopener"><span class="dot" style="background:#ff8000"></span>Just Eat</a>
-      </div>
-      <p class="note">Disponibilité selon les boutiques et les zones de livraison.</p>
-    </div>
-  </div>
-</section>
-
 <section class="section section--white">
   <div class="wrap">
-    <div class="reveal" style="max-width:720px;margin-bottom:28px">
+    <div class="section-head reveal">
       <div>
-        <span class="eyebrow">Nos réseaux</span>
-        <h2>Rejoignez la <span class="script">team Facto</span></h2>
-        <p class="lead" style="margin:0">Nouveautés, sketchs, jeux-concours, ouvertures de boutiques… Plus de 420&nbsp;000 personnes nous suivent déjà sur TikTok.</p>
+        <span class="eyebrow">Actus</span>
+        <h2>Quoi de neuf à la <span class="script">Facto</span>&nbsp;?</h2>
       </div>
+      <a class="link-more" href="actualites.html">Toutes les actus →</a>
     </div>
-    <div class="socials-big reveal" style="margin-bottom:22px">
+    {{actus:dernieres}}
+    <div class="follow reveal">
+      <p><b>Suivez-nous</b> pour les nouveautés, les jeux-concours et les ouvertures en avant-première.</p>
+      <div class="socials-big">
       <a class="sb-tiktok" href="https://www.tiktok.com/@yogurt_factory" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.4v13.4a3 3 0 1 1-3-3c.3 0 .6 0 .9.1V9a6.5 6.5 0 1 0 5.5 6.4V8.7a8 8 0 0 0 4.6 1.5V6.8A4.6 4.6 0 0 1 16.6 2z"/></svg><span>TikTok<small>@yogurt_factory · 420k+ abonnés</small></span></a>
       <a class="sb-insta" href="https://www.instagram.com/yogurtfactory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span>Instagram<small>@yogurtfactory</small></span></a>
       <a class="sb-fb" href="https://www.facebook.com/YogurtFactory.fr/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2.3V2.2L14.2 2C10.8 2 10 4.4 10 6.1v2.4H7.6V12H10v10h4V12h3.1l.4-3.5H14z"/></svg><span>Facebook<small>YogurtFactory.fr</small></span></a>
     </div>
-    <div class="social-grid reveal">
-      <img src="images/topping-smarties.webp" alt="Pot de glace et bonbons" loading="lazy" width="1600" height="1068">
-      <img src="images/pot-magnifique.webp" alt="Pot Le Magnifique à la mangue et aux fruits rouges" loading="lazy" width="371" height="371">
-      <img src="images/pot-framboise.webp" alt="Pot à la framboise" loading="lazy" width="523" height="778">
-      <img src="images/video-cover.webp" alt="Intérieur d'une boutique Yogurt Factory" loading="lazy" width="1400" height="875">
     </div>
   </div>
 </section>

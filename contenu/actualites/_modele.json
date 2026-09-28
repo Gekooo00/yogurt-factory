@@ -1,0 +1,9 @@
+{
+  "titre": { "fr": "Titre de l'actualité", "en": "News title" },
+  "resume": { "fr": "Une ou deux phrases affichées sur l'accueil et la page Actus.", "en": "One or two sentences." },
+  "texte": [
+    { "fr": "Paragraphe supplémentaire (facultatif, affiché uniquement sur la page Actus).", "en": "Optional extra paragraph." }
+  ],
+  "image": "images/boutique.webp",
+  "lien": { "url": "carte.html", "texte": { "fr": "En savoir plus", "en": "Learn more" } }
+}

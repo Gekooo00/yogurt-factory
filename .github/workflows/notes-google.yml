@@ -1,0 +1,37 @@
+# Met à jour chaque mois les notes Google des boutiques (outils/notes_google.py),
+# puis enregistre les fiches modifiées ; « Publier le site » se relance ensuite (déclencheur workflow_run).
+# Nécessite le secret GOOGLE_PLACES_API_KEY (Settings > Secrets and variables > Actions).
+# Sans ce secret, le workflow s'arrête proprement sans rien faire.
+name: Notes Google
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # le 1er de chaque mois à 6 h (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  notes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Mise à jour des notes
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: |
+          if [ -z "$GOOGLE_PLACES_API_KEY" ]; then echo "Secret GOOGLE_PLACES_API_KEY absent : rien à faire."; exit 0; fi
+          python outils/notes_google.py
+
+      - name: Enregistrement
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add contenu/boutiques
+          git diff --cached --quiet && echo "Aucune note modifiée." || (git commit -m "Notes Google mises à jour" && git push)

@@ -19,6 +19,9 @@
    Ce fichier est minifié par build.py : les commentaires ne sont pas publiés.
    ========================================================================== */
 
+/* Un élément masqué par l’attribut hidden le reste, quel que soit son style d’affichage */
+[hidden] { display: none !important; }
+
 :root {
   --red: #e3232b;
   --red-deep: #b3131b;
@@ -496,16 +499,6 @@ td:first-child { font-weight: 600; }
 .reveal.is-in { opacity: 1; transform: none; }
 .no-js .reveal { opacity: 1; transform: none; }
 
-/* Mobile sticky CTA ------------------------------------------------------ */
-.mobile-cta { display: none; }
-@media (max-width: 640px) {
-  .mobile-cta {
-    display: flex; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 40; gap: 8px;
-    transform: translateY(120%); transition: transform .25s ease;
-  }
-  .mobile-cta.is-visible { transform: none; }
-  .mobile-cta .btn { flex: 1; box-shadow: var(--shadow); padding: .9em 1em; }
-}
 
 .steps--4 { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 960px) { .steps--4 { grid-template-columns: repeat(2, 1fr); row-gap: 44px; }
@@ -621,7 +614,7 @@ td:first-child { font-weight: 600; }
   background: var(--blue); color: #fff; cursor: pointer; display: grid; place-items: center; box-shadow: var(--shadow);
 }
 .a11y-btn svg { width: 28px; height: 28px; }
-@media (max-width: 640px) { .a11y-btn { bottom: 80px; width: 46px; height: 46px; }
+@media (max-width: 640px) { .a11y-btn { width: 46px; height: 46px; }
 }
 .a11y-panel {
   position: fixed; left: 16px; bottom: 80px; z-index: 61; width: min(340px, calc(100vw - 32px)); max-height: calc(100vh - 110px); overflow-y: auto;
@@ -783,7 +776,7 @@ html.protect img { -webkit-user-drag: none; }
 @media (hover: none) { .product:hover, a.card:hover, .btn:hover { transform: none; }
 }
 @media print {
-  .topbar, .site-header, .site-footer, .mobile-cta, .to-top, .a11y-btn, .a11y-panel, .menu-tabs, .store-map, .wave { display: none !important; }
+  .topbar, .site-header, .site-footer, .mobile-dock, .to-top, .a11y-btn, .a11y-panel, .menu-tabs, .store-map, .wave { display: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
   body { background: #fff; }
 }
@@ -934,7 +927,6 @@ html.protect img { -webkit-user-drag: none; }
 @media (max-height: 500px) and (orientation: landscape) {
   .site-header { position: relative; }
   .menu-nav { top: 0; }
-  .mobile-cta { display: none; }
   .hero-visual { max-width: 300px; }
 }
 /* Écrans tactiles : zones de clic confortables */
@@ -943,7 +935,6 @@ html.protect img { -webkit-user-drag: none; }
 }
 /* Encoche iPhone */
 @supports (padding: max(0px)) {
-  .mobile-cta { left: max(12px, env(safe-area-inset-left)); right: max(12px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); }
   .a11y-btn { left: max(16px, env(safe-area-inset-left)); }
 }
 /* Anciens navigateurs sans aspect-ratio */
@@ -1022,7 +1013,6 @@ h1, h2, h3 { overflow-wrap: break-word; -webkit-hyphens: auto; hyphens: auto; }
 /* Écrans doubles l'un au-dessus de l'autre (pliable en mode « ordinateur ») :
    l'en-tête reste en haut, on évite que les éléments fixes chevauchent la pliure. */
 @media (vertical-viewport-segments: 2) {
-  .mobile-cta { bottom: 12px; }
   .site-header { position: relative; }
   .menu-nav { top: 0; }
   .hero, .page-hero { min-height: env(viewport-segment-height 0 0, 50vh); }
@@ -1174,7 +1164,6 @@ html.tb-hidden .topbar { display: none; }
 /* Éléments flottants : ne cachent jamais la fin de page */
 @media (max-width: 640px) {
   .site-footer { padding-bottom: 96px; }
-  .mobile-cta.is-hidden-by-footer { transform: translateY(140%); }
 }
 .a11y-btn { transition: transform .2s ease, opacity .2s ease; }
 .a11y-btn:not(:hover):not(:focus-visible) { opacity: .88; }
@@ -1217,3 +1206,116 @@ html.tb-hidden .topbar { display: none; }
 .lang-hint button { background: transparent; border: 0; color: #fff; font-size: 1.2rem; cursor: pointer; opacity: .7; width: 28px; height: 28px; }
 @media (max-width: 640px) { .lang-hint { bottom: 84px; border-radius: 18px; } }
 @media (max-width: 380px) { .topbar a { display: none; } .topbar { cursor: pointer; padding-right: 40px; font-size: .78rem; } }
+
+/* ==========================================================================
+   8. Barre de raccourcis mobile, zones sûres (encoche, Dynamic Island), actualités
+   ========================================================================== */
+
+/* Barre de raccourcis : une pilule compacte à droite du bouton d'accessibilité.
+   Masquée par défaut ; main.js ajoute .is-visible selon le défilement.
+   Cachée par une translation qui inclut la zone du geste d'accueil iPhone,
+   pour qu'aucun bord ne dépasse en bas de page. */
+.mobile-dock { display: none; }
+@media (max-width: 640px) {
+  .mobile-dock {
+    --dock-bottom: max(16px, env(safe-area-inset-bottom));
+    display: flex; position: fixed; z-index: 40; bottom: var(--dock-bottom);
+    left: calc(max(16px, env(safe-area-inset-left)) + 56px); right: max(16px, env(safe-area-inset-right));
+    width: fit-content; max-width: calc(100vw - 88px); margin-inline: auto;
+    padding: 4px; gap: 4px; border-radius: 999px; background: rgba(255, 255, 255, .96); box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    transform: translateY(calc(100% + var(--dock-bottom) + 12px)); opacity: 0; visibility: hidden;
+    transition: transform .28s ease, opacity .2s ease, visibility 0s linear .28s;
+  }
+  .mobile-dock.is-visible { transform: none; opacity: 1; visibility: visible; transition: transform .28s ease, opacity .2s ease, visibility 0s; }
+  .mobile-dock a {
+    display: inline-flex; align-items: center; gap: 6px; min-height: 42px; padding: 0 14px; border-radius: 999px;
+    font-family: var(--font-display); font-weight: 700; font-size: .88rem; white-space: nowrap; color: var(--ink); text-decoration: none;
+  }
+  .mobile-dock a svg { width: 17px; height: 17px; flex: none; color: var(--red); }
+  .mobile-dock .dock-main { background: var(--red); color: #fff; }
+  .mobile-dock .dock-main svg { color: #fff; }
+  .a11y-btn { bottom: max(16px, env(safe-area-inset-bottom)); }
+  .lang-hint { bottom: calc(max(16px, env(safe-area-inset-bottom)) + 64px); }
+  .site-footer { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 340px) { .mobile-dock a { padding: 0 10px; font-size: .8rem; } }
+html.a11y-motion .mobile-dock { transition: none; }
+
+/* Zones sûres : en paysage, l'encoche ou la Dynamic Island occupent un côté de
+   l'écran (viewport-fit=cover) ; le contenu s'en écarte, les fonds restent pleine largeur. */
+@supports (padding: max(0px)) {
+  .wrap { padding-left: max(var(--gutter), env(safe-area-inset-left)); padding-right: max(var(--gutter), env(safe-area-inset-right)); }
+  .topbar { padding-left: max(44px, env(safe-area-inset-left)); padding-right: max(44px, env(safe-area-inset-right)); }
+  .to-top { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); }
+  .a11y-panel { left: max(16px, env(safe-area-inset-left)); }
+}
+/* Application installée sur l'écran d'accueil : la barre d'état ne recouvre pas l'en-tête */
+@media (display-mode: standalone) {
+  body { padding-top: env(safe-area-inset-top); }
+  .site-header { top: env(safe-area-inset-top); }
+}
+/* Hauteurs d'écran : unités « small / dynamic viewport » quand elles existent (barres du navigateur mobile) */
+@supports (height: 100svh) {
+  .err { min-height: calc(100svh - 110px); }
+  .a11y-panel { max-height: calc(100dvh - 110px); }
+}
+/* Téléphones en paysage : hauteur réduite, on compacte les grands blocs */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero { padding-top: 24px; }
+  .page-hero { padding-top: 28px; padding-bottom: 48px; }
+  .section { padding: 48px 0; }
+  .a11y-panel { max-height: calc(100vh - 40px); bottom: 12px; }
+  .mobile-dock { display: none; }
+}
+/* Tablettes en portrait : deux colonnes plutôt que quatre étroites */
+@media (orientation: portrait) and (min-width: 700px) and (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* En-tête de section avec lien « tout voir » */
+.section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap; margin-bottom: 32px; }
+.section-head h2 { margin-bottom: 0; }
+.link-more { font-family: var(--font-display); font-weight: 700; color: var(--red); text-decoration: none; white-space: nowrap; }
+.link-more:hover { text-decoration: underline; }
+
+/* Actualités */
+.news-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.news-card { display: flex; flex-direction: column; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-sm); min-width: 0; }
+.section--white .news-card { background: var(--cream); box-shadow: none; }
+.news-media { aspect-ratio: 16 / 10; background: linear-gradient(135deg, #ffe3e6, #fff3c4); display: grid; place-items: center; overflow: hidden; }
+.news-media img { width: 100%; height: 100%; object-fit: cover; }
+.news-emoji { font-size: 4rem; }
+.news-body { padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.news-body time { font-size: .8rem; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: .06em; }
+.news-body h3 { margin: 0; font-size: 1.2rem; }
+.news-body p { margin: 0; color: var(--ink-soft); }
+.news-more { margin-top: auto; padding-top: 6px; font-weight: 700; color: var(--red); text-decoration: none; }
+.news-more:hover { text-decoration: underline; }
+.news-page .news-list { grid-template-columns: 1fr; max-width: 860px; margin: 0 auto 32px; gap: 28px; }
+.news-page .news-card { flex-direction: row; scroll-margin-top: 110px; }
+.news-page .news-media { flex: 0 0 38%; aspect-ratio: auto; min-height: 220px; position: relative; }
+.news-page .news-media img { position: absolute; inset: 0; }
+.news-page .note { max-width: 860px; margin: 0 auto; }
+@media (max-width: 900px) { .news-list { grid-template-columns: repeat(2, 1fr); } .news-list > :nth-child(3) { display: none; } }
+@media (max-width: 640px) {
+  .news-list { grid-template-columns: 1fr; }
+  .news-list > :nth-child(3) { display: flex; }
+  .news-page .news-card { flex-direction: column; }
+  .news-page .news-media { flex: none; aspect-ratio: 16 / 10; min-height: 0; }
+  .news-page .news-media img { position: static; }
+}
+.news-page .news-list > :nth-child(3) { display: flex; }
+
+/* Réseaux sous les actus */
+.follow { margin-top: 48px; padding-top: 36px; border-top: 1px solid var(--line); display: grid; gap: 18px; }
+.follow p { margin: 0; color: var(--ink-soft); max-width: 60ch; }
+
+/* Livraison : ligne sous la recherche de l'accueil et fiches boutiques */
+.delivery-line { margin: 22px auto 0; color: var(--ink-soft); font-size: .98rem; max-width: 60ch; }
+.delivery-line a { color: var(--red); font-weight: 700; }
+.store .deliv { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; font-size: .86rem; margin-top: 2px; }
+.store .deliv span { color: var(--ink-soft); font-weight: 600; }
+.store .deliv a { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--ink); font-weight: 600; text-decoration: none; }
+.store .deliv a:hover { border-color: currentColor; }
+.store .deliv i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }

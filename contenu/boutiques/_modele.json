@@ -12,5 +12,7 @@
   "lng": 2.35222,
   "note_google": 4.6,
   "nombre_avis": 120,
-  "lien_google": "https://maps.app.goo.gl/xxxxxxxx"
+  "lien_google": "https://maps.app.goo.gl/xxxxxxxx",
+  "uber_eats": "https://www.ubereats.com/fr/store/yogurt-factory-xxxx/xxxxxxxx",
+  "deliveroo": "https://deliveroo.fr/fr/menu/ville/quartier/yogurt-factory-xxxx"
 }

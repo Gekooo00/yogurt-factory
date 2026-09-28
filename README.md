@@ -31,6 +31,7 @@ puis ouvrir http://localhost:8765
 | `_src/static/` | `.htaccess` (Apache), `_headers` / `_redirects` (Netlify), `security.txt` |
 | `assets/css/style.css` | Styles ; plan du fichier et variables de couleurs en tête |
 | `assets/js/main.js` | Comportements du site, textes affichés par le script (FR / EN) |
+| `outils/` | Scripts d’entretien (notes Google via l’API officielle) |
 | `build.py` | Générateur : lit et **vérifie** `contenu/`, fabrique les pages, la sécurité, le référencement |
 | `images/` | Photos ; `images/menu/` produits ; `images/boutiques/` photos des boutiques ; `images/src/` originaux (non publiés) |
 | `dist/` | Site généré, prêt à publier (ne jamais modifier à la main) |
@@ -52,6 +53,9 @@ La carte **n'affiche aucun prix** : chaque boutique fixe les siens (les franchis
 | Ajouter / retirer un topping, un coulis, un sirop, une perle | `contenu/carte/2-toppings.json` ou `contenu/carte/listes.json` |
 | Ajouter un produit à la carte | le fichier de la rubrique dans `contenu/carte/` |
 | Changer les récompenses fidélité | `contenu/fidelite.json` |
+| Publier une actualité | `contenu/actualites/` (un fichier daté par actu, modèle `_modele.json`) |
+| Ajouter un lien Uber Eats / Deliveroo / Takeaway | champs `uber_eats`, `deliveroo`, `takeaway` de la fiche boutique |
+| Mettre à jour les notes Google | automatique chaque mois avec le secret `GOOGLE_PLACES_API_KEY` (voir `outils/notes_google.py`) |
 | Changer l'adresse de réception d'un formulaire | `contenu/reglages.json` |
 | Modifier un texte de page | `_src/pages/…` **et** `_src/pages-en/…` |
 | Autoriser un service externe (vidéo, statistiques…) | dictionnaire `CSP` en haut de `build.py` |

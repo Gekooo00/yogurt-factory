@@ -1,0 +1,9 @@
+{
+  "titre": { "fr": "1 € dépensé = 1 point fidélité", "en": "€1 spent = 1 loyalty point" },
+  "resume": {
+    "fr": "Donnez votre numéro de téléphone en caisse ou sur la borne : vos points s'accumulent et se transforment en gourmandises offertes dès 30 points.",
+    "en": "Give your phone number at the till or kiosk: your points add up and turn into free treats from 30 points."
+  },
+  "image": "images/pot-magnifique.webp",
+  "lien": { "url": "fidelite.html", "texte": { "fr": "Découvrir les récompenses", "en": "See the rewards" } }
+}

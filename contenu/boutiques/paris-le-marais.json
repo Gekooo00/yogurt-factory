@@ -9,5 +9,7 @@
   "horaires": "Tous les jours 13h–minuit",
   "telephone": "09 80 51 35 73",
   "lat": 48.85902,
-  "lng": 2.35351
+  "lng": 2.35351,
+  "uber_eats": "https://www.ubereats.com/fr/store/yogurt-factory-le-marais/3ZHg26PYR0SewBqg5ytgLw",
+  "deliveroo": "https://deliveroo.fr/fr/menu/paris/4eme-hotel-de-ville/yogurt-factory"
 }

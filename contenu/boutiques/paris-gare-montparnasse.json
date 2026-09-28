@@ -9,5 +9,7 @@
   "horaires": "Lun–sam 7h–20h · dim 10h–20h",
   "telephone": "",
   "lat": 48.84048,
-  "lng": 2.32084
+  "lng": 2.32084,
+  "uber_eats": "https://www.ubereats.com/fr/store/yogurt-factory-montparnasse/CvD3wml4SlKjGRNOU4B88A",
+  "deliveroo": "https://deliveroo.fr/fr/menu/paris/Montparnasse/yogurt-factory-montparnasse"
 }

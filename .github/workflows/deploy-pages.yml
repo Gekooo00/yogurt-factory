@@ -8,6 +8,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_run:            # après la mise à jour mensuelle des notes Google
+    workflows: ["Notes Google"]
+    types: [completed]
 
 permissions:
   contents: write

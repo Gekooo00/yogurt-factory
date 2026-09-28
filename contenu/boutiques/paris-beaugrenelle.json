@@ -9,5 +9,7 @@
   "horaires": "Tous les jours 10h–21h",
   "telephone": "09 83 76 53 52",
   "lat": 48.84857,
-  "lng": 2.2825
+  "lng": 2.2825,
+  "uber_eats": "https://www.ubereats.com/fr/store/yogurt-factory-beaugrenelle/hmZWY1RIT3-R7B1Bk0eVBQ",
+  "deliveroo": "https://deliveroo.fr/fr/menu/paris/Zola/yogurt-factory-beaugrenelle"
 }

@@ -9,5 +9,7 @@
   "horaires": "Lun–sam 10h–20h",
   "telephone": "",
   "lat": 48.83673,
-  "lng": 2.23828
+  "lng": 2.23828,
+  "uber_eats": "https://www.ubereats.com/fr/store/yogurt-factory-boulogne/YfK1SWOWSeSJtETNU3eFpw",
+  "deliveroo": "https://deliveroo.fr/fr/menu/paris/boulogne-billancourt/yogurt-factory-boulogne"
 }

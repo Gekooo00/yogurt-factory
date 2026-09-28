@@ -1,0 +1,12 @@
+{
+  "titre": { "fr": "Un tout nouveau site pour la Facto", "en": "A brand-new website for the Facto" },
+  "resume": {
+    "fr": "Carte complète, recherche de boutique avec « Ouvert maintenant », programme fidélité et version anglaise : bienvenue sur le nouveau yogurtfactory.fr.",
+    "en": "Full menu, store finder with “Open now”, loyalty programme and an English version: welcome to the new yogurtfactory.fr."
+  },
+  "texte": [
+    { "fr": "Retrouvez toutes nos boutiques sur une carte interactive, avec leurs horaires, leur itinéraire et, quand elles livrent, leurs liens Uber Eats et Deliveroo.", "en": "Find all our stores on an interactive map, with opening hours, directions and, where they deliver, their Uber Eats and Deliveroo links." }
+  ],
+  "image": "images/boutique.webp",
+  "lien": { "url": "boutiques.html", "texte": { "fr": "Trouver ma Facto", "en": "Find my Facto" } }
+}

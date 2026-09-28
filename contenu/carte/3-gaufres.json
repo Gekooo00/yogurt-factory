@@ -9,7 +9,7 @@
       "produits": [
         {
           "nom": "Bubble Waffle",
-          "image": "images/menu/bubble-waffle.webp",
+          "image": "images/bubble-waffle.webp",
           "badge": { "fr": "Gourmandise", "en": "Indulgence" },
           "halal": true,
           "description": { "fr": "La gaufre à bulles de Hong Kong", "en": "The Hong Kong egg waffle" },
@@ -20,7 +20,7 @@
         },
         {
           "nom": { "fr": "Gaufres liégeoises", "en": "Liège waffles" },
-          "image": "images/menu/gaufre-liege.webp",
+          "image": "images/gaufre-liege.webp",
           "options": [
             { "nom": "La Liégeoise", "texte": { "fr": "nature (sucrée)", "en": "plain (sugared)" } },
             { "nom": "La Wallonne", "texte": { "fr": "coulis au choix", "en": "sauce of your choice" } },

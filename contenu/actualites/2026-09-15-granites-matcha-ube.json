@@ -1,0 +1,9 @@
+{
+  "titre": { "fr": "Granités, matcha et ube débarquent", "en": "Slushies, matcha and ube have landed" },
+  "resume": {
+    "fr": "Trois nouveautés à la carte : des granités cola, fraise et tropical blue, et des boissons gourmandes au matcha et à l'ube.",
+    "en": "Three new arrivals: cola, strawberry and tropical blue slushies, plus indulgent matcha and ube drinks."
+  },
+  "emoji": "🧊",
+  "lien": { "url": "carte.html#boissons", "texte": { "fr": "Voir la carte", "en": "See the menu" } }
+}

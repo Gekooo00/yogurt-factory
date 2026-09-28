@@ -9,5 +9,7 @@
   "horaires": "Tous les jours 10h–20h",
   "telephone": "01 45 89 35 42",
   "lat": 48.82973,
-  "lng": 2.35491
+  "lng": 2.35491,
+  "uber_eats": "https://www.ubereats.com/fr/store/yogurt-factory-italie-2/_fZ8qq07QPafzmyS-xKUKg",
+  "deliveroo": "https://deliveroo.fr/fr/menu/paris/13eme-butte-aux-cailles/yogurt-factory-italie-2"
 }

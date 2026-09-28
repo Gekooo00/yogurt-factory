@@ -14,6 +14,7 @@ Où modifier quoi :
     contenu/fidelite.json       récompenses du programme de fidélité
     contenu/pays.json           pays (ordre des pastilles, nom anglais, fuseau horaire)
     contenu/reglages.json       adresses des formulaires, protection du texte…
+    contenu/actualites/*.json   actualités (page Actus et les 3 dernières sur l'accueil)
     _src/pages/*.html           texte des pages en français (_src/pages-en/ : anglais, même nom de fichier)
     _src/partials/              en-tête, pied de page, données structurées communes
     _src/static/                fichiers copiés tels quels à la racine (.htaccess, _headers, security.txt…)
@@ -31,7 +32,7 @@ Chaque page commence par un bloc de réglages lu ici puis retiré :
 
 Balises remplacées dans les pages : {{count:stores}}, {{count:cities}}, {{count:toppings}},
 {{count:coulis}}, {{carte:onglets}}, {{carte:rubriques}}, {{fidelite:recompenses}},
-{{fidelite:max}}, {{icon:halal}}, {{pot:TEXTE}}, {{nav:x}}, {{alt_href}}.
+{{fidelite:max}}, {{actus:liste}}, {{actus:dernieres}}, {{icon:halal}}, {{pot:TEXTE}}, {{nav:x}}, {{alt_href}}.
 Une balise oubliée ou mal écrite arrête le build avec un message.
 """
 import hashlib
@@ -81,7 +82,7 @@ SLUGS_EN = {
     "carte.html": "menu.html", "fidelite.html": "loyalty.html", "boutiques.html": "stores.html", "recrutement.html": "careers.html",
     "mentions-legales.html": "legal-notice.html", "confidentialite.html": "privacy.html", "cgu.html": "terms.html",
     "accessibilite.html": "accessibility.html", "plan-du-site.html": "sitemap.html", "hors-ligne.html": "offline.html",
-    "merci.html": "thank-you.html",
+    "merci.html": "thank-you.html", "actualites.html": "news.html",
 }
 
 
@@ -125,7 +126,7 @@ def csp_string(settings, meta=False):
     return "; ".join((k + " " + v).strip() for k, v in policy.items() if not (meta and k in META_CSP_IGNORED))
 
 
-NAV_KEYS = ["concept", "carte", "fidelite", "boutiques", "franchise", "recrutement", "contact"]
+NAV_KEYS = ["concept", "carte", "fidelite", "boutiques", "actualites", "franchise", "recrutement", "contact"]
 ICONS = {
     "halal": '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">'
              '<path d="M13.5 3.2A9 9 0 1 0 20.8 16 7.2 7.2 0 1 1 13.5 3.2z"/>'
@@ -285,7 +286,13 @@ STORE_FIELDS = {   # clé du fichier JSON -> clé utilisée par le JavaScript du
     "nom": "name", "centre": "center", "adresse": "address", "code_postal": "zip", "ville": "city",
     "region": "region", "pays": "country", "horaires": "hours", "telephone": "phone", "lat": "lat", "lng": "lng",
     "note_google": "rating", "nombre_avis": "reviews", "lien_google": "googleUrl", "photo": "photo",
-    "fuseau_horaire": "tz",
+    "fuseau_horaire": "tz", "uber_eats": "uberEats", "deliveroo": "deliveroo", "takeaway": "takeaway",
+}
+# Liens de commande en ligne acceptés (sécurité : aucun autre domaine ne peut être affiché)
+DELIVERY_DOMAINS = {
+    "uber_eats": r"https://www\.ubereats\.com/",
+    "deliveroo": r"https://deliveroo\.(fr|be|co\.uk|es)/",
+    "takeaway": r"https://www\.takeaway\.com/",
 }
 STORE_REQUIRED = ("nom", "adresse", "ville", "region", "pays", "horaires")
 HOURS_FREE_TEXT = ("Horaires du centre", "Horaires saisonniers")   # affichés tels quels, sans « Ouvert / Fermé »
@@ -389,6 +396,9 @@ def load_stores(countries):
             fail(f"{where} : nombre_avis doit être un nombre entier (ex. 1234).")
         if data.get("lien_google") and not re.match(r"https://(www\.google\.[a-z.]+/maps|maps\.google\.[a-z.]+|maps\.app\.goo\.gl|goo\.gl/maps)/", data["lien_google"]):
             fail(f"{where} : lien_google doit être un lien Google Maps en https://.")
+        for key, pattern in DELIVERY_DOMAINS.items():
+            if data.get(key) and not re.match(pattern, data[key]):
+                fail(f"{where} : {key} doit être un lien vers la fiche de la boutique sur ce service (https://…).")
         hours = data["horaires"].strip()
         if hours not in HOURS_FREE_TEXT and not all(HOURS_RE.match(seg.strip()) for seg in hours.split("·")):
             print(f"  ! {where} : horaires « {hours} » non reconnus, la boutique s'affichera sans « Ouvert / Fermé ».")
@@ -585,6 +595,77 @@ def rewards_html(rewards, lang):
     return "\n        ".join(
         f'<li class="reward" data-points="{r["points"]}"><span class="pts-badge">{r["points"]}<small>points</small></span>'
         f'<b>{html.escape(tr(r, lang))}</b><span class="state"></span></li>' for r in rewards)
+
+
+# ---- Actualités ----------------------------------------------------------------
+MONTHS = {"fr": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+          "en": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
+
+
+def load_news():
+    """contenu/actualites/AAAA-MM-JJ-titre-court.json, les plus récentes d'abord. « _ » au début = brouillon non publié."""
+    news = []
+    for path in sorted((CONTENT / "actualites").glob("*.json"), reverse=True):
+        if path.name.startswith("_"):
+            continue
+        m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})-([a-z0-9-]+)", path.stem)
+        if not m:
+            fail(f"{rel(path)} : le nom doit être de la forme 2026-09-28-titre-court.json (date de publication au début).")
+        n = read_json(path)
+        for k in ("titre", "resume"):
+            if not n.get(k):
+                fail(f"{rel(path)} : le champ « {k} » est obligatoire.")
+        if n.get("image") and not (ROOT / n["image"]).is_file():
+            fail(f"{rel(path)} : l'image « {n['image']} » n'existe pas.")
+        if n.get("lien") and not re.match(r"(https://|[a-z0-9-]+\.html)", n["lien"].get("url", "")):
+            fail(f"{rel(path)} : lien.url doit être une page du site (ex. carte.html#boissons) ou une adresse https://.")
+        n["date"], n["id"], n["_file"] = date(int(m[1]), int(m[2]), int(m[3])), m[4], rel(path)
+        news.append(n)
+    return news
+
+
+def news_date(d, lang):
+    return f"{d.day} {MONTHS[lang][d.month - 1]} {d.year}" if lang == "fr" else f"{d.day} {MONTHS[lang][d.month - 1]} {d.year}"
+
+
+def news_link(n, lang):
+    url = n["lien"]["url"]
+    if not url.startswith("https://") and lang == "en":
+        page, _, anchor = url.partition("#")
+        url = slug("en", page) + ("#" + anchor if anchor else "")
+    ext = ' target="_blank" rel="noopener"' if url.startswith("https://") else ""
+    return f'<a class="news-more" href="{html.escape(url)}"{ext}>{html.escape(tr(n["lien"]["texte"], lang))} →</a>'
+
+
+def news_card(n, lang, full):
+    e = html.escape
+    media = image_tag(n["image"], tr(n["titre"], lang), n["_file"]) if n.get("image") else         f'<span class="news-emoji" aria-hidden="true">{n.get("emoji", "🍦")}</span>'
+    body = [f'<time datetime="{n["date"].isoformat()}">{news_date(n["date"], lang)}</time>',
+            f'<h3>{e(tr(n["titre"], lang))}</h3>', f'<p>{e(tr(n["resume"], lang))}</p>']
+    if full:
+        body += [f"<p>{e(tr(par, lang))}</p>" for par in n.get("texte", [])]
+    if n.get("lien"):
+        body.append(news_link(n, lang))
+    tag = "article"
+    ident = f' id="{n["id"]}"' if full else ""
+    return f'<{tag} class="news-card"{ident}><div class="news-media">{media}</div><div class="news-body">{"".join(body)}</div></{tag}>'
+
+
+def news_html(news, lang, limit=None, full=False):
+    items = news[:limit] if limit else news
+    if not items:
+        return ""
+    return '<div class="news-list">' + "".join(news_card(n, lang, full) for n in items) + "</div>"
+
+
+def news_jsonld(news, lang):
+    return ld({"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "item": {
+            "@type": "NewsArticle", "headline": tr(n["titre"], lang), "description": tr(n["resume"], lang),
+            "datePublished": n["date"].isoformat(), "url": page_url(lang, "actualites.html") + "#" + n["id"],
+            "publisher": {"@id": SITE_URL + "/#organization"},
+            **({"image": SITE_URL + "/" + n["image"]} if n.get("image") else {})}}
+        for i, n in enumerate(news, 1)]})
 
 
 def data_js(settings, countries, stores):
@@ -899,6 +980,7 @@ def build():
     stores = load_stores(countries)
     menu = load_menu()
     rewards = load_rewards()
+    news = load_news()
 
     # On vide dist/ sans supprimer le dossier lui-même (il peut être ouvert par un serveur local)
     DIST.mkdir(exist_ok=True)
@@ -960,6 +1042,8 @@ def build():
                 tabs, body = menu_html(menu, lang)
                 raw = raw.replace("{{carte:onglets}}", tabs).replace("{{carte:rubriques}}", body)
             raw = (raw.replace("{{fidelite:recompenses}}", rewards_html(rewards, lang))
+                   .replace("{{actus:liste}}", news_html(news, lang, full=True))
+                   .replace("{{actus:dernieres}}", news_html(news, lang, limit=3))
                    .replace("{{fidelite:max}}", str(rewards[-1]["points"] + 10))
                    .replace("{{count:stores}}", str(len(stores))).replace("{{count:cities}}", str(len({s["city"] for s in stores})))
                    .replace("{{count:toppings}}", str(menu["counts"]["toppings"])).replace("{{count:coulis}}", str(menu["counts"]["coulis"])))
@@ -983,6 +1067,8 @@ def build():
                 extra += (SRC / meta["jsonld"]).read_text(encoding="utf-8")
             if page.name == "carte.html":
                 extra += menu_jsonld(menu, lang)
+            if page.name == "actualites.html" and news:
+                extra += news_jsonld(news, lang)
             if page.name == "boutiques.html":
                 extra += store_jsonld(stores)
                 raw = raw.replace('<div class="store-list"></div>', '<div class="store-list">' + store_cards(stores) + "</div>")

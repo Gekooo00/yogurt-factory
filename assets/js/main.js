@@ -60,6 +60,7 @@ const I18N = {
     typeHome: ["Trouver une Facto… ex. ", ["Paris", "Marseille", "Lyon", "Toulouse", "Nantes"]],
     formFail: (m) => "Oups, l'envoi a échoué. Réessayez ou écrivez-nous à " + m + ".",
     formMail: (m) => "Votre messagerie va s'ouvrir avec votre message pré-rempli : il ne reste qu'à cliquer sur « Envoyer ». Rien ne s'ouvre ? Écrivez-nous directement à " + m + ".",
+    delivery: "🛵 Livraison",
     country: (c) => c, hours: (h) => h
   },
   en: {
@@ -87,6 +88,7 @@ const I18N = {
     typeHome: ["Find a Facto… e.g. ", ["Paris", "Lyon", "Brussels", "Luxembourg", "Nice"]],
     formFail: (m) => "Oops, sending failed. Please try again or email us at " + m + ".",
     formMail: (m) => "Your email app will open with your message ready: just click “Send”. Nothing opens? Email us directly at " + m + ".",
+    delivery: "🛵 Delivery",
     country: (c) => c === "Tous" ? "All" : ((window.YF_COUNTRIES || []).find((x) => x.name === c) || {}).en || c,
     hours: (h) => String(h)
       .replace(/Tous les jours/gi, "Daily").replace(/Horaires du centre/gi, "Mall opening hours").replace(/Horaires saisonniers/gi, "Seasonal hours")
@@ -119,14 +121,12 @@ const store = {
   const header = $(".site-header");
   const burger = $(".burger");
   const nav = $("#nav");
-  const mobileCta = $(".mobile-cta");
   const toTop = $(".to-top");
 
   let ticking = false;
   const onScroll = () => {
     const y = window.scrollY;
     header && header.classList.toggle("is-scrolled", y > 8);
-    mobileCta && mobileCta.classList.toggle("is-visible", y > 500);
     toTop && toTop.classList.toggle("is-visible", y > 900);
     ticking = false;
   };
@@ -146,21 +146,44 @@ const store = {
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") setOpen(false); });
     document.addEventListener("click", (e) => { if (nav.classList.contains("is-open") && !e.target.closest(".site-header")) setOpen(false); });
     window.matchMedia("(min-width: 1181px)").addEventListener("change", () => setOpen(false));
+    window.matchMedia("(orientation: portrait)").addEventListener("change", () => setOpen(false));   // téléphone tourné
   }
 
   $$("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });
 })();
 
-/* ---- Bandeau refermable & bouton mobile masqué en bas de page ------------ */
+/* ---- Barre de raccourcis mobile (« Trouver une Facto » / « La carte ») ------
+   Visible après le haut de page ; s'efface quand on fait défiler vers le bas
+   (lecture), revient dès qu'on remonte ou qu'on s'arrête, et disparaît
+   entièrement au niveau du pied de page. Le lien de la page en cours est retiré. */
+(() => {
+  const dock = $(".mobile-dock");
+  if (!dock) return;
+  const here = location.pathname.replace(/\/$/, "/index.html");
+  $$("a", dock).forEach((a) => { if (a.pathname === here) a.remove(); });
+  if (!$("a", dock)) { dock.remove(); return; }
+  dock.classList.toggle("is-single", $$("a", dock).length === 1);
+  const foot = $(".site-footer");
+  let lastY = window.scrollY, idle;
+  const atFooter = () => !!foot && foot.getBoundingClientRect().top < window.innerHeight - 24;
+  const set = (show) => dock.classList.toggle("is-visible", show && !atFooter());
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+    if (y < 360) set(false);
+    else if (y > lastY + 6) set(false);
+    else if (y < lastY - 6) set(true);
+    lastY = y;
+    clearTimeout(idle);
+    idle = setTimeout(() => set(window.scrollY >= 360), 650);
+  }, { passive: true });
+})();
+
+/* ---- Bandeau d'annonce refermable ------------------------------------------ */
 (() => {
   const close = $(".tb-close");
   close && close.addEventListener("click", () => { document.documentElement.classList.add("tb-hidden"); store.set("yf-tb", 1); });
   const bar = $("#topbar"), link = bar && $("a", bar);
   bar && link && bar.addEventListener("click", (e) => { if (!e.target.closest("a, button")) location.href = link.href; });
-  const cta = $(".mobile-cta"), foot = $(".site-footer");
-  if (cta && foot && "IntersectionObserver" in window) {
-    new IntersectionObserver(([en]) => cta.classList.toggle("is-hidden-by-footer", en.isIntersecting), { threshold: 0 }).observe(foot);
-  }
 })();
 
 /* ---- Suggestion de langue (visiteurs dont le navigateur n'est pas en français) */
@@ -313,10 +336,17 @@ const YF_STORE_UI = (() => {
     ? `<a class="rating" href="${esc(reviewsUrl(s))}" target="_blank" rel="noopener" aria-label="${t("ratingAria", LANG === "fr" ? String(s.rating).replace(".", ",") : s.rating, s.reviews)}"><span class="stars" aria-hidden="true">${stars(s.rating)}</span><b>${LANG === "fr" ? String(s.rating).replace(".", ",") : s.rating}</b>${s.reviews ? `<small>${t("reviews", Number(s.reviews).toLocaleString(LANG === "fr" ? "fr-FR" : "en-GB"))}</small>` : ""}</a>`
     : `<a class="rating rating--empty" href="${esc(reviewsUrl(s))}" target="_blank" rel="noopener">${t("seeReviews")}</a>`;
   const photo = (s) => BASE + "/" + (s.photo || YF_CONFIG.defaultStorePhoto).replace(/^\//, "");
+  // Liens de commande en ligne (renseignés dans contenu/boutiques/, domaines vérifiés par build.py)
+  const DELIVERY = [["uberEats", "Uber Eats", "#06c167"], ["deliveroo", "Deliveroo", "#00ccbc"], ["takeaway", "Takeaway", "#ff8000"]];
+  const delivers = (s) => DELIVERY.some(([k]) => s[k]);
+  const delivery = (s) => delivers(s)
+    ? `<div class="deliv"><span>${t("delivery")}</span>${DELIVERY.filter(([k]) => s[k]).map(([k, name, color]) =>
+      `<a href="${esc(s[k])}" target="_blank" rel="noopener"><i style="background:${color}"></i>${name}</a>`).join("")}</div>`
+    : "";
   const favKey = (s) => s.name;
   const getFav = () => store.get("yf-fav-store", null);
   const setFav = (name) => store.set("yf-fav-store", name);
-  return { fullAddr, dirUrl, reviewsUrl, rating, photo, favKey, getFav, setFav };
+  return { fullAddr, dirUrl, reviewsUrl, rating, photo, delivers, delivery, favKey, getFav, setFav };
 })();
 
 /* ---- Accueil : « Ma Facto » ----------------------------------------------- */
@@ -343,6 +373,7 @@ const YF_STORE_UI = (() => {
   const list = $(".store-list", root);
   const count = $(".store-count", root);
   const openOnly = $("#store-open", root);
+  const delivOnly = $("#store-deliv", root);
   const geoBtn = $("#store-geo", root);
   const moreBtn = $("#store-more", root);
   const mapEl = $("#store-map");
@@ -386,6 +417,7 @@ const YF_STORE_UI = (() => {
       (!q || norm([s.name, s.center, s.address, s.zip, s.city, s.region, s.country].join(" ")).includes(q))
     ).map((s) => ({ ...s, st: YF_HOURS.status(s), d: userPos && s.lat != null ? dist(userPos, s) : null }));
     if (openOnly.checked) res = res.filter((s) => s.st.state === "open" || s.st.state === "soon");
+    if (delivOnly && delivOnly.checked) res = res.filter(UI.delivers);
     if (userPos) res.sort((a, b) => (a.d ?? 1e9) - (b.d ?? 1e9));
     const fi = res.findIndex((s) => s.name === fav);
     if (fi > 0) res.unshift(res.splice(fi, 1)[0]);
@@ -408,6 +440,7 @@ const YF_STORE_UI = (() => {
         <address>${esc(s.center)} · ${esc(s.address)}, ${esc([s.zip, s.city].filter(Boolean).join(" "))}</address>
         <span class="status status--${s.st.state}">${esc(s.st.label)}</span>
         <div class="hours">${esc(t("hours", s.hours))}</div>
+        ${UI.delivery(s)}
         <div class="actions"><a href="${esc(UI.dirUrl(s))}" target="_blank" rel="noopener">${t("routeBtn")}</a>${tel}${onMap}</div>
       </div>
     </article>`;
@@ -470,7 +503,7 @@ const YF_STORE_UI = (() => {
     res.forEach((s) => { if (markers[s.id]) { markers[s.id].addTo(map); pts.push([s.lat, s.lng]); } });
     if (userPos) { pts.push([userPos.lat, userPos.lng]); map.setView([userPos.lat, userPos.lng], 11); return; }
     if (!pts.length) return;
-    const pristine = country === "Tous" && !input.value.trim() && !regionSel.value && !openOnly.checked;
+    const pristine = country === "Tous" && !input.value.trim() && !regionSel.value && !openOnly.checked && !(delivOnly && delivOnly.checked);
     if (pristine) map.setView([46.6, 2.4], 5);
     else if (pts.length === 1) map.setView(pts[0], 14);
     else map.fitBounds(pts, { padding: [30, 30], maxZoom: 13 });
@@ -534,10 +567,12 @@ const YF_STORE_UI = (() => {
   input.addEventListener("input", () => { clearTimeout(debounce); debounce = setTimeout(() => render(), 150); });
   regionSel.addEventListener("change", () => render());
   openOnly.addEventListener("change", () => render());
+  delivOnly && delivOnly.addEventListener("change", () => render());
   $("form", root).addEventListener("submit", (e) => { e.preventDefault(); input.blur(); });
 
   const params = new URLSearchParams(location.search);
   if (params.get("q")) input.value = params.get("q");
+  if (params.get("livraison") && delivOnly) delivOnly.checked = true;
   fillRegions();
   render();
 })();
