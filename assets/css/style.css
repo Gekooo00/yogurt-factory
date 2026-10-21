@@ -489,6 +489,17 @@ td:first-child { font-weight: 600; }
 .footer-bottom { margin-top: 48px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: .86rem; }
 .site-footer .social-links a { background: rgba(255,255,255,.1); color: #fff; }
 .site-footer .social-links a:hover { background: var(--red); text-decoration: none; }
+.rg-badge {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  width: 148px; height: 148px; margin-top: 18px; padding: 10px; border-radius: 50%;
+  background: #fff; color: var(--ink); border: 3px solid var(--red); box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  line-height: 1.2; transition: transform .2s;
+}
+.rg-badge:hover { transform: scale(1.04) rotate(-3deg); text-decoration: none; }
+.rg-star { width: 26px; height: 26px; color: var(--red); margin-bottom: 2px; }
+.rg-top { font-size: .68rem; font-weight: 700; color: var(--ink-soft); }
+.rg-ttl { font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; color: var(--red); }
+.rg-name { font-size: .8rem; font-weight: 700; }
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 520px) { .footer-grid { grid-template-columns: 1fr; }
