@@ -1,0 +1,38 @@
+# Yogurt Factory — robots.txt
+# Tous les moteurs de recherche et assistants IA sont les bienvenus.
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Moteurs de recherche
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: YandexBot
+User-agent: Qwantbot
+User-agent: Applebot
+User-agent: Baiduspider
+User-agent: Slurp
+Allow: /
+
+# Assistants et moteurs IA (réponses, citations, résumés)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: meta-externalagent
+User-agent: MistralAI-User
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: DuckAssistBot
+Allow: /
+
+Sitemap: https://yogurtfactory.fr/sitemap.xml
+# Résumé pour les agents IA : https://yogurtfactory.fr/llms.txt

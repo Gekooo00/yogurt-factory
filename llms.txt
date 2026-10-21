@@ -1,0 +1,49 @@
+# Yogurt Factory
+
+> Yogurt Factory (« la Facto ») est le leader français du frozen yogurt : glace au yaourt 0 % de matières grasses ou sundae vanille, servie avec le plus gros bar à toppings de France (34 toppings et 11 coulis à volonté, tant que ça rentre dans le pot). Enseigne créée en 2011 par Ouriel Hodara et Emmanuel Tedesco, réseau de franchise depuis 2016, 88 boutiques référencées sur le site.
+
+Informations clés :
+- Produits : glace au yaourt 0 % MG, sundae vanille, pots Le Mignon (110 g), Le Beau (160 g), Le Magnifique (220 g), Le Superbe (350 g, à partager), Le Parfait (180 g), Le Trognon (90 g, moins de 10 ans) ; bubble waffles, gaufres liégeoises, crêpes, donuts ; bubble tea, smoothies, milkshakes, thés glacés, citronnade, granités ; cafés frappés, boissons chaudes, matcha, ube.
+- Halal : les glaces (yaourt et sundae vanille) et les bubble waffles sont halal ; lait pasteurisé et stérilisé. Les bonbons Tagada, Schtroumpfs et Marshmallow contiennent de la gélatine de porc.
+- Prix : fixés et affichés par chaque boutique (ils peuvent varier d'une boutique franchisée à l'autre) ; le site ne publie pas de prix.
+- Fidélité : 1 € dépensé = 1 point, avec le numéro de téléphone en caisse ou sur borne ; récompenses : 30 points = Petit thé glacé, 40 points = Donut, 50 points = La Wallonne, 60 points = Petit bubble tea, 70 points = Petit smoothie ou milkshake, 80 points = Un Mignon avec toppings, 90 points = Le Parfait, 100 points = Waffle Bomb, 110 points = La Délicieuse, 120 points = Le Superbe à partager.
+- Franchise : apport ≈ 30 000 €, droit d'entrée 20 000 € HT, kiosques de 15 à 25 m² ou boutiques de 30 à 60 m², contrat de 5 ans.
+- Réseaux sociaux : TikTok @yogurt_factory, Instagram @yogurtfactory, Facebook YogurtFactory.fr.
+
+## Pages principales
+- [Yogurt Factory](https://yogurtfactory.fr/) : Glace au yaourt 0 % ou sundae vanille et le plus gros bar à toppings de France. Bubble tea, gaufres, cafés. 90 boutiques dans 10 pays.
+- [Déclaration d'accessibilité](https://yogurtfactory.fr/accessibilite.html) : Engagement de Yogurt Factory pour un site accessible à tous : fonctionnalités d'accessibilité, état de conformité et contact.
+- [Actualités](https://yogurtfactory.fr/actualites.html) : Les dernières nouvelles de Yogurt Factory : nouveaux produits, ouvertures de boutiques, programme fidélité et jeux-concours.
+- [Nos boutiques](https://yogurtfactory.fr/boutiques.html) : Adresses, horaires et itinéraires de toutes les boutiques Yogurt Factory en France, en Belgique, au Luxembourg, en Espagne, en Afrique et en Asie.
+- [La carte](https://yogurtfactory.fr/carte.html) : Glace au yaourt 0 % ou sundae vanille, 34 toppings et 11 coulis à volonté, bubble waffles, crêpes, bubble tea, granités, cafés, matcha et ube.
+- [Conditions générales d'utilisation](https://yogurtfactory.fr/cgu.html) : Conditions générales d'utilisation du site yogurtfactory.fr : accès, informations publiées, liens externes et droit applicable.
+- [Notre concept & notre histoire](https://yogurtfactory.fr/concept.html) : Née en 2011 de l'envie de deux jeunes diplômés d'HEC, Yogurt Factory est devenue le leader français du frozen yogurt : 90 points de vente dans 10 pays.
+- [Politique de confidentialité](https://yogurtfactory.fr/confidentialite.html) : Comment Yogurt Factory collecte, utilise et protège vos données personnelles (formulaires, programme fidélité, candidatures) et comment exercer vos droits RGPD.
+- [Contact & questions fréquentes](https://yogurtfactory.fr/contact.html) : Une question sur nos produits, une boutique, un partenariat ou la franchise ? Contactez Yogurt Factory ou consultez nos réponses aux questions fréquentes.
+- [Cookies et traceurs](https://yogurtfactory.fr/cookies.html) : Le site Yogurt Factory n'utilise aucun cookie publicitaire ni de mesure d'audience. Détail des traceurs strictement nécessaires.
+- [Programme fidélité](https://yogurtfactory.fr/fidelite.html) : 1 € = 1 point avec votre numéro de téléphone, en caisse ou sur borne. Échangez vos points contre des gourmandises offertes dès 30 points.
+- [Devenir franchisé Yogurt Factory](https://yogurtfactory.fr/franchise.html) : Ouvrez une Yogurt Factory : apport 30 000 €, droit d'entrée 20 000 € HT, formation et accompagnement. Leader du frozen yogurt en France.
+- [Mentions légales](https://yogurtfactory.fr/mentions-legales.html) : Mentions légales du site Yogurt Factory : éditeur, hébergeur, propriété intellectuelle, réseau de franchise, médiation.
+- [Plan du site](https://yogurtfactory.fr/plan-du-site.html) : Toutes les pages du site Yogurt Factory : carte, boutiques, fidélité, franchise, recrutement, contact et informations légales.
+- [La Facto recrute](https://yogurtfactory.fr/recrutement.html) : Équipier polyvalent, manager, responsable de boutique : rejoignez les équipes Yogurt Factory en CDI, CDD, temps plein ou temps partiel.
+
+## English version
+- [Yogurt Factory](https://yogurtfactory.fr/en/) : 0% fat frozen yogurt or vanilla soft serve, and the biggest topping bar in France. Bubble tea, waffles, coffee. 90 stores in 10 countries.
+- [Accessibility statement](https://yogurtfactory.fr/en/accessibility.html) : Yogurt Factory's commitment to a website accessible to everyone: accessibility features, compliance status and contact.
+- [News](https://yogurtfactory.fr/en/news.html) : The latest from Yogurt Factory: new products, store openings, loyalty programme and giveaways.
+- [Our stores](https://yogurtfactory.fr/en/stores.html) : Addresses, opening hours and directions for every Yogurt Factory store in France, Belgium, Luxembourg, Spain, Africa and Asia.
+- [Menu](https://yogurtfactory.fr/en/menu.html) : 0% fat frozen yogurt or vanilla soft serve, 34 toppings and 11 sauces as much as you like, bubble waffles, crêpes, bubble tea, slushies, coffee, matcha and ube.
+- [Terms of use](https://yogurtfactory.fr/en/terms.html) : Terms of use of the yogurtfactory.fr website: access, published information, external links and governing law.
+- [Our concept & our story](https://yogurtfactory.fr/en/concept.html) : Born in 2011 from the dream of two young HEC graduates, Yogurt Factory has become France's frozen yogurt leader: 90 stores in 10 countries.
+- [Privacy policy](https://yogurtfactory.fr/en/privacy.html) : How Yogurt Factory collects, uses and protects your personal data (forms, loyalty programme, applications) and how to exercise your GDPR rights.
+- [Contact & FAQ](https://yogurtfactory.fr/en/contact.html) : A question about our products, a store, a partnership or the franchise? Contact Yogurt Factory or read the answers to our frequently asked questions.
+- [Cookies and trackers](https://yogurtfactory.fr/en/cookies.html) : The Yogurt Factory website uses no advertising or analytics cookies. Details of the strictly necessary trackers.
+- [Loyalty programme](https://yogurtfactory.fr/en/loyalty.html) : €1 = 1 point with just your phone number, at the till or on the kiosk. Swap your points for free treats from 30 points.
+- [Become a Yogurt Factory franchisee](https://yogurtfactory.fr/en/franchise.html) : Open a Yogurt Factory: €30,000 personal contribution, €20,000 entry fee (excl. VAT), training and support. France's frozen yogurt leader.
+- [Legal notice](https://yogurtfactory.fr/en/legal-notice.html) : Legal notice for the Yogurt Factory website: publisher, host, intellectual property, franchise network, consumer mediation.
+- [Sitemap](https://yogurtfactory.fr/en/sitemap.html) : Every page of the Yogurt Factory website: menu, stores, loyalty, franchise, careers, contact and legal information.
+- [The Facto is hiring](https://yogurtfactory.fr/en/careers.html) : Crew member, manager, store manager: join the Yogurt Factory teams on permanent or fixed-term contracts, full or part time.
+
+## Données
+- [Liste complète des boutiques avec adresses et horaires](https://yogurtfactory.fr/llms-full.txt) : contenu intégral du site en texte brut
+- [Plan du site](https://yogurtfactory.fr/sitemap.xml)

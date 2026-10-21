@@ -1,0 +1,1 @@
+try{var a=JSON.parse(localStorage.getItem("yf-a11y")||"{}");for(var k in a)a[k]&&document.documentElement.classList.add("a11y-"+k)}catch{}try{localStorage.getItem("yf-tb")==="1"&&document.documentElement.classList.add("tb-hidden")}catch{}
