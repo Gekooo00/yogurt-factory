@@ -1,0 +1,9 @@
+# Netlify / Cloudflare Pages : anciennes adresses WordPress -> nouvelles pages
+/notre-concept/*        /concept.html           301
+/nos-gourmandises/*     /carte.html             301
+/nos-shops/*            /boutiques.html         301
+/adresse/*              /boutiques.html         301
+/devenir-franchise/*    /franchise.html         301
+/mention-legales/*      /mentions-legales.html  301
+/wp-content/uploads/*   /carte.html             301
+/en/*                  /en/404.html            404

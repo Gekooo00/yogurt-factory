@@ -1,0 +1,3221 @@
+# Yogurt Factory
+
+> Yogurt Factory (« la Facto ») est le leader français du frozen yogurt : glace au yaourt 0 % de matières grasses ou sundae vanille, servie avec le plus gros bar à toppings de France (34 toppings et 11 coulis à volonté, tant que ça rentre dans le pot). Enseigne créée en 2011 par Ouriel Hodara et Emmanuel Tedesco, réseau de franchise depuis 2016, 88 boutiques référencées sur le site.
+
+Informations clés :
+- Produits : glace au yaourt 0 % MG, sundae vanille, pots Le Mignon (110 g), Le Beau (160 g), Le Magnifique (220 g), Le Superbe (350 g, à partager), Le Parfait (180 g), Le Trognon (90 g, moins de 10 ans) ; bubble waffles, gaufres liégeoises, crêpes, donuts ; bubble tea, smoothies, milkshakes, thés glacés, citronnade, granités ; cafés frappés, boissons chaudes, matcha, ube.
+- Halal : les glaces (yaourt et sundae vanille) et les bubble waffles sont halal ; lait pasteurisé et stérilisé. Les bonbons Tagada, Schtroumpfs et Marshmallow contiennent de la gélatine de porc.
+- Prix : fixés et affichés par chaque boutique (ils peuvent varier d'une boutique franchisée à l'autre) ; le site ne publie pas de prix.
+- Fidélité : 1 € dépensé = 1 point, avec le numéro de téléphone en caisse ou sur borne ; récompenses : 30 points = Petit thé glacé, 40 points = Donut, 50 points = La Wallonne, 60 points = Petit bubble tea, 70 points = Petit smoothie ou milkshake, 80 points = Un Mignon avec toppings, 90 points = Le Parfait, 100 points = Waffle Bomb, 110 points = La Délicieuse, 120 points = Le Superbe à partager.
+- Franchise : apport ≈ 30 000 €, droit d'entrée 20 000 € HT, kiosques de 15 à 25 m² ou boutiques de 30 à 60 m², contrat de 5 ans.
+- Réseaux sociaux : TikTok @yogurt_factory, Instagram @yogurtfactory, Facebook YogurtFactory.fr.
+
+## Pages principales
+- [Yogurt Factory](https://yogurtfactory.fr/) : Glace au yaourt 0 % ou sundae vanille et le plus gros bar à toppings de France. Bubble tea, gaufres, cafés. 90 boutiques dans 10 pays.
+- [Déclaration d'accessibilité](https://yogurtfactory.fr/accessibilite.html) : Engagement de Yogurt Factory pour un site accessible à tous : fonctionnalités d'accessibilité, état de conformité et contact.
+- [Actualités](https://yogurtfactory.fr/actualites.html) : Les dernières nouvelles de Yogurt Factory : nouveaux produits, ouvertures de boutiques, programme fidélité et jeux-concours.
+- [Nos boutiques](https://yogurtfactory.fr/boutiques.html) : Adresses, horaires et itinéraires de toutes les boutiques Yogurt Factory en France, en Belgique, au Luxembourg, en Espagne, en Afrique et en Asie.
+- [La carte](https://yogurtfactory.fr/carte.html) : Glace au yaourt 0 % ou sundae vanille, 34 toppings et 11 coulis à volonté, bubble waffles, crêpes, bubble tea, granités, cafés, matcha et ube.
+- [Conditions générales d'utilisation](https://yogurtfactory.fr/cgu.html) : Conditions générales d'utilisation du site yogurtfactory.fr : accès, informations publiées, liens externes et droit applicable.
+- [Notre concept & notre histoire](https://yogurtfactory.fr/concept.html) : Née en 2011 de l'envie de deux jeunes diplômés d'HEC, Yogurt Factory est devenue le leader français du frozen yogurt : 90 points de vente dans 10 pays.
+- [Politique de confidentialité](https://yogurtfactory.fr/confidentialite.html) : Comment Yogurt Factory collecte, utilise et protège vos données personnelles (formulaires, programme fidélité, candidatures) et comment exercer vos droits RGPD.
+- [Contact & questions fréquentes](https://yogurtfactory.fr/contact.html) : Une question sur nos produits, une boutique, un partenariat ou la franchise ? Contactez Yogurt Factory ou consultez nos réponses aux questions fréquentes.
+- [Cookies et traceurs](https://yogurtfactory.fr/cookies.html) : Le site Yogurt Factory n'utilise aucun cookie publicitaire ni de mesure d'audience. Détail des traceurs strictement nécessaires.
+- [Programme fidélité](https://yogurtfactory.fr/fidelite.html) : 1 € = 1 point avec votre numéro de téléphone, en caisse ou sur borne. Échangez vos points contre des gourmandises offertes dès 30 points.
+- [Devenir franchisé Yogurt Factory](https://yogurtfactory.fr/franchise.html) : Ouvrez une Yogurt Factory : apport 30 000 €, droit d'entrée 20 000 € HT, formation et accompagnement. Leader du frozen yogurt en France.
+- [Mentions légales](https://yogurtfactory.fr/mentions-legales.html) : Mentions légales du site Yogurt Factory : éditeur, hébergeur, propriété intellectuelle, réseau de franchise, médiation.
+- [Plan du site](https://yogurtfactory.fr/plan-du-site.html) : Toutes les pages du site Yogurt Factory : carte, boutiques, fidélité, franchise, recrutement, contact et informations légales.
+- [La Facto recrute](https://yogurtfactory.fr/recrutement.html) : Équipier polyvalent, manager, responsable de boutique : rejoignez les équipes Yogurt Factory en CDI, CDD, temps plein ou temps partiel.
+
+## English version
+- [Yogurt Factory](https://yogurtfactory.fr/en/) : 0% fat frozen yogurt or vanilla soft serve, and the biggest topping bar in France. Bubble tea, waffles, coffee. 90 stores in 10 countries.
+- [Accessibility statement](https://yogurtfactory.fr/en/accessibility.html) : Yogurt Factory's commitment to a website accessible to everyone: accessibility features, compliance status and contact.
+- [News](https://yogurtfactory.fr/en/news.html) : The latest from Yogurt Factory: new products, store openings, loyalty programme and giveaways.
+- [Our stores](https://yogurtfactory.fr/en/stores.html) : Addresses, opening hours and directions for every Yogurt Factory store in France, Belgium, Luxembourg, Spain, Africa and Asia.
+- [Menu](https://yogurtfactory.fr/en/menu.html) : 0% fat frozen yogurt or vanilla soft serve, 34 toppings and 11 sauces as much as you like, bubble waffles, crêpes, bubble tea, slushies, coffee, matcha and ube.
+- [Terms of use](https://yogurtfactory.fr/en/terms.html) : Terms of use of the yogurtfactory.fr website: access, published information, external links and governing law.
+- [Our concept & our story](https://yogurtfactory.fr/en/concept.html) : Born in 2011 from the dream of two young HEC graduates, Yogurt Factory has become France's frozen yogurt leader: 90 stores in 10 countries.
+- [Privacy policy](https://yogurtfactory.fr/en/privacy.html) : How Yogurt Factory collects, uses and protects your personal data (forms, loyalty programme, applications) and how to exercise your GDPR rights.
+- [Contact & FAQ](https://yogurtfactory.fr/en/contact.html) : A question about our products, a store, a partnership or the franchise? Contact Yogurt Factory or read the answers to our frequently asked questions.
+- [Cookies and trackers](https://yogurtfactory.fr/en/cookies.html) : The Yogurt Factory website uses no advertising or analytics cookies. Details of the strictly necessary trackers.
+- [Loyalty programme](https://yogurtfactory.fr/en/loyalty.html) : €1 = 1 point with just your phone number, at the till or on the kiosk. Swap your points for free treats from 30 points.
+- [Become a Yogurt Factory franchisee](https://yogurtfactory.fr/en/franchise.html) : Open a Yogurt Factory: €30,000 personal contribution, €20,000 entry fee (excl. VAT), training and support. France's frozen yogurt leader.
+- [Legal notice](https://yogurtfactory.fr/en/legal-notice.html) : Legal notice for the Yogurt Factory website: publisher, host, intellectual property, franchise network, consumer mediation.
+- [Sitemap](https://yogurtfactory.fr/en/sitemap.html) : Every page of the Yogurt Factory website: menu, stores, loyalty, franchise, careers, contact and legal information.
+- [The Facto is hiring](https://yogurtfactory.fr/en/careers.html) : Crew member, manager, store manager: join the Yogurt Factory teams on permanent or fixed-term contracts, full or part time.
+
+## Données
+- [Liste complète des boutiques avec adresses et horaires](https://yogurtfactory.fr/llms-full.txt) : contenu intégral du site en texte brut
+- [Plan du site](https://yogurtfactory.fr/sitemap.xml)
+
+
+---
+
+# Yogurt Factory — Glace au yaourt 0 % & toppings à volonté
+URL : https://yogurtfactory.fr/
+
+Le plus gros bar à toppings de France
+
+# Ton pot.
+Tes toppings.
+à volonté !
+Glace au yaourt 0 % de matières grasses ou sundae vanille, et un bar à toppings géant : fruits frais, coulis, bonbons, biscuits… Tout ce qui rentre dans le pot, au même prix.
+📍 Trouver ma Facto  Voir la carte
+
+90 points de vente
+10 pays
+34 toppings à volonté
+2011 l'année de notre 1er pot
+
+Comment ça marche ?
+
+## 3 étapes pour un pot  parfait
+Chez Yogurt Factory, c'est vous le chef. On s'occupe de la glace, vous faites le reste.
+
+### Choisissez votre pot
+Glace au yaourt 0 % ou sundae vanille, en Mignon, Beau ou Magnifique… ou le Superbe, à partager.
+
+### Ajoutez vos toppings
+34 toppings et 11 coulis : fruits frais, Kinder Bueno®, brownie, pistache, Tagada… À volonté tant que ça rentre dans le pot.
+
+### Savourez !
+Sur place, à emporter ou livré. Et à chaque euro dépensé, 1 point fidélité pour vous offrir votre prochaine gourmandise.
+
+Nouveautés
+
+## Toujours plus de  gourmandises
+La Facto ne s'arrête jamais d'inventer. Découvrez nos dernières créations, à personnaliser comme vos pots.
+
+Nouvelle base
+
+### Le Sundae vanille
+Toute la douceur de la vanille, à garnir de coulis et de toppings comme vos pots.
+
+Gourmandise
+
+### Bubble Waffle
+La gaufre à bulles de Hong Kong : La Jolie ou La Délicieuse, avec glace et toppings.
+
+9 perles au choix
+
+### Bubble Tea
+8 sirops, 9 parfums de boba : des dizaines de combinaisons fruitées.
+Nouveau
+
+### Matcha & Ube
+Les boissons tendance du moment débarquent à la Facto, avec cafés frappés et granités.
+
+100 % gourmand
+La glace au yaourt, c'est quoi ?
+
+## Toute la gourmandise,  sans le gras
+Notre glace est fabriquée à base de yaourt et servie à l'italienne, bien crémeuse. Résultat : une texture ultra-onctueuse, une petite note acidulée qui donne envie d'y revenir… et 0 % de matières grasses dans la glace. Plutôt team vanille ? Notre sundae vanille vous attend.
+- Glace au yaourt  0 % de matières grasses
+- Fruits frais préparés chaque jour, sous vos yeux
+-  Halal (glaces et bubble waffles), à base de lait  pasteurisé et stérilisé
+- Un  prix fixe selon la taille du pot, toppings compris   Découvrir le concept
+
+Nos boutiques
+
+## Il y a sûrement une Facto  près de chez vous
+88 adresses en France et dans le monde, de Paris à Kuala Lumpur. Sur place, à emporter… ou livré chez vous.
+🛵 Envie de rester au chaud ?  Voir les boutiques qui livrent avec Uber Eats, Deliveroo ou Takeaway.
+
+Programme fidélité
+
+## 1 € dépensé =  1 point
+Donnez simplement votre numéro de téléphone en caisse ou sur la borne. Dès 30 points, vos gourmandises sont offertes !
+-  30 points : un petit thé glacé offert
+-  80 points : un Mignon avec toppings offert
+-  120 points : le Superbe à partager offert   Toutes les récompenses
+
+Devenir franchisé
+
+## Ouvrez votre Yogurt Factory
+Rejoignez le leader français du frozen yogurt : un concept simple à exploiter, rentable, et une marque que les clients adorent. Objectif 2026 : 100 points de vente.
+
+30 k€ d'apport personnel
+15 m² minimum en kiosque
+300 k€ CA annuel moyen*
+5 ans de contrat
+Tout savoir sur la franchise  Candidater
+* Chiffre moyen communiqué par l'enseigne, non contractuel.
+
+Actus
+
+## Quoi de neuf à la  Facto ?   Toutes les actus →
+
+28 septembre 2026
+
+### Un tout nouveau site pour la Facto
+Carte complète, recherche de boutique avec « Ouvert maintenant », programme fidélité et version anglaise : bienvenue sur le nouveau yogurtfactory.fr. Trouver ma Facto →
+
+15 septembre 2026
+
+### Granités, matcha et ube débarquent
+Trois nouveautés à la carte : des granités cola, fraise et tropical blue, et des boissons gourmandes au matcha et à l'ube. Voir la carte →
+
+1 septembre 2026
+
+### 1 € dépensé = 1 point fidélité
+Donnez votre numéro de téléphone en caisse ou sur la borne : vos points s'accumulent et se transforment en gourmandises offertes dès 30 points. Découvrir les récompenses →
+
+Suivez-nous pour les nouveautés, les jeux-concours et les ouvertures en avant-première.
+TikTok @yogurt_factory · 420k+ abonnés   Instagram @yogurtfactory   Facebook YogurtFactory.fr
+
+## La Facto recrute !
+Équipiers, managers, responsables de boutique : CDI, CDD, temps plein ou partiel. Venez travailler dans la bonne humeur (et le sucre).
+Voir les postes
+
+---
+
+# Déclaration d'accessibilité — Yogurt Factory
+URL : https://yogurtfactory.fr/accessibilite.html
+
+Accueil › Informations légales
+
+# Accessibilité
+La gourmandise, c'est pour tout le monde. Notre site aussi.
+
+## Notre engagement
+Yogurt Factory s'engage à rendre son site internet accessible au plus grand nombre, conformément au référentiel général d'amélioration de l'accessibilité (RGAA 4.1) et aux normes WCAG 2.1 niveau AA.
+
+## Le menu accessibilité
+Le bouton bleu  ♿ en bas à gauche de chaque page ouvre un menu qui permet de :
+- agrandir la taille du texte ;
+- renforcer les contrastes ;
+- utiliser une police plus lisible, adaptée notamment aux personnes dyslexiques ;
+- augmenter l'espacement des lignes et des mots ;
+- souligner tous les liens et renforcer l'indicateur de focus ;
+- stopper toutes les animations et défilements automatiques.
+Vos réglages sont mémorisés sur votre appareil. Ils complètent, sans les remplacer, les réglages de votre navigateur et de vos aides techniques.
+
+## Ce que nous avons mis en place
+- Navigation complète au clavier et lien d'évitement « Aller au contenu » ;
+- structure de titres hiérarchisée et zones de page identifiées (en-tête, navigation, contenu, pied de page) ;
+- textes alternatifs sur les images informatives ;
+- formulaires avec étiquettes explicites et messages de retour annoncés aux lecteurs d'écran ;
+- respect du réglage système « réduire les animations » ;
+- site utilisable du mobile au grand écran, avec zoom jusqu'à 200 %.
+
+## État de conformité
+Le site n'a pas encore fait l'objet d'un audit de conformité RGAA complet.  [À mettre à jour après audit : « partiellement conforme » ou « totalement conforme », avec le taux de conformité, la date et l'auteur de l'audit.]
+
+### Contenus non accessibles connus
+- La carte interactive des boutiques n'est pas entièrement utilisable au clavier et avec un lecteur d'écran : la liste des boutiques, juste en dessous, présente les mêmes informations de façon accessible.
+- Certaines photographies de produits issues de nos menus contiennent du texte incrusté ; ces informations sont reprises en texte dans la page.
+
+## Retour d'information et contact
+Si vous rencontrez un défaut d'accessibilité vous empêchant d'accéder à un contenu ou à une fonctionnalité, contactez-nous via le  formulaire de contact (sujet « Autre ») ou à  [e-mail] : nous vous transmettrons l'information sous une autre forme.
+
+## Voies de recours
+Si vous n'obtenez pas de réponse satisfaisante, vous pouvez contacter le  Défenseur des droits ou lui écrire gratuitement, sans affranchissement : Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07.
+
+---
+
+# Actualités — Nouveautés, ouvertures et bons plans | Yogurt Factory
+URL : https://yogurtfactory.fr/actualites.html
+
+Accueil › Actualités
+
+# Les actus de la  Facto
+Nouveaux produits, ouvertures de boutiques, bons plans : tout ce qui se passe chez Yogurt Factory.
+
+28 septembre 2026
+
+### Un tout nouveau site pour la Facto
+Carte complète, recherche de boutique avec « Ouvert maintenant », programme fidélité et version anglaise : bienvenue sur le nouveau yogurtfactory.fr.
+Retrouvez toutes nos boutiques sur une carte interactive, avec leurs horaires, leur itinéraire et, quand elles livrent, leurs liens Uber Eats et Deliveroo. Trouver ma Facto →
+
+15 septembre 2026
+
+### Granités, matcha et ube débarquent
+Trois nouveautés à la carte : des granités cola, fraise et tropical blue, et des boissons gourmandes au matcha et à l'ube. Voir la carte →
+
+1 septembre 2026
+
+### 1 € dépensé = 1 point fidélité
+Donnez votre numéro de téléphone en caisse ou sur la borne : vos points s'accumulent et se transforment en gourmandises offertes dès 30 points. Découvrir les récompenses →
+Pour ne rien manquer, suivez-nous sur  TikTok et  Instagram.
+
+---
+
+# Nos boutiques — Trouver une Yogurt Factory près de chez vous
+URL : https://yogurtfactory.fr/boutiques.html
+
+Accueil › Nos boutiques
+
+# Trouvez votre  Facto
+88 adresses dans  79 villes, en France et dans le monde. Cherchez par ville, code postal ou centre commercial.
+
+Astuce : ⭐ sur une boutique pour en faire « Ma Facto »  Ouvert maintenant  🛵 Livraison
+
+Île-de-France
+
+### Argenteuil
+Côté Seine · 50 avenue du Maréchal Foch, 95100 Argenteuil
+Lun–sam 10h–20h
+
+Île-de-France
+
+### Aulnay-sous-Bois
+O'Parinor · Haut de Galy, 93606 Aulnay-sous-Bois
+Tous les jours 10h–20h
+
+Île-de-France
+
+### Boulogne-Billancourt
+Les Passages · 5 rue Tony Garnier, 92100 Boulogne-Billancourt
+Lun–sam 10h–20h
+
+Île-de-France
+
+### Claye-Souilly
+Shopping Promenade · 3 rue Robert Schuman, 77410 Claye-Souilly
+Tous les jours 12h–20h
+
+Île-de-France
+
+### Collégien
+Bay 2 · Rue du Général de Gaulle, 77090 Collégien
+Lun–sam 9h30–20h · dim 10h–19h
+
+Île-de-France
+
+### Créteil
+Créteil Soleil · Avenue de la France Libre, 94000 Créteil
+Lun–sam 10h–20h30
+
+Île-de-France
+
+### La Défense – 4 Temps
+Westfield Les 4 Temps · 15 parvis de La Défense, 92092 Puteaux
+Tous les jours 10h–20h30
+
+Île-de-France
+
+### La Défense – Le Dôme
+Le Dôme, Les 4 Temps · Parvis de La Défense, 92092 Puteaux
+Tous les jours 10h–22h30
+
+Île-de-France
+
+### Levallois-Perret
+So Ouest · 30 rue d'Alsace, 92300 Levallois-Perret
+Lun–sam 10h–20h30
+
+Île-de-France
+
+### Lieusaint
+Carré Sénart · 3 allée du Préambule, 77127 Lieusaint
+Lun–sam 11h–20h30 · dim 11h–19h
+
+Île-de-France
+
+### Paris Beaugrenelle
+Beaugrenelle · 12 rue Linois, 75015 Paris
+Tous les jours 10h–21h
+
+Île-de-France
+
+### Paris Carrousel du Louvre
+Carrousel du Louvre · 99 rue de Rivoli, 75001 Paris
+Tous les jours 10h–20h
+
+Île-de-France
+
+### Paris Gare Montparnasse
+Gare Montparnasse, hall 1, niveau 2 · 17 boulevard de Vaugirard, 75015 Paris
+Lun–sam 7h–20h · dim 10h–20h
+
+Île-de-France
+
+### Paris Italie 2
+Italie Deux · 30 avenue d'Italie, 75013 Paris
+Tous les jours 10h–20h
+
+Île-de-France
+
+### Paris Le Marais
+Le Marais · 3 rue Saint-Merri, 75004 Paris
+Tous les jours 13h–minuit
+
+Île-de-France
+
+### Paris Les Halles
+Westfield Forum des Halles · 101 rue Berger, 75001 Paris
+Tous les jours 10h–20h
+
+Île-de-France
+
+### Paris Passage du Havre
+Passage du Havre · 109 rue Saint-Lazare, 75009 Paris
+Lun–sam 10h–20h · dim 10h–19h
+
+Île-de-France
+
+### Roissy
+Aéroville · 30 rue des Buissons, 95700 Roissy-en-France
+Lun–sam 9h–20h
+
+Île-de-France
+
+### Rosny-sous-Bois
+Rosny 2 · Avenue du Général de Gaulle, 93110 Rosny-sous-Bois
+Mar–sam 10h–21h · dim–lun 10h–20h
+
+Île-de-France
+
+### Serris
+Val d'Europe · 14 cours du Danube, 77700 Serris
+Tous les jours 10h–22h
+
+Île-de-France
+
+### Thiais
+Belle Épine · Rue du Luxembourg, 94320 Thiais
+Lun–sam 10h–20h30 · dim 11h–19h
+
+Île-de-France
+
+### Villeneuve-la-Garenne
+Qwartz · 4 boulevard Gallieni, 92390 Villeneuve-la-Garenne
+Tous les jours 9h30–20h30
+
+Île-de-France
+
+### Vélizy
+Vélizy 2 · Centre commercial Vélizy 2, 78140 Vélizy-Villacoublay
+Lun–sam 10h–21h · dim 10h–19h
+
+Île-de-France
+
+### Évry
+Évry 2 · 2 boulevard de l'Europe, 91000 Évry-Courcouronnes
+Lun–sam 10h–21h
+
+Auvergne-Rhône-Alpes
+
+### Grenoble – Grand Place
+Grand Place · 55 Grand Place, 38100 Grenoble
+Lun–sam 10h–20h
+
+Auvergne-Rhône-Alpes
+
+### Grenoble – Neyrpic
+Neyrpic · 9 avenue Benoît Frachon, 38400 Saint-Martin-d'Hères
+Lun–sam 10h–20h
+
+Auvergne-Rhône-Alpes
+
+### Lyon Confluence
+Confluence · 112 cours Charlemagne, 69002 Lyon
+Tous les jours 10h–20h
+
+Auvergne-Rhône-Alpes
+
+### Lyon Part-Dieu
+Westfield La Part-Dieu · 17 rue du Docteur Bouchut, 69003 Lyon
+Lun–sam 10h–20h
+
+Auvergne-Rhône-Alpes
+
+### Vichy
+Les 4 Chemins · 35 rue Lucas, 03200 Vichy
+Mar–sam 9h30–19h · dim–lun 14h–19h
+
+Bourgogne-Franche-Comté
+
+### Besançon
+Châteaufarine · Rue André Breton, 25000 Besançon
+Lun–sam 10h–20h
+
+Bourgogne-Franche-Comté
+
+### Dijon
+Toison d'Or · Route de Langres, 21000 Dijon
+Lun–sam 10h–20h
+
+Bretagne
+
+### Brest
+Coat Ar Gueven · 50 rue Jean Jaurès, 29200 Brest
+Lun–sam 10h–19h30
+
+Bretagne
+
+### Quimper
+La Galerie · 163 route de Bénodet, 29000 Quimper
+Lun–sam 9h–19h30
+
+Bretagne
+
+### Rennes
+Colombia · 40 place du Colombier, 35000 Rennes
+Lun–sam 10h–20h
+
+Centre-Val de Loire
+
+### Tours
+L'Heure Tranquille · 59 avenue Marcel Mérieux, 37200 Tours
+Lun–sam 10h–20h · dim 11h–19h
+
+Grand Est
+
+### Metz
+Muse · 2 rue des Messageries, 57000 Metz
+Lun–sam 10h–20h
+
+Grand Est
+
+### Nancy
+Saint-Sébastien · Rue des Ponts, 54000 Nancy
+Lun–sam 10h–20h
+
+Grand Est
+
+### Strasbourg
+Les Halles · 24 place des Halles, 67000 Strasbourg
+Lun–sam 10h–20h
+
+Grand Est
+
+### Thionville
+Carrefour Geric · Centre commercial Geric, 57100 Thionville
+Tous les jours 9h–20h
+
+Hauts-de-France
+
+### Beauvais
+Jeu de Paume · 21 boulevard Saint-André, 60000 Beauvais
+Lun–sam 10h–20h
+
+Hauts-de-France
+
+### Calais – Coquelles
+Cité Europe · 1001 boulevard du Kent, 62231 Coquelles
+Lun–sam 10h–20h
+
+Hauts-de-France
+
+### Dunkerque
+Centre Marine · Centre Marine, 59140 Dunkerque
+Horaires du centre
+
+Hauts-de-France
+
+### Lille
+Euralille · 100 avenue Willy Brandt, 59777 Lille
+Lun–sam 10h–20h
+
+Hauts-de-France
+
+### Noyelles-Godault
+Auchan Noyelles · Route Nationale 43, 62950 Noyelles-Godault
+Lun–sam 10h–20h30
+
+Normandie
+
+### Caen – Mondeville 2
+Mondeville 2 · ZA de l'Étoile, 14120 Mondeville
+Lun–sam 9h30–20h
+
+Normandie
+
+### Caen – Rives de l'Orne
+Les Rives de l'Orne · Quai Amiral Hamelin, 14000 Caen
+Lun–sam 10h–20h
+
+Normandie
+
+### Cherbourg
+Les Eléis · Quai de l'Entrepôt, 50100 Cherbourg-en-Cotentin
+Lun–sam 10h30–18h30
+
+Normandie
+
+### Granville
+Centre-ville · 6 rue de l'Abreuvoir, 50400 Granville
+Horaires saisonniers
+
+Normandie
+
+### Le Havre
+Docks Vauban · 70 quai Frissard, 76600 Le Havre
+Tous les jours 10h–20h
+
+Normandie
+
+### Rouen
+Docks 76 · 5-7 rue Netien, 76000 Rouen
+Lun–sam 10h–20h
+
+Nouvelle-Aquitaine
+
+### Anglet
+BAB2 · Avenue Jean Léon Laporte, 64600 Anglet
+Lun–sam 10h–20h
+
+Nouvelle-Aquitaine
+
+### Bayonne
+Centre-ville · 81 rue d'Espagne, 64100 Bayonne
+Lun–sam 12h–19h
+
+Nouvelle-Aquitaine
+
+### Bordeaux – Bègles
+Rives d'Arcins · Rue des Frères Lumière, 33130 Bègles
+Horaires du centre
+
+Nouvelle-Aquitaine
+
+### La Rochelle – Beaulieu
+Beaulieu · ZAC de Beaulieu, 17138 Puilboreau
+Lun–sam 9h30–19h30
+
+Nouvelle-Aquitaine
+
+### La Rochelle – Centre
+Centre-ville · 14 rue du Temple, 17000 La Rochelle
+Lun–sam 12h–18h45
+
+Nouvelle-Aquitaine
+
+### Poitiers
+Passage des Cordeliers · 4 rue Henri Oudin, 86000 Poitiers
+Lun–sam 10h–20h
+
+Occitanie
+
+### Béziers
+Polygone · 3 carrefour de l'Hours, 34500 Béziers
+Lun–sam 10h–20h
+
+Occitanie
+
+### Montpellier
+Odysseum · 2 place de Lisbonne, 34000 Montpellier
+Tous les jours 12h–19h
+
+Occitanie
+
+### Perpignan – Claira
+Carrefour Claira · Route du Barcarès, 66530 Claira
+Lun–sam 9h30–20h
+
+Occitanie
+
+### Toulouse Centre
+Centre-ville · 58 rue Léon Gambetta, 31000 Toulouse
+Tous les jours 12h–22h
+
+Occitanie
+
+### Toulouse – Blagnac
+Centre commercial Blagnac · 2 allée Émile Zola, 31700 Blagnac
+Lun–sam 9h30–20h
+
+Pays de la Loire
+
+### Angers – Beaucouzé
+L'Atoll · Écoparc du Buisson, 49070 Beaucouzé
+Lun–sam 10h–20h
+
+Pays de la Loire
+
+### La Roche-sur-Yon
+Les Flâneries · 181 rue Philippe Lebon, 85000 La Roche-sur-Yon
+Lun–jeu 9h30–21h30 · ven–sam 9h30–22h
+
+Pays de la Loire
+
+### Le Mans
+Auchan – ZAC du Moulin aux Moines · ZAC du Moulin aux Moines, 72650 La Chapelle-Saint-Aubin
+Lun–sam 10h–21h
+
+Pays de la Loire
+
+### Nantes Beaulieu
+Beaulieu · 1 boulevard Général de Gaulle, 44200 Nantes
+Lun–sam 9h30–20h
+
+Pays de la Loire
+
+### Nantes – Basse-Goulaine
+Pôle Sud · Route de Clisson, 44115 Basse-Goulaine
+Lun–sam 8h30–21h
+
+Provence-Alpes-Côte d'Azur
+
+### Aix-en-Provence
+Jas de Bouffan · 210 avenue de Bredasque, 13090 Aix-en-Provence
+Lun–sam 9h30–20h
+
+Provence-Alpes-Côte d'Azur
+
+### Antibes
+Vieil Antibes · 6 traverse Lacan, 06600 Antibes
+Tous les jours 13h–19h
+
+Provence-Alpes-Côte d'Azur
+
+### Avignon – Le Pontet
+Auchan Le Pontet · 533 avenue Louis Braille, 84130 Le Pontet
+Lun–sam 12h–19h30
+
+Provence-Alpes-Côte d'Azur
+
+### Cabriès
+Avant Cap – Plan de Campagne · CD6, 13480 Cabriès
+Tous les jours 9h30–19h30
+
+Provence-Alpes-Côte d'Azur
+
+### Cagnes-sur-Mer
+Polygone Riviera · 137 avenue des Alpes, 06800 Cagnes-sur-Mer
+Lun–sam 10h–20h · dim 10h–19h
+
+Provence-Alpes-Côte d'Azur
+
+### Nice TNL
+Nice TNL · 15 boulevard Général Louis Delfino, 06300 Nice
+Lun–sam 10h–20h
+
+Provence-Alpes-Côte d'Azur
+
+### Nice – Cap 3000
+Cap 3000 · 217 avenue Eugène Donadeï, 06700 Saint-Laurent-du-Var
+Lun–sam 10h–21h · dim 10h–20h
+
+Provence-Alpes-Côte d'Azur
+
+### Saint-Raphaël
+Front de mer · 101 promenade René Coty, 83700 Saint-Raphaël
+Tous les jours 11h–19h30
+
+Provence-Alpes-Côte d'Azur
+
+### Toulon – La Valette
+Avenue 83 · 300 avenue de l'Université, 83160 La Valette-du-Var
+Lun–sam 11h–20h
+
+Guyane
+
+### Matoury
+Family Plaza · CC Family Plaza, 97351 Matoury
+Tous les jours 9h30–19h30
+
+Nouvelle-Calédonie
+
+### Dumbéa
+Dumbéa Mall · Centre commercial Dumbéa Mall, 98835 Dumbéa-sur-Mer
+Lun–jeu 10h–19h30 · ven 10h–20h · sam 9h–20h · dim 9h–18h
+
+Nouvelle-Calédonie
+
+### Nouméa – Baie des Citrons
+Baie des Citrons · Promenade Roger Laroque, 98800 Nouméa
+Lun–jeu 11h–19h · ven–dim 11h–20h
+
+Nouvelle-Calédonie
+
+### Nouméa – Mirage Plaza
+Mirage Plaza · 27 promenade Roger Laroque, 98800 Nouméa
+Horaires du centre
+
+Wallonie
+
+### Charleroi
+Rive Gauche · Place Verte 20, 6000 Charleroi
+Lun–sam 10h–19h
+
+Wallonie
+
+### Liège
+Médiacité · Boulevard Raymond Poincaré 7, 4020 Liège
+Lun–sam 10h–20h
+
+Luxembourg
+
+### Luxembourg
+Cloche d'Or · 25 boulevard F. W. Raiffeisen, 2411 Luxembourg
+Lun–sam 10h–21h
+
+Pays basque
+
+### Saint-Sébastien
+Garbera · Garbera Zeharbidea 1, 20017 Donostia-San Sebastián
+Tous les jours 12h–22h30
+
+Mbour
+
+### Saly
+Saly · Route de Saly, croisement allée des Milliardaires, Saly
+Tous les jours 10h–20h
+
+Estuaire
+
+### Libreville
+Mbolo · Boulevard Triomphal, Libreville
+Tous les jours 9h–18h30
+
+Kuala Lumpur
+
+### Kuala Lumpur – Mid Valley
+Mid Valley Megamall · Lingkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur
+Tous les jours 10h–22h
+
+Kuala Lumpur
+
+### Putrajaya – IOI City Mall
+IOI City Mall · Level 3A, IOI City Tower Two, 62502 Putrajaya
+Horaires du centre
+
+Tachkent
+
+### Tachkent
+Tashkent City Mall · Tashkent City, Tachkent
+Tous les jours 12h–minuit
+
+Horaires indicatifs, susceptibles de varier (jours fériés, vacances scolaires, horaires des centres commerciaux). En cas de doute, appelez la boutique.
+
+## Pas de Facto près de chez vous ?
+C'est peut-être le signe qu'il faut en ouvrir une. On cherche des entrepreneurs partout en France et à l'international.
+Devenir franchisé
+
+---
+
+# La carte — Glaces, toppings, gaufres, bubble tea | Yogurt Factory
+URL : https://yogurtfactory.fr/carte.html
+
+Accueil › La carte
+
+# La  carte
+Glace au yaourt 0 % ou sundae vanille, le plus gros bar à toppings de France, gaufres, crêpes, bubble tea, cafés… Tout est là, il n'y a plus qu'à choisir.
+
+## Les glaces
+Glace au yaourt 0 % ou sundae vanille · toppings à volonté tant que ça rentre dans le pot
+
+Glace au yaourt 0 % L'originale : légère, onctueuse, délicieusement acidulée
+Sundae vanille Pour les fans de douceur : crémeuse à souhait
+Halal Lait pasteurisé et stérilisé
+
+### Pots classiques · coulis + toppings à volonté
+
+#### Le Mignon
+110 g · taille S
+Best-seller
+
+#### Le Beau
+160 g · taille M
+
+#### Le Magnifique
+220 g · taille L
+
+### Les spéciales
+
+À partager
+
+#### Le Superbe
+350 g · 1 coulis + 3 toppings
+
+#### Le Parfait
+180 g · 1 coulis + 2 toppings
+– de 10 ans
+
+#### Le Trognon
+90 g · 1 coulis + 2 toppings
+
+## Le plus gros bar à toppings de France
+34 toppings et 11 coulis, à volonté · selon les boutiques et les saisons
+
+### Fruits frais
+- Fraise
+- Framboise
+- Myrtille
+- Mangue
+- Ananas
+- Kiwi
+- Banane
+- Passion
+- Noix de coco
+- Melon  (de saison)
+- Pastèque  (de saison)
+
+### Chocolats & biscuits
+- Billes chocolat au lait
+- Billes chocolat blanc
+- Billes chocolat noir
+- Kinder Bueno
+- Kinder Bueno White
+- Kit Kat
+- Lion
+- M&M's
+- Maltesers
+- Crunch
+- Daim
+- Schoko-Bons
+- Smarties
+- Brownie
+- Cookie
+- Spéculoos
+- Meringue
+
+### Bonbons & croquants
+- Tagada  (contient de la gélatine de porc)
+- Schtroumpfs  (contient de la gélatine de porc)
+- Marshmallow  (contient de la gélatine de porc)
+- Chouchou
+- Noisette
+- Muesli
+
+### Coulis
+- Cacahuète
+- Caramel beurre salé
+- Chocolat blanc
+- Chocolat-noisette
+- Exotique
+- Fraise
+- Framboise
+- Kit Kat
+- Noisette
+- Pistache
+- Spéculoos
+
+## Gaufres, crêpes & donuts
+Chaud, croustillant, gourmand
+
+### Bubble Waffle  Gourmandise
+La gaufre à bulles de Hong Kong
+-  La Jolie glace + coulis
+-  La Délicieuse glace + coulis + toppings
+
+### Gaufres liégeoises
+-  La Liégeoise nature (sucrée)
+-  La Wallonne coulis au choix
+-  Waffle Bomb gaufre, coulis et glace
+
+### Crêpes
+-  Au sucre
+-  À composer Nutella®, miel, spéculoos, caramel, framboise et exotique
+
+### Donuts  Nouveau
+Moelleux et personnalisables avec vos toppings et coulis préférés
+
+## Boissons fraîches
+Smoothies, milkshakes, bubble tea, thés glacés et granités
+
+### Bubble Tea  Tendance
+1. Le sirop fraise, framboise, litchi, mangue, passion, pêche, mojito et pamplemousse
+2. Les perles (boba) cerise, fraise, framboise, litchi, myrtille, pomme, pêche, mangue et passion
+
+### Smoothies
+Glace au yaourt, lait et fruits
+- Fraise · framboise · myrtille
+- Mangue · kiwi · ananas
+- Fraise · banane
+- Mangue · banane
+
+### Milkshakes
+Glace vanille, lait et gourmandise
+Kinder Bueno, Oreo, spéculoos, vanille et Daim
+
+### Thés glacés & citronnade
+Fraise, framboise, litchi, mangue, passion, pêche, mojito et pamplemousse
+
+### Granités  Nouveau
+Cola, fraise et tropical blue
+
+### Nos sirops
+Fruités fraise, framboise, litchi, mangue, passion, pêche, mojito et pamplemousse
+Gourmands noisette, vanille, caramel et spéculoos
+
+## Cafés & boissons chaudes
+À personnaliser avec nos sirops noisette, vanille, caramel et spéculoos
+
+### Café frappé  Froid
+Caramel, vanille, spéculoos, cookie et noisette
+
+### Boissons chaudes
+Expresso, chocolat chaud, cappuccino, café au lait, mocha et thé
+
+### Matcha  Nouveau
+Le thé vert japonais en version gourmande : doux, crémeux et plein de peps
+
+### Ube  Nouveau
+L'igname violette star des Philippines, gourmande et à la couleur irrésistible
+
+## Halal & allergènes
+Bon à savoir avant de commander
+
+### ✅ Halal
+Nos glaces (glace au yaourt et sundae vanille) et nos bubble waffles sont halal. Le lait utilisé est pasteurisé et stérilisé.
+Attention : les bonbons  Tagada, Schtroumpfs et Marshmallow contiennent de la  gélatine de porc.
+
+### ⚠️ Allergènes
+Nos produits peuvent contenir du lait, du gluten, des œufs, du soja, de l'arachide et des fruits à coque. La liste détaillée par produit, topping et coulis est disponible en boutique : demandez-la avant de commander.
+Carte indicative : produits et parfums peuvent varier selon les boutiques. Les prix sont affichés dans chaque boutique.
+
+## Ça vous donne faim ?
+Passez nous voir, cumulez vos points fidélité, ou faites-vous livrer via Uber Eats ou Deliveroo.
+Trouver une Facto  Programme fidélité
+
+---
+
+# Conditions générales d'utilisation — Yogurt Factory
+URL : https://yogurtfactory.fr/cgu.html
+
+Accueil › Informations légales
+
+# Conditions d'utilisation
+
+En vigueur au  [date].
+
+## 1. Objet
+Les présentes conditions encadrent l'utilisation du site yogurtfactory.fr, site vitrine présentant la marque Yogurt Factory, ses produits, ses boutiques, son programme fidélité et son réseau de franchise. Le site ne permet pas de passer commande ni d'effectuer de paiement. L'utilisation du site vaut acceptation des présentes conditions.
+
+## 2. Accès au site
+Le site est accessible gratuitement, 24 h/24 et 7 j/7, sauf interruption pour maintenance ou cas de force majeure. L'éditeur ne peut être tenu responsable d'une indisponibilité temporaire.
+
+## 3. Informations publiées
+Les informations (produits, horaires, adresses, chiffres du réseau) sont fournies à titre indicatif et peuvent évoluer sans préavis. Le site ne présente pas de prix : chaque boutique fixe librement les siens, affichés en magasin. Les photographies sont non contractuelles. Les chiffres relatifs à la franchise sont non contractuels : seul le Document d'Information Précontractuelle (article L.330-3 du Code de commerce) fait foi.
+
+## 4. Commandes en livraison
+Les commandes en livraison sont passées sur des plateformes tierces (Uber Eats, Deliveroo, Takeaway), selon leurs propres conditions générales.
+
+## 5. Comportement des utilisateurs
+L'utilisateur s'engage à ne pas transmettre via les formulaires de contenu illicite, injurieux ou portant atteinte aux droits de tiers, et à ne pas perturber le fonctionnement du site.
+
+## 6. Liens externes
+Le site contient des liens vers des sites tiers (réseaux sociaux, plateformes de livraison, cartographie). L'éditeur n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.
+
+## 7. Propriété intellectuelle et données personnelles
+Voir nos  mentions légales et notre  politique de confidentialité.
+
+## 8. Droit applicable
+Les présentes conditions sont soumises au droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux français sont compétents, sous réserve des règles protectrices applicables aux consommateurs.
+
+---
+
+# Notre concept & notre histoire — Yogurt Factory
+URL : https://yogurtfactory.fr/concept.html
+
+Accueil › Le concept
+
+# La Facto, c'est  vous qui la faites
+Une glace au yaourt légère, un bar à toppings géant et une seule règle : se faire plaisir. Depuis 2011, on remplit des pots… et des sourires.
+
+Le concept
+
+## Un pot, un prix,  zéro limite
+Le principe est simple : vous choisissez la taille de votre pot, on le remplit de notre glace au yaourt 0 % de matières grasses ou de notre sundae vanille, et vous passez au bar à toppings. Fruits frais coupés chaque jour, coulis, sauces, biscuits, bonbons, céréales… vous ajoutez tout ce que vous voulez.
+Tant que ça tient dans le pot, c'est le même prix. Une formule unique en France, qui fait de chaque pot une création perso.
+- Une alternative plus légère aux glaces traditionnelles
+- Le plus gros bar à toppings de France : 34 toppings et 11 coulis
+- Des glaces et bubble waffles halal, à base de lait pasteurisé et stérilisé
+- Des produits frais, préparés sous vos yeux
+- La personnalisation au cœur de l'expérience
+Bienvenue à la Facto !
+
+Les pots
+
+## Mignon, Beau ou  Magnifique ?
+Six formats pour tous les appétits, des plus petits aux plus gourmands. Le prix est fixe pour chaque taille, toppings compris.
+
+Le Trognon 90 g · moins de 10 ans
+Le Mignon 110 g
+Le Beau 160 g
+Le Parfait 180 g
+Le Magnifique 220 g
+Le Superbe 350 g · à partager
+Voir la carte
+
+Nos valeurs
+
+## Ce qui nous fait  tourner
+
+🍓
+
+### Fraîcheur
+Les fruits sont lavés et coupés chaque jour en boutique. Pas de compromis sur le goût.
+
+🎨
+
+### Liberté
+Des milliers de combinaisons possibles : votre pot ne ressemble à aucun autre.
+
+💪
+
+### Légèreté & qualité
+Une glace au yaourt 0 % de matières grasses, halal, à base de lait pasteurisé et stérilisé.
+
+😄
+
+### Bonne humeur
+Des équipes souriantes et des boutiques pétillantes, rouges et blanches.
+
+Notre histoire
+
+## Du rêve américain au  n°1 français
+Tout commence par un voyage aux États-Unis. Ouriel Hodara et Emmanuel Tedesco, tout juste diplômés d'HEC, y découvrent le frozen yogurt en libre-service… et décident de l'adapter à la française.
+-  2011
+
+### Le premier pot
+À 23 ans, les deux fondateurs ouvrent la première boutique Yogurt Factory.
+-  2016
+
+### Lancement de la franchise
+Fort du succès des boutiques en propre, le réseau s'ouvre aux entrepreneurs.
+-  2017
+
+### Croissance record
+Yogurt Factory entre au classement du Financial Times des 1 000 entreprises européennes à plus forte croissance (2017 et 2018).
+-  2018
+
+### Rachat de Boon
+La Facto reprend l'enseigne concurrente Boon et ses boutiques.
+-  2019
+
+### Cap à l'international
+Plus de 40 points de vente, et les premières ouvertures hors de France.
+-  2024
+
+### Toujours plus de gourmandises
+Bubble waffles, gaufres de Liège, bubble tea : la carte s'élargit au-delà du pot.
+-  2025
+
+### 90 points de vente
+Donuts, sundae vanille, matcha, ube et granités débarquent. Le réseau compte 90 adresses dans 10 pays, de la France à l'Ouzbékistan.
+-  2026
+
+### Objectif 100
+Lancement du programme fidélité (1 € = 1 point) et nouvelles ouvertures majeures. Et si la prochaine, c'était la vôtre ?
+
+## Envie de goûter ?
+Trouvez la boutique la plus proche et composez votre premier pot.
+Trouver une Facto  Voir la carte
+
+---
+
+# Politique de confidentialité — Yogurt Factory
+URL : https://yogurtfactory.fr/confidentialite.html
+
+Accueil › Informations légales
+
+# Politique de confidentialité
+Vos données vous appartiennent. Voici, en toute transparence, ce que nous en faisons.
+
+Dernière mise à jour :  [date]
+
+## 1. Responsable du traitement
+[Raison sociale],  [adresse du siège], est responsable des traitements de données réalisés via ce site et le programme fidélité. Pour les demandes transmises à une boutique franchisée (contact, candidature), le franchisé concerné est destinataire des données et responsable de leur traitement pour sa boutique.
+Contact données personnelles :  [dpo@… ou adresse postale]
+
+## 2. Données collectées, finalités et bases légales
+
+| Traitement | Données | Base légale | Conservation
+| Formulaire de contact | Nom, e-mail, sujet, boutique, message | Intérêt légitime (répondre à votre demande) | 3 ans après le dernier échange
+| Candidature franchise | Identité, coordonnées, zone, apport, projet | Mesures précontractuelles à votre demande | 3 ans après le dernier contact
+| Candidature emploi | Identité, coordonnées, poste, CV, message | Mesures précontractuelles à votre demande | 2 ans après le dernier contact (sauf opposition)
+| Programme fidélité | Numéro de téléphone, historique d'achats et de points | Exécution du contrat (règlement du programme) |  [3 ans après la dernière activité]
+| Offres promotionnelles (SMS / e-mail) | Numéro de téléphone, e-mail | Consentement, retirable à tout moment (STOP SMS) | 3 ans après le dernier contact
+| « Autour de moi » (boutiques) | Position approximative | Consentement (demandé par votre navigateur) | Non conservée : le calcul se fait uniquement dans votre navigateur
+
+## 3. Destinataires
+Vos données sont destinées aux équipes habilitées de Yogurt Factory et, le cas échéant, au franchisé de la boutique concernée. Elles peuvent être traitées par nos sous-traitants, dans la limite nécessaire à leur mission :
+-  Pongo — gestion du programme fidélité ( [localisation des données]) ;
+-   [Hébergeur] — hébergement du site ;
+-   [Messagerie / outil de formulaire] — réception des formulaires.
+Vos données ne sont jamais vendues. Aucun transfert hors de l'Union européenne n'est réalisé sans garanties appropriées (clauses contractuelles types de la Commission européenne).
+
+## 4. Services tiers
+La carte des boutiques affiche des fonds de plan  OpenStreetMap : votre navigateur contacte leurs serveurs pour charger les images de la carte (votre adresse IP leur est alors transmise). Les liens « Itinéraire » ouvrent Google Maps uniquement si vous cliquez dessus. Les liens vers nos réseaux sociaux (TikTok, Instagram, Facebook) et les plateformes de livraison vous redirigent vers ces services, soumis à leurs propres politiques de confidentialité.
+Les polices de caractères sont hébergées sur notre propre serveur : aucune donnée n'est transmise à Google Fonts.
+
+## 5. Vos droits
+Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition, de portabilité, ainsi que du droit de retirer votre consentement à tout moment et de définir des directives relatives au sort de vos données après votre décès.
+Pour les exercer, écrivez à  [dpo@…] en précisant votre demande. Nous répondons dans un délai d'un mois. Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la  CNIL.
+Vous pouvez aussi vous inscrire gratuitement sur la liste d'opposition au démarchage téléphonique  Bloctel.
+
+## 6. Sécurité
+Le site est servi en HTTPS. Nous mettons en œuvre des mesures techniques et organisationnelles adaptées pour protéger vos données contre la perte, l'accès non autorisé ou la divulgation.
+
+## 7. Mineurs
+Les formulaires de candidature et le programme fidélité s'adressent aux personnes âgées d'au moins 15 ans. En dessous, l'accord d'un titulaire de l'autorité parentale est nécessaire.
+
+---
+
+# Contact & questions fréquentes — Yogurt Factory
+URL : https://yogurtfactory.fr/contact.html
+
+Accueil › Contact
+
+# On  papote ?
+Une question, une suggestion, un compliment pour l'équipe de votre boutique préférée ? On vous lit avec plaisir.
+
+📍
+
+### Une boutique ?
+Adresses, horaires et téléphones de toutes nos boutiques.
+
+🚀
+
+### Ouvrir une Facto ?
+Déposez votre candidature franchise, on vous rappelle.
+
+🙋
+
+### Travailler chez nous ?
+Découvrez nos postes et envoyez votre candidature.
+
+Écrivez-nous
+
+## Formulaire de contact
+Service client, partenariats, presse, événements : choisissez le sujet et on transmet à la bonne personne.
+
+FAQ
+
+## Questions  fréquentes
+
+C'est quoi, la glace au yaourt ?
+
+C'est une glace à base de yaourt, servie à l'italienne. Elle est plus légère qu'une glace classique (notre glace affiche 0 % de matières grasses), avec une texture crémeuse et un petit goût acidulé. Vous préférez la vanille ? Choisissez notre sundae vanille comme base.
+
+Vos glaces sont-elles halal ?
+
+Oui, nos glaces (glace au yaourt et sundae vanille) et nos bubble waffles sont halal. Le lait utilisé est pasteurisé et stérilisé. Attention : certains bonbons du bar à toppings (Tagada, Schtroumpfs, Marshmallow) contiennent de la gélatine de porc.
+
+Comment fonctionne le programme fidélité ?
+
+Donnez votre numéro de téléphone en caisse ou sur la borne : 1 € dépensé = 1 point, à échanger dès 30 points contre des gourmandises offertes. Tous les détails sur la page  Fidélité.
+
+Les toppings sont vraiment à volonté ?
+
+Oui ! Pour le Mignon, le Beau et le Magnifique, vous ajoutez autant de toppings que vous voulez parmi nos 34 toppings et 11 coulis, tant que ça rentre dans le pot. Le prix reste le même.
+
+Combien ça coûte ?
+
+Chaque boutique fixe ses prix, qui sont affichés en magasin et sur les applications de livraison. Le principe reste le même partout : un prix selon la taille du pot, toppings compris.
+
+Peut-on se faire livrer ?
+
+Oui, dans de nombreuses villes via Uber Eats ou Deliveroo (Takeaway en Belgique). Sur la page  Boutiques, cochez « Livraison » : chaque boutique qui livre affiche ses liens de commande.
+
+Et pour les allergies ?
+
+La liste des allergènes de chaque produit et topping est disponible en boutique : n'hésitez pas à la demander à l'équipe avant de composer votre pot.
+
+Quels sont les horaires de ma boutique ?
+
+Ils sont indiqués sur la page  Nos boutiques. Les horaires peuvent varier selon les centres commerciaux, les jours fériés et les vacances : en cas de doute, appelez directement la boutique.
+
+Comment ouvrir une Yogurt Factory ?
+
+Tout est expliqué sur la page  Devenir franchisé : chiffres clés, accompagnement et formulaire de candidature.
+
+---
+
+# Cookies et traceurs — Yogurt Factory
+URL : https://yogurtfactory.fr/cookies.html
+
+Accueil › Informations légales
+
+# Cookies &  traceurs
+Bonne nouvelle : ici, les seuls cookies qui comptent sont ceux de notre bar à toppings.
+
+## Ce que nous utilisons
+Ce site  n'utilise aucun cookie publicitaire, de réseau social ou de mesure d'audience. C'est pourquoi aucun bandeau de consentement ne vous est présenté (article 82 de la loi Informatique et Libertés et recommandations de la CNIL).
+Seul un traceur strictement nécessaire, exempté de consentement, est déposé dans votre navigateur :
+
+| Nom | Finalité | Type | Durée
+| yf-a11y | Mémoriser vos réglages d'accessibilité (taille du texte, contraste…) | Stockage local du navigateur, uniquement si vous modifiez un réglage | Jusqu'à réinitialisation ou effacement par vous
+| yf-fav-store, yf-tb, yf-lang-hint | Mémoriser votre boutique favorite, la fermeture du bandeau et de la suggestion de langue | Stockage local du navigateur, uniquement si vous utilisez ces fonctions | Jusqu'à effacement par vous
+
+## Services tiers
+La carte des boutiques charge des images depuis OpenStreetMap, qui ne dépose pas de cookie. Les boutons vers TikTok, Instagram, Facebook, Google Maps et les plateformes de livraison sont de simples liens : aucun contenu de ces services n'est chargé tant que vous ne cliquez pas.
+
+## Gérer vos traceurs
+Vous pouvez effacer à tout moment les données stockées par ce site depuis les paramètres de votre navigateur, ou via le bouton « Réinitialiser » du menu accessibilité.
+⚠ Si un outil de statistiques, un pixel publicitaire ou un module de réseau social est ajouté au site, un bandeau de consentement conforme devra être mis en place avant leur activation.
+
+---
+
+# Programme fidélité — 1 € = 1 point | Yogurt Factory
+URL : https://yogurtfactory.fr/fidelite.html
+
+Accueil › Fidélité
+
+# Vos gourmandises vous  rapportent
+Avec le programme fidélité Yogurt Factory, chaque euro dépensé vous rapporte 1 point. Pas de carte, pas d'appli à télécharger : juste votre numéro de téléphone.
+Voir les récompenses  Comment ça marche ?
+
+Comment ça marche ?
+
+## Simple comme  1, 2, 3
+
+📱
+
+### Donnez votre numéro
+En caisse ou directement sur la borne, indiquez votre numéro de téléphone. C'est votre compte fidélité.
+
+🪙
+
+### 1 € = 1 point
+À chaque commande, vos points s'ajoutent automatiquement sur votre compte.
+
+🎁
+
+### Faites-vous plaisir
+Dès 30 points, échangez-les contre des gourmandises offertes, en caisse ou sur la borne.
+
+Les récompenses
+
+## Qu'allez-vous vous  offrir ?
+Faites glisser le curseur pour voir ce que vos points vous permettent de débloquer.
+
+-  30 points Petit thé glacé
+-  40 points Donut
+-  50 points La Wallonne
+-  60 points Petit bubble tea
+-  70 points Petit smoothie ou milkshake
+-  80 points Un Mignon avec toppings
+-  90 points Le Parfait
+-  100 points Waffle Bomb
+-  110 points La Délicieuse
+-  120 points Le Superbe à partager
+
+### Simulateur Mes points (= euros dépensés) 45 pts
+Commencer à cumuler
+
+FAQ fidélité
+
+## Vos questions
+
+Faut-il télécharger une application ?
+
+Non. Votre numéro de téléphone suffit : on le saisit en caisse ou vous le tapez sur la borne de commande.
+
+Comment sont calculés les points ?
+
+1 € dépensé = 1 point, sur le montant total de votre commande.
+
+Mes points sont-ils valables dans toutes les boutiques ?
+
+Le programme est disponible dans les boutiques participantes. Demandez à l'équipe de votre Facto préférée.
+
+Comment utiliser mes points ?
+
+Au moment de commander, en caisse ou sur la borne, choisissez la récompense que vous souhaitez : les points correspondants sont déduits de votre solde.
+
+## Règlement du programme fidélité
+Organisateur. Le programme est proposé par  [Raison sociale] et les boutiques Yogurt Factory participantes, avec la solution technique de Pongo.
+Inscription. Gratuite et sans obligation d'achat, réservée aux personnes physiques, par la communication d'un numéro de téléphone mobile en caisse ou sur borne.
+Acquisition. 1 point par euro TTC dépensé. Les points ne sont ni échangeables contre de l'argent, ni cessibles.
+Récompenses. Selon le barème affiché ci-dessus et en boutique, dans la limite des produits disponibles. Le barème peut évoluer : les clients en sont informés en boutique.
+Validité des points.  [Durée de validité des points, ex. 12 mois après le dernier achat]
+Données personnelles. Le numéro de téléphone est utilisé uniquement pour la gestion du compte fidélité et, avec votre accord, pour vous envoyer nos offres. Voir notre  politique de confidentialité.
+Fin du programme. L'organisateur peut modifier ou mettre fin au programme, moyennant une information préalable des membres d'au moins  [30] jours.
+
+---
+
+# Devenir franchisé Yogurt Factory — Franchise frozen yogurt
+URL : https://yogurtfactory.fr/franchise.html
+
+Accueil › Devenir franchisé
+
+# Ouvrez votre  Yogurt Factory
+Rejoignez le leader français du frozen yogurt : un concept rentable et simple à exploiter, une marque qui plaît à tous les âges, et une équipe qui vous accompagne à chaque étape.
+Je candidate  Les chiffres clés
+
+90 points de vente fin 2025
+64 franchisés
+10 pays
+100 objectif fin 2026
+
+Pourquoi nous rejoindre ?
+
+## Un concept qui a fait  ses preuves
+Depuis 2011, Yogurt Factory a transformé une idée simple en réseau international, avec 23 succursales exploitées en propre : on applique à nos boutiques ce qu'on vous recommande.
+
+🏆
+
+### Le leader du marché
+N°1 du frozen yogurt en France, sur un segment « plaisir plus léger » en croissance régulière.
+
+⚙️
+
+### Simple à exploiter
+Pas de cuisine complexe, une petite équipe, des process rodés et des produits prêts à l'emploi.
+
+📈
+
+### Une carte qui lisse la saison
+Gaufres, crêpes, boissons chaudes, matcha, ube, bubble tea et cafés frappés : de quoi vendre toute l'année, pas seulement l'été. Et un programme fidélité pour faire revenir les clients.
+
+📱
+
+### Une marque ultra-visible
+Plus de 420 000 abonnés sur TikTok, une communauté active sur Instagram, et une identité rouge et blanche qu'on repère de loin.
+
+📐
+
+### Des formats flexibles
+Du kiosque de 15 m² en centre commercial à la boutique de centre-ville : on s'adapte à votre emplacement.
+
+🤝
+
+### Un vrai accompagnement
+Recherche du local, financement, formation, ouverture, suivi : vous n'êtes jamais seul.
+
+Les chiffres clés
+
+## Investissement & conditions
+Des conditions d'accès raisonnables pour un modèle rentable.
+
+30 000 € d'apport personnel
+20 000 € HT droit d'entrée
+≈ 90 000 € investissement global
+300 000 € CA annuel moyen
+5 % redevance sur le CA HT
+1 % redevance publicitaire
+5 ans durée du contrat
+15–60 m² surface de vente
+
+### Postes d'investissement (estimation HT)
+
+| Poste | Montant indicatif
+| Machine à glace au yaourt | ≈ 25 000 €
+| Bar à toppings | à partir de 12 000 €
+| Équipements complémentaires | ≈ 10 000 €
+| Travaux & aménagement | 50 000 à 80 000 €
+
+### Les formats
+
+| Format | Surface & emplacement
+| Kiosque | 15 à 25 m² en galerie de centre commercial (15 m² minimum + réserve séparée)
+| Boutique | 30 à 60 m² en centre-ville, zones piétonnes et gares
+Chiffres indicatifs et non contractuels, communiqués à titre d'information. Le détail vous sera remis avec le Document d'Information Précontractuelle (DIP).
+
+L'accompagnement
+
+## On vous forme,  on vous suit
+Notre équipe franchise vous accompagne avant, pendant et après l'ouverture.
+-  Avant
+
+### Préparer le projet
+Aide à la recherche et à la validation de l'emplacement, au montage du financement et au plan d'aménagement de la boutique.
+-  Formation
+
+### 2 semaines pour devenir un pro
+Formation pratique en boutique et théorique : production, hygiène, gestion, ressources humaines, service client.
+-  Ouverture
+
+### 5 jours à vos côtés
+Un animateur réseau est présent sur place pour lancer votre boutique dans les meilleures conditions.
+-  Après
+
+### Un suivi continu
+Assistance sur les process et la gestion, nouveautés produits, campagnes marketing nationales et locales, centrale d'achat.
+
+Le parcours
+
+## De la candidature à  l'ouverture
+
+### Candidature
+Vous remplissez le formulaire ci-dessous. On vous rappelle rapidement.
+
+### Rencontre
+Échange sur votre projet, visite de boutiques et remise du DIP.
+
+### Validation
+Choix du local, plan de financement et signature du contrat.
+
+### Ouverture
+Travaux, formation, et c'est parti pour les premiers pots !
+
+Profil recherché
+
+## Vous êtes fait pour la Facto si…
+
+- Vous avez l'âme d'un entrepreneur et le sens du commerce
+- Vous aimez manager et motiver une équipe
+- Le service client est une évidence pour vous
+- Vous disposez d'un apport personnel d'environ 30 000 €
+- Vous vous impliquez personnellement dans l'exploitation
+- Vous avez une zone ou un local en tête (c'est un plus !)
+
+Candidature
+
+## Parlons de votre projet
+Remplissez ce formulaire : notre responsable développement vous recontacte pour un premier échange, sans engagement.
+
+Faut-il de l'expérience en restauration ?
+
+Non. La formation initiale couvre tout ce qu'il faut savoir. Une expérience en commerce ou en management est en revanche un vrai atout.
+
+Peut-on ouvrir à l'étranger ?
+
+Oui : la marque est déjà présente dans 10 pays, de l'Europe à l'Asie en passant par l'Afrique. Présentez-nous votre projet, on l'étudiera avec attention.
+
+Peut-on ouvrir plusieurs boutiques ?
+
+C'est possible et même encouragé. Parlons-en lors de notre premier échange.
+
+---
+
+# Mentions légales — Yogurt Factory
+URL : https://yogurtfactory.fr/mentions-legales.html
+
+Accueil › Informations légales
+
+# Mentions légales
+Conformément à l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN).
+
+## 1. Éditeur du site
+Le site  yogurtfactory.fr est édité par :
+[Raison sociale],  [forme juridique : SAS, SARL…] au capital de  [montant] €
+Siège social :  [adresse complète]
+RCS  [ville] n°  [SIREN] — SIRET  [SIRET]
+N° de TVA intracommunautaire :  [FR…]
+Téléphone :  [numéro] — E-mail :  [contact@…]
+Directeur de la publication :  [Prénom Nom, qualité]
+
+## 2. Hébergement
+[Nom de l'hébergeur] —  [adresse] —  [téléphone]
+
+## 3. Réseau de franchise
+Yogurt Factory est un réseau composé de boutiques exploitées en propre et de boutiques franchisées. Chaque boutique franchisée est exploitée par une entreprise juridiquement et financièrement indépendante, seule responsable de son exploitation. Chaque boutique fixe librement ses prix, affichés en magasin ; les horaires et produits disponibles peuvent également varier d'une boutique à l'autre.
+
+## 4. Propriété intellectuelle
+La marque Yogurt Factory, le logo, les noms de produits (Le Mignon, Le Beau, Le Magnifique, Le Superbe, Le Parfait, Le Trognon…), ainsi que l'ensemble des contenus de ce site (textes, photographies, visuels, mise en page) sont protégés par le Code de la propriété intellectuelle. Toute reproduction, représentation ou adaptation, totale ou partielle, sans autorisation écrite préalable est interdite.
+Les marques de tiers citées (Kinder®, Kinder Bueno®, Kit Kat®, Lion®, Crunch®, Smarties®, M&M's®, Maltesers®, Daim®, Oreo®, Nutella®, Haribo®, Tagada®…) appartiennent à leurs propriétaires respectifs et sont citées à titre purement informatif pour décrire la composition de nos produits.
+
+## 5. Informations produits & allergènes
+Conformément au règlement (UE) n° 1169/2011 (INCO), les informations sur les 14 allergènes majeurs présents dans nos produits sont disponibles dans chaque boutique, sur simple demande. Les photographies sont des suggestions de présentation.
+
+## 6. Médiation de la consommation
+Conformément aux articles L.611-1 et suivants du Code de la consommation, en cas de litige non résolu avec notre service client, vous pouvez recourir gratuitement au médiateur de la consommation :  [nom et coordonnées du médiateur, site internet].
+
+## 7. Crédits
+Conception et réalisation :  [agence / prestataire]. Polices : Lobster, Montserrat et Poppins (licence SIL Open Font License). Fonds de carte : © contributeurs OpenStreetMap.
+
+## 8. Contact
+Pour toute question relative au site, utilisez notre  formulaire de contact.
+
+---
+
+# Plan du site — Yogurt Factory
+URL : https://yogurtfactory.fr/plan-du-site.html
+
+Accueil › Plan du site
+
+# Plan du  site
+Toutes nos pages en un coup d'œil.
+
+## 🍦 Gourmandises
+-  Accueil
+-  Le concept & notre histoire
+-  La carte
+-  Les glaces
+-  Toppings & coulis
+-  Gaufres, crêpes & donuts
+-  Boissons fraîches
+-  Cafés & boissons chaudes
+-  Halal & allergènes
+-  Programme fidélité
+
+## 📍 Boutiques & réseau
+-  Toutes les boutiques
+-  Devenir franchisé
+-  Chiffres clés
+-  Candidature
+-  Actualités
+-  On recrute
+-  Contact
+-  Questions fréquentes
+
+## ⚖️ Informations légales
+-  Mentions légales
+-  Politique de confidentialité
+-  Cookies
+-  Conditions d'utilisation
+-  Règlement fidélité
+-  Accessibilité
+
+---
+
+# La Facto recrute — Emplois & candidatures | Yogurt Factory
+URL : https://yogurtfactory.fr/recrutement.html
+
+Accueil › On recrute
+
+# La Facto  recrute !
+Vous avez le sourire, l'esprit d'équipe et un faible pour les toppings ? Rejoignez l'une de nos boutiques, en CDI ou CDD, à temps plein ou partiel.
+Postuler maintenant
+
+Nos métiers
+
+## Trouvez  votre place
+
+### Équipier(ère) polyvalent(e)
+CDI / CDD Temps plein ou partiel Débutant accepté
+Accueil et conseil des clients, préparation des pots, gaufres et boissons, mise en place du bar à toppings et découpe des fruits, encaissement, propreté de la boutique.
+
+### Manager / Adjoint(e)
+CDI Temps plein Expérience souhaitée
+Animation de l'équipe, organisation des plannings, gestion des stocks et des commandes, respect des standards qualité et hygiène.
+
+### Responsable de boutique
+CDI Temps plein Management
+Pilotage de l'activité et du chiffre d'affaires, recrutement et formation de l'équipe, animations commerciales locales.
+
+Pourquoi nous rejoindre ?
+
+## Travailler dans la  bonne humeur
+- Une ambiance jeune, fun et bienveillante
+- Une formation à votre arrivée, même sans expérience
+- Des horaires adaptés, compatibles avec les études
+- Des perspectives d'évolution vers le management
+- Un réseau de 90 points de vente en France et à l'étranger
+
+Candidature spontanée
+
+## Postulez en 2 minutes
+Indiquez la ville ou la boutique qui vous intéresse : votre candidature sera transmise au responsable concerné.
+Astuce : vous pouvez aussi déposer votre CV directement en boutique, les équipes adorent rencontrer les candidats !
+
+---
+
+# Yogurt Factory — 0% fat frozen yogurt & unlimited toppings
+URL : https://yogurtfactory.fr/en/
+
+The biggest topping bar in France
+
+# Your pot.
+Your toppings.
+all you want!
+0% fat frozen yogurt or vanilla soft serve, and a giant topping bar: fresh fruit, sauces, sweets, biscuits… Everything that fits in the pot, for the same price.
+📍 Find my Facto  See the menu
+
+90 stores
+10 countries
+34 unlimited toppings
+2011 the year of our first pot
+
+How does it work?
+
+## 3 steps to the  perfect pot
+At Yogurt Factory, you're the chef. We take care of the ice cream, you do the rest.
+
+### Pick your pot
+0% frozen yogurt or vanilla soft serve, in Mignon, Beau or Magnifique size… or the Superbe, to share.
+
+### Add your toppings
+34 toppings and 11 sauces: fresh fruit, Kinder Bueno®, brownie, pistachio, Tagada… All you want, as long as it fits in the pot.
+
+### Enjoy!
+Eat in, take away or delivered. And every euro spent earns 1 loyalty point towards your next treat.
+
+What's new
+
+## Ever more  treats
+The Facto never stops inventing. Discover our latest creations, to customise just like your pots.
+
+New base
+
+### Vanilla soft serve
+All the sweetness of vanilla, to top with sauces and toppings just like your pots.
+
+Indulgence
+
+### Bubble Waffle
+The Hong Kong egg waffle: La Jolie or La Délicieuse, with ice cream and toppings.
+
+9 pearl flavours
+
+### Bubble Tea
+8 syrups, 9 boba flavours: dozens of fruity combinations.
+New
+
+### Matcha & Ube
+The trendiest drinks of the moment land at the Facto, alongside iced coffees and slushies.
+
+100% indulgent
+What is frozen yogurt?
+
+## All the indulgence,  none of the fat
+Our ice cream is made from yogurt and served soft, nice and creamy. The result: an ultra-smooth texture, a slightly tangy note that keeps you coming back… and 0% fat in the ice cream. More of a vanilla fan? Our vanilla soft serve is waiting for you.
+- Frozen yogurt with  0% fat
+- Fresh fruit prepared every day, right in front of you
+-  Halal (ice creams and bubble waffles), made with  pasteurised and sterilised milk
+- A  set price per pot size, toppings included   Discover the concept
+
+Our stores
+
+## There's probably a Facto  near you
+88 locations in France and around the world, from Paris to Kuala Lumpur. Eat in, take away… or delivered to your door.
+🛵 Staying in?  See the stores that deliver with Uber Eats, Deliveroo or Takeaway.
+
+Loyalty programme
+
+## €1 spent =  1 point
+Just give your phone number at the till or on the kiosk. From 30 points, your treats are on us!
+-  30 points: a free small iced tea
+-  80 points: a free Mignon with toppings
+-  120 points: a free Superbe to share   All rewards
+
+Become a franchisee
+
+## Open your own Yogurt Factory
+Join France's frozen yogurt leader: a simple, profitable concept and a brand customers love. 2026 goal: 100 stores.
+
+€30k personal contribution
+15 m² minimum for a kiosk
+€300k average annual revenue*
+5 years contract
+All about the franchise  Apply
+* Average figure provided by the brand, not contractual.
+
+News
+
+## What's new at the  Facto?   All the news →
+
+28 September 2026
+
+### A brand-new website for the Facto
+Full menu, store finder with “Open now”, loyalty programme and an English version: welcome to the new yogurtfactory.fr. Find my Facto →
+
+15 September 2026
+
+### Slushies, matcha and ube have landed
+Three new arrivals: cola, strawberry and tropical blue slushies, plus indulgent matcha and ube drinks. See the menu →
+
+1 September 2026
+
+### €1 spent = 1 loyalty point
+Give your phone number at the till or kiosk: your points add up and turn into free treats from 30 points. See the rewards →
+
+Follow us for new products, giveaways and store openings before anyone else.
+TikTok @yogurt_factory · 420k+ followers   Instagram @yogurtfactory   Facebook YogurtFactory.fr
+
+## The Facto is hiring!
+Crew members, managers, store managers: permanent or fixed-term, full or part time. Come and work in a good mood (and a sugar rush).
+See the jobs
+
+---
+
+# Accessibility statement — Yogurt Factory
+URL : https://yogurtfactory.fr/en/accessibility.html
+
+Home › Legal information
+
+# Accessibility
+Treats are for everyone. So is our website.
+
+## Our commitment
+Yogurt Factory is committed to making its website accessible to as many people as possible, in line with the French accessibility framework (RGAA 4.1) and WCAG 2.1 level AA.
+
+## The accessibility menu
+The blue  ♿ button at the bottom left of every page opens a menu that lets you:
+- make the text larger;
+- increase contrast;
+- use a more readable font, suited in particular to people with dyslexia;
+- increase line and word spacing;
+- underline all links and strengthen the focus indicator;
+- stop all animations and automatic scrolling;
+- go back to the classic mouse cursor.
+Your settings are saved on your device. They complement, without replacing, your browser and assistive technology settings.
+
+## What we have put in place
+- Full keyboard navigation and a “Skip to content” link;
+- a clear heading structure and identified page regions (header, navigation, content, footer);
+- text alternatives for informative images;
+- forms with explicit labels and feedback messages announced to screen readers;
+- respect for the system “reduce motion” setting;
+- a site usable from mobile to large screens, with zoom up to 200%;
+- an English version of the whole website.
+
+## Compliance status
+The website has not yet undergone a full RGAA compliance audit.  [To be updated after an audit.]
+
+### Known non-accessible content
+- The interactive store map is not fully usable with a keyboard and screen reader: the store list just below shows the same information in an accessible way.
+- Some product photos taken from our menus contain embedded text; this information is repeated as text on the page.
+
+## Feedback and contact
+If an accessibility issue prevents you from accessing content or a feature, contact us via the  contact form (subject “Other”) or at  [email]: we will provide the information in another format.
+
+## Remedies
+If you don't receive a satisfactory answer, you can contact the French  Défenseur des droits (Defender of Rights).
+
+---
+
+# News — New products, openings and offers | Yogurt Factory
+URL : https://yogurtfactory.fr/en/news.html
+
+Home › News
+
+# News from the  Facto
+New products, store openings, offers: everything happening at Yogurt Factory.
+
+28 September 2026
+
+### A brand-new website for the Facto
+Full menu, store finder with “Open now”, loyalty programme and an English version: welcome to the new yogurtfactory.fr.
+Find all our stores on an interactive map, with opening hours, directions and, where they deliver, their Uber Eats and Deliveroo links. Find my Facto →
+
+15 September 2026
+
+### Slushies, matcha and ube have landed
+Three new arrivals: cola, strawberry and tropical blue slushies, plus indulgent matcha and ube drinks. See the menu →
+
+1 September 2026
+
+### €1 spent = 1 loyalty point
+Give your phone number at the till or kiosk: your points add up and turn into free treats from 30 points. See the rewards →
+Don't miss a thing: follow us on  TikTok and  Instagram.
+
+---
+
+# Our stores — Find a Yogurt Factory near you
+URL : https://yogurtfactory.fr/en/stores.html
+
+Home › Our stores
+
+# Find your  Facto
+88 locations in  79 cities, in France and around the world. Search by city, postcode or shopping centre.
+
+Tip: tap ⭐ on a store to make it “My Facto”  Open now  🛵 Delivery
+
+Île-de-France
+
+### Argenteuil
+Côté Seine · 50 avenue du Maréchal Foch, 95100 Argenteuil
+Lun–sam 10h–20h
+
+Île-de-France
+
+### Aulnay-sous-Bois
+O'Parinor · Haut de Galy, 93606 Aulnay-sous-Bois
+Tous les jours 10h–20h
+
+Île-de-France
+
+### Boulogne-Billancourt
+Les Passages · 5 rue Tony Garnier, 92100 Boulogne-Billancourt
+Lun–sam 10h–20h
+
+Île-de-France
+
+### Claye-Souilly
+Shopping Promenade · 3 rue Robert Schuman, 77410 Claye-Souilly
+Tous les jours 12h–20h
+
+Île-de-France
+
+### Collégien
+Bay 2 · Rue du Général de Gaulle, 77090 Collégien
+Lun–sam 9h30–20h · dim 10h–19h
+
+Île-de-France
+
+### Créteil
+Créteil Soleil · Avenue de la France Libre, 94000 Créteil
+Lun–sam 10h–20h30
+
+Île-de-France
+
+### La Défense – 4 Temps
+Westfield Les 4 Temps · 15 parvis de La Défense, 92092 Puteaux
+Tous les jours 10h–20h30
+
+Île-de-France
+
+### La Défense – Le Dôme
+Le Dôme, Les 4 Temps · Parvis de La Défense, 92092 Puteaux
+Tous les jours 10h–22h30
+
+Île-de-France
+
+### Levallois-Perret
+So Ouest · 30 rue d'Alsace, 92300 Levallois-Perret
+Lun–sam 10h–20h30
+
+Île-de-France
+
+### Lieusaint
+Carré Sénart · 3 allée du Préambule, 77127 Lieusaint
+Lun–sam 11h–20h30 · dim 11h–19h
+
+Île-de-France
+
+### Paris Beaugrenelle
+Beaugrenelle · 12 rue Linois, 75015 Paris
+Tous les jours 10h–21h
+
+Île-de-France
+
+### Paris Carrousel du Louvre
+Carrousel du Louvre · 99 rue de Rivoli, 75001 Paris
+Tous les jours 10h–20h
+
+Île-de-France
+
+### Paris Gare Montparnasse
+Gare Montparnasse, hall 1, niveau 2 · 17 boulevard de Vaugirard, 75015 Paris
+Lun–sam 7h–20h · dim 10h–20h
+
+Île-de-France
+
+### Paris Italie 2
+Italie Deux · 30 avenue d'Italie, 75013 Paris
+Tous les jours 10h–20h
+
+Île-de-France
+
+### Paris Le Marais
+Le Marais · 3 rue Saint-Merri, 75004 Paris
+Tous les jours 13h–minuit
+
+Île-de-France
+
+### Paris Les Halles
+Westfield Forum des Halles · 101 rue Berger, 75001 Paris
+Tous les jours 10h–20h
+
+Île-de-France
+
+### Paris Passage du Havre
+Passage du Havre · 109 rue Saint-Lazare, 75009 Paris
+Lun–sam 10h–20h · dim 10h–19h
+
+Île-de-France
+
+### Roissy
+Aéroville · 30 rue des Buissons, 95700 Roissy-en-France
+Lun–sam 9h–20h
+
+Île-de-France
+
+### Rosny-sous-Bois
+Rosny 2 · Avenue du Général de Gaulle, 93110 Rosny-sous-Bois
+Mar–sam 10h–21h · dim–lun 10h–20h
+
+Île-de-France
+
+### Serris
+Val d'Europe · 14 cours du Danube, 77700 Serris
+Tous les jours 10h–22h
+
+Île-de-France
+
+### Thiais
+Belle Épine · Rue du Luxembourg, 94320 Thiais
+Lun–sam 10h–20h30 · dim 11h–19h
+
+Île-de-France
+
+### Villeneuve-la-Garenne
+Qwartz · 4 boulevard Gallieni, 92390 Villeneuve-la-Garenne
+Tous les jours 9h30–20h30
+
+Île-de-France
+
+### Vélizy
+Vélizy 2 · Centre commercial Vélizy 2, 78140 Vélizy-Villacoublay
+Lun–sam 10h–21h · dim 10h–19h
+
+Île-de-France
+
+### Évry
+Évry 2 · 2 boulevard de l'Europe, 91000 Évry-Courcouronnes
+Lun–sam 10h–21h
+
+Auvergne-Rhône-Alpes
+
+### Grenoble – Grand Place
+Grand Place · 55 Grand Place, 38100 Grenoble
+Lun–sam 10h–20h
+
+Auvergne-Rhône-Alpes
+
+### Grenoble – Neyrpic
+Neyrpic · 9 avenue Benoît Frachon, 38400 Saint-Martin-d'Hères
+Lun–sam 10h–20h
+
+Auvergne-Rhône-Alpes
+
+### Lyon Confluence
+Confluence · 112 cours Charlemagne, 69002 Lyon
+Tous les jours 10h–20h
+
+Auvergne-Rhône-Alpes
+
+### Lyon Part-Dieu
+Westfield La Part-Dieu · 17 rue du Docteur Bouchut, 69003 Lyon
+Lun–sam 10h–20h
+
+Auvergne-Rhône-Alpes
+
+### Vichy
+Les 4 Chemins · 35 rue Lucas, 03200 Vichy
+Mar–sam 9h30–19h · dim–lun 14h–19h
+
+Bourgogne-Franche-Comté
+
+### Besançon
+Châteaufarine · Rue André Breton, 25000 Besançon
+Lun–sam 10h–20h
+
+Bourgogne-Franche-Comté
+
+### Dijon
+Toison d'Or · Route de Langres, 21000 Dijon
+Lun–sam 10h–20h
+
+Bretagne
+
+### Brest
+Coat Ar Gueven · 50 rue Jean Jaurès, 29200 Brest
+Lun–sam 10h–19h30
+
+Bretagne
+
+### Quimper
+La Galerie · 163 route de Bénodet, 29000 Quimper
+Lun–sam 9h–19h30
+
+Bretagne
+
+### Rennes
+Colombia · 40 place du Colombier, 35000 Rennes
+Lun–sam 10h–20h
+
+Centre-Val de Loire
+
+### Tours
+L'Heure Tranquille · 59 avenue Marcel Mérieux, 37200 Tours
+Lun–sam 10h–20h · dim 11h–19h
+
+Grand Est
+
+### Metz
+Muse · 2 rue des Messageries, 57000 Metz
+Lun–sam 10h–20h
+
+Grand Est
+
+### Nancy
+Saint-Sébastien · Rue des Ponts, 54000 Nancy
+Lun–sam 10h–20h
+
+Grand Est
+
+### Strasbourg
+Les Halles · 24 place des Halles, 67000 Strasbourg
+Lun–sam 10h–20h
+
+Grand Est
+
+### Thionville
+Carrefour Geric · Centre commercial Geric, 57100 Thionville
+Tous les jours 9h–20h
+
+Hauts-de-France
+
+### Beauvais
+Jeu de Paume · 21 boulevard Saint-André, 60000 Beauvais
+Lun–sam 10h–20h
+
+Hauts-de-France
+
+### Calais – Coquelles
+Cité Europe · 1001 boulevard du Kent, 62231 Coquelles
+Lun–sam 10h–20h
+
+Hauts-de-France
+
+### Dunkerque
+Centre Marine · Centre Marine, 59140 Dunkerque
+Horaires du centre
+
+Hauts-de-France
+
+### Lille
+Euralille · 100 avenue Willy Brandt, 59777 Lille
+Lun–sam 10h–20h
+
+Hauts-de-France
+
+### Noyelles-Godault
+Auchan Noyelles · Route Nationale 43, 62950 Noyelles-Godault
+Lun–sam 10h–20h30
+
+Normandie
+
+### Caen – Mondeville 2
+Mondeville 2 · ZA de l'Étoile, 14120 Mondeville
+Lun–sam 9h30–20h
+
+Normandie
+
+### Caen – Rives de l'Orne
+Les Rives de l'Orne · Quai Amiral Hamelin, 14000 Caen
+Lun–sam 10h–20h
+
+Normandie
+
+### Cherbourg
+Les Eléis · Quai de l'Entrepôt, 50100 Cherbourg-en-Cotentin
+Lun–sam 10h30–18h30
+
+Normandie
+
+### Granville
+Centre-ville · 6 rue de l'Abreuvoir, 50400 Granville
+Horaires saisonniers
+
+Normandie
+
+### Le Havre
+Docks Vauban · 70 quai Frissard, 76600 Le Havre
+Tous les jours 10h–20h
+
+Normandie
+
+### Rouen
+Docks 76 · 5-7 rue Netien, 76000 Rouen
+Lun–sam 10h–20h
+
+Nouvelle-Aquitaine
+
+### Anglet
+BAB2 · Avenue Jean Léon Laporte, 64600 Anglet
+Lun–sam 10h–20h
+
+Nouvelle-Aquitaine
+
+### Bayonne
+Centre-ville · 81 rue d'Espagne, 64100 Bayonne
+Lun–sam 12h–19h
+
+Nouvelle-Aquitaine
+
+### Bordeaux – Bègles
+Rives d'Arcins · Rue des Frères Lumière, 33130 Bègles
+Horaires du centre
+
+Nouvelle-Aquitaine
+
+### La Rochelle – Beaulieu
+Beaulieu · ZAC de Beaulieu, 17138 Puilboreau
+Lun–sam 9h30–19h30
+
+Nouvelle-Aquitaine
+
+### La Rochelle – Centre
+Centre-ville · 14 rue du Temple, 17000 La Rochelle
+Lun–sam 12h–18h45
+
+Nouvelle-Aquitaine
+
+### Poitiers
+Passage des Cordeliers · 4 rue Henri Oudin, 86000 Poitiers
+Lun–sam 10h–20h
+
+Occitanie
+
+### Béziers
+Polygone · 3 carrefour de l'Hours, 34500 Béziers
+Lun–sam 10h–20h
+
+Occitanie
+
+### Montpellier
+Odysseum · 2 place de Lisbonne, 34000 Montpellier
+Tous les jours 12h–19h
+
+Occitanie
+
+### Perpignan – Claira
+Carrefour Claira · Route du Barcarès, 66530 Claira
+Lun–sam 9h30–20h
+
+Occitanie
+
+### Toulouse Centre
+Centre-ville · 58 rue Léon Gambetta, 31000 Toulouse
+Tous les jours 12h–22h
+
+Occitanie
+
+### Toulouse – Blagnac
+Centre commercial Blagnac · 2 allée Émile Zola, 31700 Blagnac
+Lun–sam 9h30–20h
+
+Pays de la Loire
+
+### Angers – Beaucouzé
+L'Atoll · Écoparc du Buisson, 49070 Beaucouzé
+Lun–sam 10h–20h
+
+Pays de la Loire
+
+### La Roche-sur-Yon
+Les Flâneries · 181 rue Philippe Lebon, 85000 La Roche-sur-Yon
+Lun–jeu 9h30–21h30 · ven–sam 9h30–22h
+
+Pays de la Loire
+
+### Le Mans
+Auchan – ZAC du Moulin aux Moines · ZAC du Moulin aux Moines, 72650 La Chapelle-Saint-Aubin
+Lun–sam 10h–21h
+
+Pays de la Loire
+
+### Nantes Beaulieu
+Beaulieu · 1 boulevard Général de Gaulle, 44200 Nantes
+Lun–sam 9h30–20h
+
+Pays de la Loire
+
+### Nantes – Basse-Goulaine
+Pôle Sud · Route de Clisson, 44115 Basse-Goulaine
+Lun–sam 8h30–21h
+
+Provence-Alpes-Côte d'Azur
+
+### Aix-en-Provence
+Jas de Bouffan · 210 avenue de Bredasque, 13090 Aix-en-Provence
+Lun–sam 9h30–20h
+
+Provence-Alpes-Côte d'Azur
+
+### Antibes
+Vieil Antibes · 6 traverse Lacan, 06600 Antibes
+Tous les jours 13h–19h
+
+Provence-Alpes-Côte d'Azur
+
+### Avignon – Le Pontet
+Auchan Le Pontet · 533 avenue Louis Braille, 84130 Le Pontet
+Lun–sam 12h–19h30
+
+Provence-Alpes-Côte d'Azur
+
+### Cabriès
+Avant Cap – Plan de Campagne · CD6, 13480 Cabriès
+Tous les jours 9h30–19h30
+
+Provence-Alpes-Côte d'Azur
+
+### Cagnes-sur-Mer
+Polygone Riviera · 137 avenue des Alpes, 06800 Cagnes-sur-Mer
+Lun–sam 10h–20h · dim 10h–19h
+
+Provence-Alpes-Côte d'Azur
+
+### Nice TNL
+Nice TNL · 15 boulevard Général Louis Delfino, 06300 Nice
+Lun–sam 10h–20h
+
+Provence-Alpes-Côte d'Azur
+
+### Nice – Cap 3000
+Cap 3000 · 217 avenue Eugène Donadeï, 06700 Saint-Laurent-du-Var
+Lun–sam 10h–21h · dim 10h–20h
+
+Provence-Alpes-Côte d'Azur
+
+### Saint-Raphaël
+Front de mer · 101 promenade René Coty, 83700 Saint-Raphaël
+Tous les jours 11h–19h30
+
+Provence-Alpes-Côte d'Azur
+
+### Toulon – La Valette
+Avenue 83 · 300 avenue de l'Université, 83160 La Valette-du-Var
+Lun–sam 11h–20h
+
+Guyane
+
+### Matoury
+Family Plaza · CC Family Plaza, 97351 Matoury
+Tous les jours 9h30–19h30
+
+Nouvelle-Calédonie
+
+### Dumbéa
+Dumbéa Mall · Centre commercial Dumbéa Mall, 98835 Dumbéa-sur-Mer
+Lun–jeu 10h–19h30 · ven 10h–20h · sam 9h–20h · dim 9h–18h
+
+Nouvelle-Calédonie
+
+### Nouméa – Baie des Citrons
+Baie des Citrons · Promenade Roger Laroque, 98800 Nouméa
+Lun–jeu 11h–19h · ven–dim 11h–20h
+
+Nouvelle-Calédonie
+
+### Nouméa – Mirage Plaza
+Mirage Plaza · 27 promenade Roger Laroque, 98800 Nouméa
+Horaires du centre
+
+Wallonie
+
+### Charleroi
+Rive Gauche · Place Verte 20, 6000 Charleroi
+Lun–sam 10h–19h
+
+Wallonie
+
+### Liège
+Médiacité · Boulevard Raymond Poincaré 7, 4020 Liège
+Lun–sam 10h–20h
+
+Luxembourg
+
+### Luxembourg
+Cloche d'Or · 25 boulevard F. W. Raiffeisen, 2411 Luxembourg
+Lun–sam 10h–21h
+
+Pays basque
+
+### Saint-Sébastien
+Garbera · Garbera Zeharbidea 1, 20017 Donostia-San Sebastián
+Tous les jours 12h–22h30
+
+Mbour
+
+### Saly
+Saly · Route de Saly, croisement allée des Milliardaires, Saly
+Tous les jours 10h–20h
+
+Estuaire
+
+### Libreville
+Mbolo · Boulevard Triomphal, Libreville
+Tous les jours 9h–18h30
+
+Kuala Lumpur
+
+### Kuala Lumpur – Mid Valley
+Mid Valley Megamall · Lingkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur
+Tous les jours 10h–22h
+
+Kuala Lumpur
+
+### Putrajaya – IOI City Mall
+IOI City Mall · Level 3A, IOI City Tower Two, 62502 Putrajaya
+Horaires du centre
+
+Tachkent
+
+### Tachkent
+Tashkent City Mall · Tashkent City, Tachkent
+Tous les jours 12h–minuit
+
+Opening hours are indicative and may vary (public and school holidays, shopping centre hours). If in doubt, call the store.
+
+## No Facto near you?
+Maybe it's a sign you should open one. We're looking for entrepreneurs across France and abroad.
+Become a franchisee
+
+---
+
+# Menu — Frozen yogurt, toppings, waffles, bubble tea | Yogurt Factory
+URL : https://yogurtfactory.fr/en/menu.html
+
+Home › Menu
+
+# The  menu
+0% frozen yogurt or vanilla soft serve, the biggest topping bar in France, waffles, crêpes, bubble tea, coffee… It's all here, you just have to choose.
+
+## Ice cream
+0% frozen yogurt or vanilla soft serve · unlimited toppings as long as they fit in the pot
+
+0% frozen yogurt The original: light, smooth, deliciously tangy
+Vanilla soft serve For sweet-tooth fans: creamy as can be
+Halal Pasteurised and sterilised milk
+
+### Classic pots · sauce + unlimited toppings
+
+#### Le Mignon
+110 g · size S
+Best-seller
+
+#### Le Beau
+160 g · size M
+
+#### Le Magnifique
+220 g · size L
+
+### Specials
+
+To share
+
+#### Le Superbe
+350 g · 1 sauce + 3 toppings
+
+#### Le Parfait
+180 g · 1 sauce + 2 toppings
+Under 10s
+
+#### Le Trognon
+90 g · 1 sauce + 2 toppings
+
+## The biggest topping bar in France
+34 toppings and 11 sauces, as much as you like · varies by store and season
+
+### Fresh fruit
+- Strawberry
+- Raspberry
+- Blueberry
+- Mango
+- Pineapple
+- Kiwi
+- Banana
+- Passion fruit
+- Coconut
+- Melon  (seasonal)
+- Watermelon  (seasonal)
+
+### Chocolate & biscuits
+- Milk chocolate balls
+- White chocolate balls
+- Dark chocolate balls
+- Kinder Bueno
+- Kinder Bueno White
+- Kit Kat
+- Lion
+- M&M's
+- Maltesers
+- Crunch
+- Daim
+- Schoko-Bons
+- Smarties
+- Brownie
+- Cookie
+- Speculoos
+- Meringue
+
+### Sweets & crunchies
+- Tagada  (contains pork gelatine)
+- Smurfs  (contains pork gelatine)
+- Marshmallow  (contains pork gelatine)
+- Candied peanuts
+- Hazelnut
+- Muesli
+
+### Sauces
+- Peanut
+- Salted caramel
+- White chocolate
+- Chocolate-hazelnut
+- Exotic
+- Strawberry
+- Raspberry
+- Kit Kat
+- Hazelnut
+- Pistachio
+- Speculoos
+
+## Waffles, crêpes & donuts
+Warm, crispy, indulgent
+
+### Bubble Waffle  Indulgence
+The Hong Kong egg waffle
+-  La Jolie ice cream + sauce
+-  La Délicieuse ice cream + sauce + toppings
+
+### Liège waffles
+-  La Liégeoise plain (sugared)
+-  La Wallonne sauce of your choice
+-  Waffle Bomb waffle, sauce and ice cream
+
+### Crêpes
+-  Sugar
+-  Build your own Nutella®, honey, speculoos, caramel, raspberry and exotic
+
+### Donuts  New
+Soft and customisable with your favourite toppings and sauces
+
+## Cold drinks
+Smoothies, milkshakes, bubble tea, iced teas and slushies
+
+### Bubble Tea  Trending
+1. The syrup strawberry, raspberry, lychee, mango, passion fruit, peach, mojito and grapefruit
+2. The pearls (boba) cherry, strawberry, raspberry, lychee, blueberry, apple, peach, mango and passion fruit
+
+### Smoothies
+Frozen yogurt, milk and fruit
+- Strawberry · raspberry · blueberry
+- Mango · kiwi · pineapple
+- Strawberry · banana
+- Mango · banana
+
+### Milkshakes
+Vanilla ice cream, milk and a treat
+Kinder Bueno, Oreo, speculoos, vanilla and Daim
+
+### Iced teas & lemonade
+Strawberry, raspberry, lychee, mango, passion fruit, peach, mojito and grapefruit
+
+### Slushies  New
+Cola, strawberry and tropical blue
+
+### Our syrups
+Fruity strawberry, raspberry, lychee, mango, passion fruit, peach, mojito and grapefruit
+Indulgent hazelnut, vanilla, caramel and speculoos
+
+## Coffee & hot drinks
+Make them yours with our hazelnut, vanilla, caramel and speculoos syrups
+
+### Iced coffee  Cold
+Caramel, vanilla, speculoos, cookie and hazelnut
+
+### Hot drinks
+Espresso, hot chocolate, cappuccino, café au lait, mocha and tea
+
+### Matcha  New
+Japanese green tea, the indulgent way: smooth, creamy and full of pep
+
+### Ube  New
+The Philippines' star purple yam: indulgent, with an irresistible colour
+
+## Halal & allergens
+Good to know before you order
+
+### ✅ Halal
+Our ice creams (frozen yogurt and vanilla soft serve) and our bubble waffles are halal. The milk we use is pasteurised and sterilised.
+Please note: the  Tagada, Smurfs and Marshmallow sweets contain  pork gelatine.
+
+### ⚠️ Allergens
+Our products may contain milk, gluten, eggs, soya, peanuts and tree nuts. The detailed allergen list for each product, topping and sauce is available in store: please ask before ordering.
+Indicative menu: products and flavours may vary between stores. Prices are displayed in each store.
+
+## Feeling hungry?
+Come and see us, collect loyalty points, or get delivered via Uber Eats or Deliveroo.
+Find a Facto  Loyalty programme
+
+---
+
+# Terms of use — Yogurt Factory
+URL : https://yogurtfactory.fr/en/terms.html
+
+Home › Legal information
+
+# Terms of use
+
+This is a courtesy translation. In the event of any discrepancy, the  French version prevails.
+In force as of  [date].
+
+## 1. Purpose
+These terms govern the use of the yogurtfactory.fr website, a showcase site presenting the Yogurt Factory brand, its products, stores, loyalty programme and franchise network. The website does not allow ordering or payment. Using the website implies acceptance of these terms.
+
+## 2. Access
+The website is freely accessible 24/7, except during maintenance or in cases of force majeure. The publisher cannot be held liable for temporary unavailability.
+
+## 3. Published information
+Information (products, opening hours, addresses, network figures) is provided for guidance and may change without notice. The website does not display prices: each store freely sets its own, displayed in store. Photographs are not contractual. Franchise figures are not contractual: only the Pre-Contractual Information Document (article L.330-3 of the French Commercial Code) is binding.
+
+## 4. Delivery orders
+Delivery orders are placed on third-party platforms (Uber Eats, Deliveroo, Takeaway), under their own terms and conditions.
+
+## 5. User conduct
+Users agree not to send unlawful, offensive or rights-infringing content through the forms, and not to disrupt the operation of the website.
+
+## 6. External links
+The website contains links to third-party sites (social networks, delivery platforms, maps). The publisher has no control over these sites and accepts no liability for their content.
+
+## 7. Intellectual property and personal data
+See our  legal notice and our  privacy policy.
+
+## 8. Governing law
+These terms are governed by French law. In the event of a dispute, and after an attempt at amicable resolution, the French courts have jurisdiction, subject to the rules protecting consumers.
+
+---
+
+# Our concept & our story — Yogurt Factory
+URL : https://yogurtfactory.fr/en/concept.html
+
+Home › Our concept
+
+# The Facto is what  you make it
+Light frozen yogurt, a giant topping bar and just one rule: treat yourself. Since 2011, we've been filling pots… and putting smiles on faces.
+
+The concept
+
+## One pot, one price,  zero limits
+It's simple: choose the size of your pot, we fill it with our 0% fat frozen yogurt or our vanilla soft serve, and off you go to the topping bar. Fresh fruit cut every day, sauces, biscuits, sweets, cereals… add whatever you like.
+As long as it fits in the pot, the price stays the same. A formula unique in France that makes every pot your own creation.
+- A lighter alternative to traditional ice cream
+- The biggest topping bar in France: 34 toppings and 11 sauces
+- Halal ice creams and bubble waffles, made with pasteurised and sterilised milk
+- Fresh products, prepared right in front of you
+- Customisation at the heart of the experience
+Welcome to the Facto!
+
+The pots
+
+## Mignon, Beau or  Magnifique?
+Six sizes for every appetite, from the littlest to the greediest. Each size has a set price, toppings included.
+
+Le Trognon 90 g · under 10s
+Le Mignon 110 g
+Le Beau 160 g
+Le Parfait 180 g
+Le Magnifique 220 g
+Le Superbe 350 g · to share
+See the menu
+
+Our values
+
+## What makes us  tick
+
+🍓
+
+### Freshness
+Fruit is washed and cut in store every day. No compromise on taste.
+
+🎨
+
+### Freedom
+Thousands of possible combinations: no two pots are alike.
+
+💪
+
+### Lightness & quality
+0% fat frozen yogurt, halal, made with pasteurised and sterilised milk.
+
+😄
+
+### Good vibes
+Smiling teams and bubbly red-and-white stores.
+
+Our story
+
+## From the American dream to  France's no.1
+It all started with a trip to the United States. Fresh HEC graduates Ouriel Hodara and Emmanuel Tedesco discovered self-serve frozen yogurt there… and decided to give it a French twist.
+-  2011
+
+### The first pot
+Aged 23, the two founders open the very first Yogurt Factory store.
+-  2016
+
+### Franchise launch
+Building on the success of its own stores, the network opens up to entrepreneurs.
+-  2017
+
+### Record growth
+Yogurt Factory enters the Financial Times ranking of Europe's 1,000 fastest-growing companies (2017 and 2018).
+-  2018
+
+### Boon acquisition
+The Facto takes over rival brand Boon and its stores.
+-  2019
+
+### Going international
+More than 40 stores, and the first openings outside France.
+-  2024
+
+### Ever more treats
+Bubble waffles, Liège waffles, bubble tea: the menu grows beyond the pot.
+-  2025
+
+### 90 stores
+Donuts, vanilla soft serve, matcha, ube and slushies arrive. The network has 90 locations in 10 countries, from France to Uzbekistan.
+-  2026
+
+### Target: 100
+Launch of the loyalty programme (€1 = 1 point) and major new openings. What if the next one were yours?
+
+## Fancy a taste?
+Find your nearest store and build your first pot.
+Find a Facto  See the menu
+
+---
+
+# Privacy policy — Yogurt Factory
+URL : https://yogurtfactory.fr/en/privacy.html
+
+Home › Legal information
+
+# Privacy policy
+Your data belongs to you. Here, in full transparency, is what we do with it.
+
+This is a courtesy translation. In the event of any discrepancy, the  French version prevails.
+Last updated:  [date]
+
+## 1. Data controller
+[Company name],  [registered office address], is responsible for the data processing carried out through this website and the loyalty programme. For requests sent to a franchised store (contact, application), the franchisee concerned receives the data and is responsible for processing it for their store.
+Data protection contact:  [dpo@… or postal address]
+
+## 2. Data collected, purposes and legal bases
+
+| Processing | Data | Legal basis | Retention
+| Contact form | Name, email, subject, store, message | Legitimate interest (answering your request) | 3 years after the last exchange
+| Franchise application | Identity, contact details, area, contribution, project | Pre-contractual steps at your request | 3 years after the last contact
+| Job application | Identity, contact details, position, CV, message | Pre-contractual steps at your request | 2 years after the last contact (unless you object)
+| Loyalty programme | Phone number, purchase and points history | Performance of the contract (programme rules) |  [3 years after last activity]
+| Promotional offers (SMS / email) | Phone number, email | Consent, which you can withdraw at any time (STOP SMS) | 3 years after the last contact
+| “Near me” (stores) | Approximate location | Consent (requested by your browser) | Not stored: the calculation happens only in your browser
+
+## 3. Recipients
+Your data is intended for authorised Yogurt Factory staff and, where applicable, the franchisee of the store concerned. It may be processed by our subcontractors, strictly as needed for their work:
+-  Pongo — loyalty programme management ( [data location]);
+-   [Host] — website hosting;
+-   [Email / form tool] — receiving forms.
+Your data is never sold. No transfer outside the European Union takes place without appropriate safeguards (European Commission standard contractual clauses).
+
+## 4. Third-party services
+The store map displays  OpenStreetMap map tiles: your browser contacts their servers to load the map images (your IP address is then sent to them). “Directions” links open Google Maps only if you click them. Links to our social networks (TikTok, Instagram, Facebook) and delivery platforms take you to those services, which have their own privacy policies.
+Fonts are hosted on our own server: no data is sent to Google Fonts.
+
+## 5. Your rights
+Under the General Data Protection Regulation (GDPR) and the French Data Protection Act, you have the right to access, rectify, erase, restrict, object to and port your data, to withdraw your consent at any time and to set instructions for what happens to your data after your death.
+To exercise these rights, write to  [dpo@…] stating your request. We reply within one month. If you believe your rights have not been respected, you may lodge a complaint with the  CNIL (French data protection authority).
+
+## 6. Security
+The website is served over HTTPS. We apply appropriate technical and organisational measures to protect your data against loss, unauthorised access or disclosure.
+
+## 7. Minors
+The application forms and the loyalty programme are intended for people aged 15 and over. Below that age, the consent of a person with parental responsibility is required.
+
+---
+
+# Contact & FAQ — Yogurt Factory
+URL : https://yogurtfactory.fr/en/contact.html
+
+Home › Contact
+
+# Let's  chat?
+A question, a suggestion, a compliment for the team at your favourite store? We'd love to hear from you.
+
+📍
+
+### Looking for a store?
+Addresses, opening hours and phone numbers for all our stores.
+
+🚀
+
+### Open a Facto?
+Send us your franchise application and we'll call you back.
+
+🙋
+
+### Work with us?
+Discover our jobs and send your application.
+
+Write to us
+
+## Contact form
+Customer service, partnerships, press, events: pick the subject and we'll pass it on to the right person.
+
+FAQ
+
+## Frequently asked  questions
+
+What is frozen yogurt?
+
+It's ice cream made from yogurt, served soft. It's lighter than classic ice cream (ours is 0% fat), with a creamy texture and a slightly tangy taste. Prefer vanilla? Choose our vanilla soft serve as your base.
+
+Are your ice creams halal?
+
+Yes, our ice creams (frozen yogurt and vanilla soft serve) and our bubble waffles are halal. The milk we use is pasteurised and sterilised. Please note: some sweets on the topping bar (Tagada, Smurfs, Marshmallow) contain pork gelatine.
+
+How does the loyalty programme work?
+
+Give your phone number at the till or on the kiosk: €1 spent = 1 point, to swap from 30 points for free treats. All the details are on the  Loyalty page.
+
+Are the toppings really unlimited?
+
+Yes! For the Mignon, Beau and Magnifique, add as many toppings as you like from our 34 toppings and 11 sauces, as long as they fit in the pot. The price stays the same.
+
+How much does it cost?
+
+Each store sets its own prices, displayed in store and on the delivery apps. The principle is the same everywhere: one price per pot size, toppings included.
+
+Can I get it delivered?
+
+Yes, in many cities via Uber Eats or Deliveroo (Takeaway in Belgium). On the  Stores page, tick “Delivery”: every store that delivers shows its ordering links.
+
+What about allergies?
+
+The allergen list for every product and topping is available in store: feel free to ask the team before building your pot.
+
+What are my store's opening hours?
+
+They're shown on the  Our stores page. Hours may vary with shopping-centre hours, public holidays and school holidays: if in doubt, call the store directly.
+
+How can I open a Yogurt Factory?
+
+Everything is explained on the  Become a franchisee page: key figures, support and application form.
+
+---
+
+# Cookies and trackers — Yogurt Factory
+URL : https://yogurtfactory.fr/en/cookies.html
+
+Home › Legal information
+
+# Cookies &  trackers
+Good news: here, the only cookies that count are the ones on our topping bar.
+
+## What we use
+This website uses  no advertising, social media or analytics cookies. That's why you aren't shown a consent banner (article 82 of the French Data Protection Act and CNIL guidelines).
+Only strictly necessary storage, exempt from consent, is used in your browser:
+
+| Name | Purpose | Type | Duration
+| yf-a11y | Remember your accessibility settings (text size, contrast…) | Browser local storage, only if you change a setting | Until you reset or clear it
+| yf-fav-store, yf-tb, yf-lang-hint | Remember your favourite store and whether you closed the top banner or the language suggestion | Browser local storage, only if you use these features | Until you clear it
+
+## Third-party services
+The store map loads images from OpenStreetMap, which sets no cookies. Buttons to TikTok, Instagram, Facebook, Google Maps and delivery platforms are simple links: no content from these services is loaded unless you click.
+
+## Managing trackers
+You can clear the data stored by this website at any time from your browser settings, or with the “Reset” button in the accessibility menu.
+
+---
+
+# Loyalty programme — €1 = 1 point | Yogurt Factory
+URL : https://yogurtfactory.fr/en/loyalty.html
+
+Home › Loyalty
+
+# Your treats  pay you back
+With the Yogurt Factory loyalty programme, every euro you spend earns you 1 point. No card, no app to download: just your phone number.
+See the rewards  How does it work?
+
+How does it work?
+
+## Easy as  1, 2, 3
+
+📱
+
+### Give your number
+At the till or directly on the kiosk, enter your phone number. That's your loyalty account.
+
+🪙
+
+### €1 = 1 point
+With every order, your points are added to your account automatically.
+
+🎁
+
+### Treat yourself
+From 30 points, swap them for free treats, at the till or on the kiosk.
+
+The rewards
+
+## What will you  treat yourself to?
+Drag the slider to see what your points can unlock.
+
+-  30 points Small iced tea
+-  40 points Donut
+-  50 points La Wallonne
+-  60 points Small bubble tea
+-  70 points Small smoothie or milkshake
+-  80 points A Mignon with toppings
+-  90 points Le Parfait
+-  100 points Waffle Bomb
+-  110 points La Délicieuse
+-  120 points Le Superbe to share
+
+### Simulator My points (= euros spent) 45 pts
+Start collecting
+
+Loyalty FAQ
+
+## Your questions
+
+Do I need to download an app?
+
+No. Your phone number is all it takes: we enter it at the till or you type it on the ordering kiosk.
+
+How are points calculated?
+
+€1 spent = 1 point, on the total amount of your order.
+
+Can I use my points in every store?
+
+The programme is available in participating stores. Ask the team at your favourite Facto.
+
+How do I use my points?
+
+When you order, at the till or on the kiosk, choose the reward you want: the matching points are deducted from your balance.
+
+## Loyalty programme rules
+This is a courtesy translation. In the event of any discrepancy, the French version prevails.
+Organiser. The programme is offered by  [Company name] and participating Yogurt Factory stores, using technology provided by Pongo.
+Membership. Free and with no purchase necessary, open to individuals, by providing a mobile phone number at the till or on the kiosk.
+Earning points. 1 point per euro spent (VAT included). Points cannot be exchanged for cash or transferred.
+Rewards. According to the table above and in store, subject to product availability. The table may change: customers are informed in store.
+Point validity.  [Validity period, e.g. 12 months after the last purchase]
+Personal data. Your phone number is only used to manage your loyalty account and, with your consent, to send you our offers. See our  privacy policy.
+End of the programme. The organiser may change or end the programme, with at least  [30] days' prior notice to members.
+
+---
+
+# Become a Yogurt Factory franchisee — Frozen yogurt franchise
+URL : https://yogurtfactory.fr/en/franchise.html
+
+Home › Franchise
+
+# Open your own  Yogurt Factory
+Join France's frozen yogurt leader: a profitable, easy-to-run concept, a brand loved by all ages, and a team that supports you every step of the way.
+Apply now  Key figures
+
+90 stores at end of 2025
+64 franchisees
+10 countries
+100 target by end of 2026
+
+Why join us?
+
+## A  proven concept
+Since 2011, Yogurt Factory has turned a simple idea into an international network, with 23 company-owned stores: we apply to our own stores what we recommend to you.
+
+🏆
+
+### The market leader
+France's no.1 in frozen yogurt, in a steadily growing “lighter indulgence” segment.
+
+⚙️
+
+### Easy to run
+No complex kitchen, a small team, well-oiled processes and ready-to-use products.
+
+📈
+
+### A menu for every season
+Waffles, crêpes, hot drinks, matcha, ube, bubble tea and iced coffees: sales all year round, not just in summer. Plus a loyalty programme that brings customers back.
+
+📱
+
+### A highly visible brand
+More than 420,000 TikTok followers, an active Instagram community, and a red-and-white identity you spot from afar.
+
+📐
+
+### Flexible formats
+From a 15 m² kiosk in a shopping centre to a high-street store: we adapt to your location.
+
+🤝
+
+### Real support
+Finding premises, financing, training, opening, follow-up: you're never on your own.
+
+Key figures
+
+## Investment & terms
+Reasonable entry terms for a profitable model.
+
+€30,000 personal contribution
+€20,000 entry fee (excl. VAT)
+≈ €90,000 total investment
+€300,000 average annual revenue
+5% royalty on net revenue
+1% advertising fee
+5 years contract length
+15–60 m² sales area
+
+### Investment breakdown (estimate, excl. VAT)
+
+| Item | Indicative amount
+| Frozen yogurt machine | ≈ €25,000
+| Topping bar | from €12,000
+| Additional equipment | ≈ €10,000
+| Works & fit-out | €50,000 to €80,000
+
+### Formats
+
+| Format | Size & location
+| Kiosk | 15 to 25 m² in a shopping-centre mall (15 m² minimum + separate storage)
+| Store | 30 to 60 m² in town centres, pedestrian areas and stations
+Indicative, non-contractual figures, given for information only. Full details are provided in the Pre-Contractual Information Document (DIP, required under French law).
+
+Support
+
+## We train you,  we stand by you
+Our franchise team supports you before, during and after the opening.
+-  Before
+
+### Preparing the project
+Help finding and approving the location, putting the financing together and planning the store layout.
+-  Training
+
+### 2 weeks to become a pro
+Hands-on training in store and theory: production, hygiene, management, HR, customer service.
+-  Opening
+
+### 5 days by your side
+A network coordinator is on site to launch your store in the best possible conditions.
+-  After
+
+### Ongoing support
+Help with processes and management, new products, national and local marketing campaigns, central purchasing.
+
+The journey
+
+## From application to  opening day
+
+### Application
+Fill in the form below. We'll call you back quickly.
+
+### Meeting
+We discuss your project, visit stores and hand you the DIP.
+
+### Approval
+Choice of premises, financing plan and contract signature.
+
+### Opening
+Works, training, and off you go with your first pots!
+
+Who we're looking for
+
+## You're made for the Facto if…
+
+- You have an entrepreneurial spirit and a flair for retail
+- You enjoy managing and motivating a team
+- Customer service comes naturally to you
+- You have a personal contribution of around €30,000
+- You get personally involved in running the store
+- You have an area or premises in mind (that's a plus!)
+
+Application
+
+## Let's talk about your project
+Fill in this form: our development manager will get back to you for a first, no-commitment chat.
+
+Do I need restaurant experience?
+
+No. The initial training covers everything you need to know. Retail or management experience is, however, a real plus.
+
+Can I open abroad?
+
+Yes: the brand is already in 10 countries, from Europe to Asia and Africa. Tell us about your project and we'll look at it carefully.
+
+Can I open several stores?
+
+It's possible and even encouraged. Let's discuss it at our first meeting.
+
+---
+
+# Legal notice — Yogurt Factory
+URL : https://yogurtfactory.fr/en/legal-notice.html
+
+Home › Legal information
+
+# Legal notice
+In accordance with article 6 of French law no. 2004-575 of 21 June 2004 on confidence in the digital economy (LCEN).
+
+This is a courtesy translation. In the event of any discrepancy, the  French version prevails.
+
+## 1. Publisher
+The  yogurtfactory.fr website is published by:
+[Company name],  [legal form] with a share capital of € [amount]
+Registered office:  [full address]
+Registered with the  [city] Trade and Companies Register under no.  [SIREN] — SIRET  [SIRET]
+EU VAT number:  [FR…]
+Phone:  [number] — Email:  [contact@…]
+Publication director:  [First name Last name, position]
+
+## 2. Hosting
+[Host name] —  [address] —  [phone]
+
+## 3. Franchise network
+Yogurt Factory is a network of company-owned and franchised stores. Each franchised store is run by a legally and financially independent company, solely responsible for its operation. Each store freely sets its own prices, displayed in store; opening hours and available products may also vary from one store to another.
+
+## 4. Intellectual property
+The Yogurt Factory trademark, logo, product names (Le Mignon, Le Beau, Le Magnifique, Le Superbe, Le Parfait, Le Trognon…) and all content on this website (text, photographs, visuals, layout) are protected by the French Intellectual Property Code. Any reproduction, representation or adaptation, in whole or in part, without prior written permission is prohibited.
+Third-party trademarks mentioned (Kinder®, Kinder Bueno®, Kit Kat®, Lion®, Crunch®, Smarties®, M&M's®, Maltesers®, Daim®, Oreo®, Nutella®, Haribo®, Tagada®…) belong to their respective owners and are cited for information purposes only, to describe our products.
+
+## 5. Product information & allergens
+In accordance with Regulation (EU) No 1169/2011, information on the 14 major allergens in our products is available in every store on request. Photographs are serving suggestions.
+
+## 6. Consumer mediation
+In accordance with articles L.611-1 et seq. of the French Consumer Code, if a dispute with our customer service remains unresolved, you may refer it free of charge to the consumer mediator:  [mediator name, contact details and website].
+
+## 7. Credits
+Design and development:  [agency / provider]. Fonts: Lobster, Montserrat and Poppins (SIL Open Font License). Map data: © OpenStreetMap contributors.
+
+## 8. Contact
+For any question about this website, please use our  contact form.
+
+---
+
+# Sitemap — Yogurt Factory
+URL : https://yogurtfactory.fr/en/sitemap.html
+
+Home › Sitemap
+
+#  Sitemap
+All our pages at a glance.
+
+## 🍦 Treats
+-  Home
+-  Our concept & story
+-  Menu
+-  Ice cream
+-  Toppings & sauces
+-  Waffles, crêpes & donuts
+-  Cold drinks
+-  Coffee & hot drinks
+-  Halal & allergens
+-  Loyalty programme
+
+## 📍 Stores & network
+-  All stores
+-  Become a franchisee
+-  Key figures
+-  Application
+-  News
+-  Careers
+-  Contact
+-  FAQ
+
+## ⚖️ Legal
+-  Legal notice
+-  Privacy policy
+-  Cookies
+-  Terms of use
+-  Loyalty rules
+-  Accessibility
+-  Version française
+
+---
+
+# The Facto is hiring — Jobs & applications | Yogurt Factory
+URL : https://yogurtfactory.fr/en/careers.html
+
+Home › Careers
+
+# The Facto is  hiring!
+Got a smile, team spirit and a soft spot for toppings? Join one of our stores, on a permanent or fixed-term contract, full or part time.
+Apply now
+
+Our jobs
+
+## Find  your place
+
+### Crew member
+Permanent / fixed-term Full or part time No experience needed
+Welcoming and advising customers, preparing pots, waffles and drinks, setting up the topping bar and cutting fruit, till, keeping the store clean.
+
+### Manager / Assistant manager
+Permanent Full time Experience preferred
+Leading the team, planning rotas, managing stock and orders, upholding quality and hygiene standards.
+
+### Store manager
+Permanent Full time Management
+Running the business and revenue, recruiting and training the team, local sales events.
+
+Why join us?
+
+## Work in a  great mood
+- A young, fun and caring atmosphere
+- Training when you start, even with no experience
+- Flexible hours, compatible with studying
+- Opportunities to move into management
+- A network of 90 stores in France and abroad
+
+Open application
+
+## Apply in 2 minutes
+Tell us which city or store you're interested in: your application will be passed on to the relevant manager.
+Tip: you can also drop your CV off in store, our teams love meeting candidates!
+
+---
+
+# Liste des boutiques (88)
+
+- Argenteuil (France) : Côté Seine, 50 avenue du Maréchal Foch, 95100 Argenteuil — Lun–sam 10h–20h
+- Aulnay-sous-Bois (France) : O'Parinor, Haut de Galy, 93606 Aulnay-sous-Bois — Tous les jours 10h–20h
+- Boulogne-Billancourt (France) : Les Passages, 5 rue Tony Garnier, 92100 Boulogne-Billancourt — Lun–sam 10h–20h
+- Claye-Souilly (France) : Shopping Promenade, 3 rue Robert Schuman, 77410 Claye-Souilly — Tous les jours 12h–20h
+- Collégien (France) : Bay 2, Rue du Général de Gaulle, 77090 Collégien — Lun–sam 9h30–20h · dim 10h–19h
+- Créteil (France) : Créteil Soleil, Avenue de la France Libre, 94000 Créteil — Lun–sam 10h–20h30 — tél. 01 43 77 21 64
+- La Défense – 4 Temps (France) : Westfield Les 4 Temps, 15 parvis de La Défense, 92092 Puteaux — Tous les jours 10h–20h30 — tél. 01 47 67 07 93
+- La Défense – Le Dôme (France) : Le Dôme, Les 4 Temps, Parvis de La Défense, 92092 Puteaux — Tous les jours 10h–22h30
+- Levallois-Perret (France) : So Ouest, 30 rue d'Alsace, 92300 Levallois-Perret — Lun–sam 10h–20h30 — tél. 09 83 00 47 57
+- Lieusaint (France) : Carré Sénart, 3 allée du Préambule, 77127 Lieusaint — Lun–sam 11h–20h30 · dim 11h–19h — tél. 09 84 45 72 92
+- Paris Beaugrenelle (France) : Beaugrenelle, 12 rue Linois, 75015 Paris — Tous les jours 10h–21h — tél. 09 83 76 53 52
+- Paris Carrousel du Louvre (France) : Carrousel du Louvre, 99 rue de Rivoli, 75001 Paris — Tous les jours 10h–20h
+- Paris Gare Montparnasse (France) : Gare Montparnasse, hall 1, niveau 2, 17 boulevard de Vaugirard, 75015 Paris — Lun–sam 7h–20h · dim 10h–20h
+- Paris Italie 2 (France) : Italie Deux, 30 avenue d'Italie, 75013 Paris — Tous les jours 10h–20h — tél. 01 45 89 35 42
+- Paris Le Marais (France) : Le Marais, 3 rue Saint-Merri, 75004 Paris — Tous les jours 13h–minuit — tél. 09 80 51 35 73
+- Paris Les Halles (France) : Westfield Forum des Halles, 101 rue Berger, 75001 Paris — Tous les jours 10h–20h — tél. 01 40 28 01 51
+- Paris Passage du Havre (France) : Passage du Havre, 109 rue Saint-Lazare, 75009 Paris — Lun–sam 10h–20h · dim 10h–19h
+- Roissy (France) : Aéroville, 30 rue des Buissons, 95700 Roissy-en-France — Lun–sam 9h–20h — tél. 01 48 62 03 85
+- Rosny-sous-Bois (France) : Rosny 2, Avenue du Général de Gaulle, 93110 Rosny-sous-Bois — Mar–sam 10h–21h · dim–lun 10h–20h — tél. 01 48 94 32 02
+- Serris (France) : Val d'Europe, 14 cours du Danube, 77700 Serris — Tous les jours 10h–22h — tél. 09 83 48 57 98
+- Thiais (France) : Belle Épine, Rue du Luxembourg, 94320 Thiais — Lun–sam 10h–20h30 · dim 11h–19h — tél. 01 75 37 23 15
+- Villeneuve-la-Garenne (France) : Qwartz, 4 boulevard Gallieni, 92390 Villeneuve-la-Garenne — Tous les jours 9h30–20h30 — tél. 01 47 90 33 04
+- Vélizy (France) : Vélizy 2, Centre commercial Vélizy 2, 78140 Vélizy-Villacoublay — Lun–sam 10h–21h · dim 10h–19h — tél. 01 39 46 24 96
+- Évry (France) : Évry 2, 2 boulevard de l'Europe, 91000 Évry-Courcouronnes — Lun–sam 10h–21h — tél. 01 78 05 09 79
+- Grenoble – Grand Place (France) : Grand Place, 55 Grand Place, 38100 Grenoble — Lun–sam 10h–20h — tél. 07 61 88 87 36
+- Grenoble – Neyrpic (France) : Neyrpic, 9 avenue Benoît Frachon, 38400 Saint-Martin-d'Hères — Lun–sam 10h–20h
+- Lyon Confluence (France) : Confluence, 112 cours Charlemagne, 69002 Lyon — Tous les jours 10h–20h
+- Lyon Part-Dieu (France) : Westfield La Part-Dieu, 17 rue du Docteur Bouchut, 69003 Lyon — Lun–sam 10h–20h
+- Vichy (France) : Les 4 Chemins, 35 rue Lucas, 03200 Vichy — Mar–sam 9h30–19h · dim–lun 14h–19h
+- Besançon (France) : Châteaufarine, Rue André Breton, 25000 Besançon — Lun–sam 10h–20h
+- Dijon (France) : Toison d'Or, Route de Langres, 21000 Dijon — Lun–sam 10h–20h
+- Brest (France) : Coat Ar Gueven, 50 rue Jean Jaurès, 29200 Brest — Lun–sam 10h–19h30
+- Quimper (France) : La Galerie, 163 route de Bénodet, 29000 Quimper — Lun–sam 9h–19h30
+- Rennes (France) : Colombia, 40 place du Colombier, 35000 Rennes — Lun–sam 10h–20h — tél. 02 99 65 10 86
+- Tours (France) : L'Heure Tranquille, 59 avenue Marcel Mérieux, 37200 Tours — Lun–sam 10h–20h · dim 11h–19h
+- Metz (France) : Muse, 2 rue des Messageries, 57000 Metz — Lun–sam 10h–20h — tél. 03 72 59 55 99
+- Nancy (France) : Saint-Sébastien, Rue des Ponts, 54000 Nancy — Lun–sam 10h–20h — tél. 03 83 23 82 50
+- Strasbourg (France) : Les Halles, 24 place des Halles, 67000 Strasbourg — Lun–sam 10h–20h
+- Thionville (France) : Carrefour Geric, Centre commercial Geric, 57100 Thionville — Tous les jours 9h–20h
+- Beauvais (France) : Jeu de Paume, 21 boulevard Saint-André, 60000 Beauvais — Lun–sam 10h–20h — tél. 03 44 07 53 79
+- Calais – Coquelles (France) : Cité Europe, 1001 boulevard du Kent, 62231 Coquelles — Lun–sam 10h–20h
+- Dunkerque (France) : Centre Marine, Centre Marine, 59140 Dunkerque — Horaires du centre
+- Lille (France) : Euralille, 100 avenue Willy Brandt, 59777 Lille — Lun–sam 10h–20h — tél. 09 67 00 51 56
+- Noyelles-Godault (France) : Auchan Noyelles, Route Nationale 43, 62950 Noyelles-Godault — Lun–sam 10h–20h30
+- Caen – Mondeville 2 (France) : Mondeville 2, ZA de l'Étoile, 14120 Mondeville — Lun–sam 9h30–20h — tél. 09 72 55 26 93
+- Caen – Rives de l'Orne (France) : Les Rives de l'Orne, Quai Amiral Hamelin, 14000 Caen — Lun–sam 10h–20h
+- Cherbourg (France) : Les Eléis, Quai de l'Entrepôt, 50100 Cherbourg-en-Cotentin — Lun–sam 10h30–18h30 — tél. 02 33 45 07 45
+- Granville (France) : Centre-ville, 6 rue de l'Abreuvoir, 50400 Granville — Horaires saisonniers — tél. 02 33 69 86 24
+- Le Havre (France) : Docks Vauban, 70 quai Frissard, 76600 Le Havre — Tous les jours 10h–20h — tél. 09 81 45 65 27
+- Rouen (France) : Docks 76, 5-7 rue Netien, 76000 Rouen — Lun–sam 10h–20h — tél. 02 79 90 13 32
+- Anglet (France) : BAB2, Avenue Jean Léon Laporte, 64600 Anglet — Lun–sam 10h–20h
+- Bayonne (France) : Centre-ville, 81 rue d'Espagne, 64100 Bayonne — Lun–sam 12h–19h
+- Bordeaux – Bègles (France) : Rives d'Arcins, Rue des Frères Lumière, 33130 Bègles — Horaires du centre — tél. 05 54 52 04 87
+- La Rochelle – Beaulieu (France) : Beaulieu, ZAC de Beaulieu, 17138 Puilboreau — Lun–sam 9h30–19h30 — tél. 09 82 20 61 94
+- La Rochelle – Centre (France) : Centre-ville, 14 rue du Temple, 17000 La Rochelle — Lun–sam 12h–18h45 — tél. 05 46 55 43 11
+- Poitiers (France) : Passage des Cordeliers, 4 rue Henri Oudin, 86000 Poitiers — Lun–sam 10h–20h — tél. 06 61 24 78 02
+- Béziers (France) : Polygone, 3 carrefour de l'Hours, 34500 Béziers — Lun–sam 10h–20h
+- Montpellier (France) : Odysseum, 2 place de Lisbonne, 34000 Montpellier — Tous les jours 12h–19h — tél. 09 67 13 29 90
+- Perpignan – Claira (France) : Carrefour Claira, Route du Barcarès, 66530 Claira — Lun–sam 9h30–20h — tél. 06 62 14 71 93
+- Toulouse Centre (France) : Centre-ville, 58 rue Léon Gambetta, 31000 Toulouse — Tous les jours 12h–22h — tél. 09 63 62 39 94
+- Toulouse – Blagnac (France) : Centre commercial Blagnac, 2 allée Émile Zola, 31700 Blagnac — Lun–sam 9h30–20h
+- Angers – Beaucouzé (France) : L'Atoll, Écoparc du Buisson, 49070 Beaucouzé — Lun–sam 10h–20h
+- La Roche-sur-Yon (France) : Les Flâneries, 181 rue Philippe Lebon, 85000 La Roche-sur-Yon — Lun–jeu 9h30–21h30 · ven–sam 9h30–22h
+- Le Mans (France) : Auchan – ZAC du Moulin aux Moines, ZAC du Moulin aux Moines, 72650 La Chapelle-Saint-Aubin — Lun–sam 10h–21h
+- Nantes Beaulieu (France) : Beaulieu, 1 boulevard Général de Gaulle, 44200 Nantes — Lun–sam 9h30–20h
+- Nantes – Basse-Goulaine (France) : Pôle Sud, Route de Clisson, 44115 Basse-Goulaine — Lun–sam 8h30–21h
+- Aix-en-Provence (France) : Jas de Bouffan, 210 avenue de Bredasque, 13090 Aix-en-Provence — Lun–sam 9h30–20h
+- Antibes (France) : Vieil Antibes, 6 traverse Lacan, 06600 Antibes — Tous les jours 13h–19h
+- Avignon – Le Pontet (France) : Auchan Le Pontet, 533 avenue Louis Braille, 84130 Le Pontet — Lun–sam 12h–19h30
+- Cabriès (France) : Avant Cap – Plan de Campagne, CD6, 13480 Cabriès — Tous les jours 9h30–19h30
+- Cagnes-sur-Mer (France) : Polygone Riviera, 137 avenue des Alpes, 06800 Cagnes-sur-Mer — Lun–sam 10h–20h · dim 10h–19h — tél. 04 97 02 19 81
+- Nice TNL (France) : Nice TNL, 15 boulevard Général Louis Delfino, 06300 Nice — Lun–sam 10h–20h — tél. 09 63 56 65 84
+- Nice – Cap 3000 (France) : Cap 3000, 217 avenue Eugène Donadeï, 06700 Saint-Laurent-du-Var — Lun–sam 10h–21h · dim 10h–20h
+- Saint-Raphaël (France) : Front de mer, 101 promenade René Coty, 83700 Saint-Raphaël — Tous les jours 11h–19h30 — tél. 04 94 82 01 39
+- Toulon – La Valette (France) : Avenue 83, 300 avenue de l'Université, 83160 La Valette-du-Var — Lun–sam 11h–20h — tél. 06 02 05 11 92
+- Matoury (Outre-mer) : Family Plaza, CC Family Plaza, 97351 Matoury — Tous les jours 9h30–19h30
+- Dumbéa (Outre-mer) : Dumbéa Mall, Centre commercial Dumbéa Mall, 98835 Dumbéa-sur-Mer — Lun–jeu 10h–19h30 · ven 10h–20h · sam 9h–20h · dim 9h–18h
+- Nouméa – Baie des Citrons (Outre-mer) : Baie des Citrons, Promenade Roger Laroque, 98800 Nouméa — Lun–jeu 11h–19h · ven–dim 11h–20h — tél. +687 31 14 77
+- Nouméa – Mirage Plaza (Outre-mer) : Mirage Plaza, 27 promenade Roger Laroque, 98800 Nouméa — Horaires du centre
+- Charleroi (Belgique) : Rive Gauche, Place Verte 20, 6000 Charleroi — Lun–sam 10h–19h
+- Liège (Belgique) : Médiacité, Boulevard Raymond Poincaré 7, 4020 Liège — Lun–sam 10h–20h
+- Luxembourg (Luxembourg) : Cloche d'Or, 25 boulevard F. W. Raiffeisen, 2411 Luxembourg — Lun–sam 10h–21h
+- Saint-Sébastien (Espagne) : Garbera, Garbera Zeharbidea 1, 20017 Donostia-San Sebastián — Tous les jours 12h–22h30
+- Saly (Sénégal) : Saly, Route de Saly, croisement allée des Milliardaires,  Saly — Tous les jours 10h–20h
+- Libreville (Gabon) : Mbolo, Boulevard Triomphal,  Libreville — Tous les jours 9h–18h30 — tél. 060 22 28 28
+- Kuala Lumpur – Mid Valley (Malaisie) : Mid Valley Megamall, Lingkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur — Tous les jours 10h–22h — tél. +60 13-432 6765
+- Putrajaya – IOI City Mall (Malaisie) : IOI City Mall, Level 3A, IOI City Tower Two, 62502 Putrajaya — Horaires du centre
+- Tachkent (Ouzbékistan) : Tashkent City Mall, Tashkent City,  Tachkent — Tous les jours 12h–minuit

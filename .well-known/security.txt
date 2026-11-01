@@ -1,0 +1,6 @@
+# Signaler une faille de sécurité (RFC 9116)
+# ⚠ Remplacer l'adresse ci-dessous et renouveler la date d'expiration chaque année.
+Contact: mailto:securite@yogurtfactory.fr
+Expires: 2027-09-30T00:00:00.000Z
+Preferred-Languages: fr, en
+Canonical: https://yogurtfactory.fr/.well-known/security.txt
